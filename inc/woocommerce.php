@@ -88,3 +88,10 @@ add_filter( 'woocommerce_breadcrumb_defaults', function ( $defaults ) {
 
 /** Default catalog ordering: alphabetical title sort groups products by brand and model. */
 add_filter( 'woocommerce_default_catalog_orderby', function () { return 'title'; } );
+
+/** Related products: show 4, matching the shop grid. */
+add_filter( 'woocommerce_output_related_products_args', function ( $args ) {
+	$args['posts_per_page'] = 4;
+	$args['columns']        = 4;
+	return $args;
+} );
