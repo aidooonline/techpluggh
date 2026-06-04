@@ -50,17 +50,19 @@ $spec = trim( wp_strip_all_tags( $product->get_short_description() ) );
 				<p class="tpg-product__spec"><?php echo esc_html( $spec ); ?></p>
 			<?php endif; ?>
 
-			<div class="mt-auto pt-3 flex flex-col gap-2">
-				<?php echo wp_kses_post( $product->get_price_html() ); ?>
-				<?php
-				if ( $product->is_in_stock() ) {
-					$qty = $product->get_stock_quantity();
-					echo '<span class="tpg-product__stock">In stock' . ( $qty ? ' · ' . (int) $qty . ' available' : '' ) . '</span>';
-				} else {
-					echo '<span class="tpg-product__stock is-out">Out of stock</span>';
-				}
-				?>
-				<a href="<?php the_permalink(); ?>" class="btn-ghost w-full text-xs"><?php esc_html_e( 'View details', 'techpluggh' ); ?></a>
+			<div class="mt-auto pt-2 flex flex-col gap-2">
+				<div class="flex items-center justify-between gap-2 flex-wrap">
+					<?php echo wp_kses_post( $product->get_price_html() ); ?>
+					<?php
+					if ( $product->is_in_stock() ) {
+						$qty = $product->get_stock_quantity();
+						echo '<span class="tpg-product__stock">In stock' . ( $qty ? ' · ' . (int) $qty . ' available' : '' ) . '</span>';
+					} else {
+						echo '<span class="tpg-product__stock is-out">Out of stock</span>';
+					}
+					?>
+				</div>
+				<a href="<?php the_permalink(); ?>" class="btn-ghost w-full text-xs !py-2.5"><?php esc_html_e( 'View details', 'techpluggh' ); ?></a>
 			</div>
 		</div>
 	</div>
