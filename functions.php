@@ -98,33 +98,55 @@ add_filter( 'body_class', function ( $classes ) {
 	$classes[] = 'tpg-theme';
 	return $classes;
 } );
-
 /**
- * TEMPORARY deploy diagnostic (admins only) - remove after deploy is verified.
- * Shows exactly which folder this site serves the theme from and whether assets exist there.
+ * TEMPORARY deploy diagnostic + permission auto-repair (admins only).
+ * Remove after deploy is verified working.
+ *
+ * Git clones can land with 700/600 permissions: PHP (owner) reads them fine,
+ * but the webserver's static handler cannot, and WP's rewrite !-f check then
+ * routes asset requests into WordPress, producing 404s for files that exist.
+ * This repairs the theme tree to 755 (dirs) / 644 (files) and reports state.
  */
 add_action( 'admin_notices', 'tpg_deploy_diagnostic' );
-add_action( 'wp_footer', function () {
-	if ( current_user_can( 'manage_options' ) ) {
-		echo "\n<!-- TPG DIAGNOSTIC\n" . esc_html( tpg_deploy_diagnostic( true ) ) . "\n-->\n";
-	}
-} );
-function tpg_deploy_diagnostic( $return = false ) {
-	if ( ! current_user_can( 'manage_options' ) ) { return ''; }
+function tpg_perms( $path ) {
+	return file_exists( $path ) ? substr( sprintf( '%o', fileperms( $path ) ), -4 ) : 'n/a';
+}
+function tpg_fix_perms() {
 	$dir   = get_template_directory();
-	$checks = array(
-		'style.css'           => $dir . '/style.css',
-		'assets/css/main.css' => $dir . '/assets/css/main.css',
-		'assets/js/main.js'   => $dir . '/assets/js/main.js',
+	$fixed = 0;
+	@chmod( $dir, 0755 ) && $fixed++;
+	$it = new RecursiveIteratorIterator(
+		new RecursiveDirectoryIterator( $dir, FilesystemIterator::SKIP_DOTS ),
+		RecursiveIteratorIterator::SELF_FIRST
 	);
-	$lines   = array();
-	$lines[] = 'ABSPATH (WordPress install): ' . ABSPATH;
-	$lines[] = 'Theme dir (filesystem): ' . $dir;
-	$lines[] = 'Theme URI (web): ' . get_template_directory_uri();
-	foreach ( $checks as $label => $path ) {
-		$lines[] = $label . ': ' . ( file_exists( $path ) ? 'EXISTS (' . size_format( filesize( $path ) ) . ')' : 'MISSING' );
+	foreach ( $it as $item ) {
+		$p = $item->getPathname();
+		if ( false !== strpos( $p, DIRECTORY_SEPARATOR . '.git' ) ) { continue; }
+		$want = $item->isDir() ? 0755 : 0644;
+		if ( ( fileperms( $p ) & 0777 ) !== $want ) {
+			if ( @chmod( $p, $want ) ) { $fixed++; }
+		}
 	}
-	$out = implode( "\n", $lines );
-	if ( $return ) { return $out; }
-	echo '<div class="notice notice-warning"><p><strong>TechPlug GH deploy diagnostic</strong></p><pre style="white-space:pre-wrap">' . esc_html( $out ) . '</pre></div>';
+	return $fixed;
+}
+function tpg_deploy_diagnostic() {
+	if ( ! current_user_can( 'manage_options' ) ) { return; }
+	$dir    = get_template_directory();
+	$before = array(
+		'theme dir'           => tpg_perms( $dir ),
+		'assets dir'          => tpg_perms( $dir . '/assets' ),
+		'assets/css dir'      => tpg_perms( $dir . '/assets/css' ),
+		'style.css'           => tpg_perms( $dir . '/style.css' ),
+		'assets/css/main.css' => tpg_perms( $dir . '/assets/css/main.css' ),
+		'assets/js/main.js'   => tpg_perms( $dir . '/assets/js/main.js' ),
+	);
+	$fixed = tpg_fix_perms();
+	$lines   = array();
+	$lines[] = 'Theme dir: ' . $dir;
+	$lines[] = 'Permissions BEFORE repair:';
+	foreach ( $before as $k => $v ) { $lines[] = '  ' . $k . ': ' . $v; }
+	$lines[] = 'Permissions AFTER repair:';
+	$lines[] = '  theme dir: ' . tpg_perms( $dir ) . ' | main.css: ' . tpg_perms( $dir . '/assets/css/main.css' ) . ' | style.css: ' . tpg_perms( $dir . '/style.css' );
+	$lines[] = 'Items repaired this load: ' . (int) $fixed;
+	echo '<div class="notice notice-warning"><p><strong>TechPlug GH deploy diagnostic (perms auto-repair)</strong></p><pre style="white-space:pre-wrap">' . esc_html( implode( "\n", $lines ) ) . '</pre></div>';
 }
