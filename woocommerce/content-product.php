@@ -28,7 +28,7 @@ if ( empty( $product ) || ! $product->is_visible() ) { return; }
 			<?php
 			$cats = wc_get_product_category_list( $product->get_id() );
 			if ( $cats ) {
-				echo '<span class="font-mono text-[10px] uppercase tracking-widest text-tpg-muted line-clamp-1">' . wp_strip_all_tags( $cats ) . '</span>';
+				echo '<span class="font-mono text-[11px] uppercase tracking-widest text-tpg-muted line-clamp-1">' . wp_strip_all_tags( $cats ) . '</span>';
 			}
 			?>
 			<a href="<?php the_permalink(); ?>"><h3 class="tpg-product__title"><?php echo esc_html( $product->get_name() ); ?></h3></a>

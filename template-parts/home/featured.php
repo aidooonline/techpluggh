@@ -5,7 +5,7 @@ if ( ! function_exists( 'wc_get_products' ) ) { return; }
 $args = array(
 	'post_type'      => 'product',
 	'post_status'    => 'publish',
-	'posts_per_page' => 8,
+	'posts_per_page' => 6,
 	'tax_query'      => array(
 		array( 'taxonomy' => 'product_visibility', 'field' => 'name', 'terms' => 'featured' ),
 	),
@@ -14,7 +14,7 @@ $q = new WP_Query( $args );
 if ( ! $q->have_posts() ) {
 	// Fallback: most recent products.
 	wp_reset_postdata();
-	$q = new WP_Query( array( 'post_type' => 'product', 'post_status' => 'publish', 'posts_per_page' => 8, 'orderby' => 'date', 'order' => 'DESC' ) );
+	$q = new WP_Query( array( 'post_type' => 'product', 'post_status' => 'publish', 'posts_per_page' => 6, 'orderby' => 'date', 'order' => 'DESC' ) );
 }
 if ( ! $q->have_posts() ) { wp_reset_postdata(); return; }
 ?>

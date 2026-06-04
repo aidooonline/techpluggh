@@ -399,7 +399,7 @@
   "image": "products/tpg-le-l14-i5-x.jpg"
  },
  {
-  "sku": "TPG-LE-L14-I5-X",
+  "sku": "TPG-LE-L14-I5-10-X",
   "name": "Lenovo ThinkPad L14 - Core i5 10th Gen, 8GB, 256GB SSD",
   "price": "2450",
   "stock": 1,
@@ -419,7 +419,7 @@
    "10th Gen",
    "UK used"
   ],
-  "image": "products/tpg-le-l14-i5-x.jpg"
+  "image": "products/tpg-le-l14-i5-10-x.jpg"
  },
  {
   "sku": "TPG-LE-T14-I5-X",

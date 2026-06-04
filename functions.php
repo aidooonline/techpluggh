@@ -7,7 +7,7 @@
 
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 
-define( 'TPG_VERSION', '1.0.0' );
+define( 'TPG_VERSION', '1.0.1' );
 define( 'TPG_DIR', get_template_directory() );
 define( 'TPG_URI', get_template_directory_uri() );
 
@@ -35,7 +35,7 @@ function tpg_setup() {
 	add_theme_support( 'woocommerce', array(
 		'thumbnail_image_width' => 700,
 		'single_image_width'    => 1200,
-		'product_grid'          => array( 'default_columns' => 4 ),
+		'product_grid'          => array( 'default_columns' => 3 ),
 	) );
 	add_theme_support( 'wc-product-gallery-zoom' );
 	add_theme_support( 'wc-product-gallery-lightbox' );

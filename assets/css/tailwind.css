@@ -35,18 +35,16 @@
   .chip { @apply inline-flex items-center gap-1 rounded-full border border-tpg-line bg-tpg-ink px-3 py-1 text-[11px] font-medium text-tpg-muted; }
   .chip-green { @apply chip border-tpg-green/40 text-tpg-green; }
 
-  /* Product card (WooCommerce) */
-  ul.products{ @apply grid grid-cols-2 lg:grid-cols-4 gap-5 list-none m-0 p-0; }
-  ul.products li.product{ @apply m-0; }
   .tpg-product{ @apply card overflow-hidden flex flex-col h-full transition-all duration-300 hover:border-tpg-green/50 hover:-translate-y-1; }
   .tpg-product__media{ @apply relative block aspect-[4/3] bg-tpg-ink overflow-hidden; }
   .tpg-product__media img{ @apply w-full h-full object-cover transition-transform duration-500; }
   .tpg-product:hover .tpg-product__media img{ @apply scale-105; }
-  .tpg-product__body{ @apply flex flex-col gap-2 p-4 flex-1; }
-  .tpg-product__title{ @apply font-display text-sm font-semibold leading-snug line-clamp-2 text-tpg-paper; }
-  .tpg-product .price{ @apply font-display text-tpg-green text-lg font-bold; }
-  .tpg-product .price del{ @apply text-tpg-muted text-sm font-normal mr-1; }
+  .tpg-product__body{ @apply flex flex-col gap-2.5 p-5 sm:p-6 flex-1; }
+  .tpg-product__title{ @apply font-display text-base lg:text-lg font-semibold leading-snug line-clamp-2 text-tpg-paper; }
+  .tpg-product .price{ @apply font-display text-tpg-green text-xl lg:text-2xl font-bold; }
+  .tpg-product .price del{ @apply text-tpg-muted text-base font-normal mr-1; }
   .tpg-product .price ins{ @apply no-underline; }
+
 
   .menu-link{ @apply text-sm font-medium text-tpg-paper/80 hover:text-tpg-green; }
   .section-title{ @apply font-display text-3xl sm:text-4xl font-bold leading-tight; }
@@ -69,3 +67,25 @@
   .tpg-prose img{ @apply rounded-xl; }
   .tpg-prose hr{ @apply border-tpg-line my-8; }
 }
+
+/* WooCommerce runtime classes: kept OUTSIDE @layer so Tailwind never tree-shakes them
+   (these class names only exist in WooCommerce's runtime HTML, not in theme source) */
+/* Product grid: large 3-up cards, Asantey-scale presentation */
+ul.products,
+.woocommerce ul.products,
+.woocommerce-page ul.products{ @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 list-none m-0 p-0; }
+/* Neutralise WooCommerce's float/percentage layout that squeezes grid items */
+ul.products li.product,
+.woocommerce ul.products[class*="columns-"] li.product,
+.woocommerce-page ul.products[class*="columns-"] li.product{ float:none; clear:none; width:100%; margin:0; padding:0; }
+/* Shop header, ordering and pagination */
+.woocommerce-products-header__title.page-title{ @apply font-display text-3xl sm:text-4xl font-bold leading-tight mb-1; }
+.woocommerce-result-count{ @apply text-tpg-muted text-sm mb-6; }
+.woocommerce-ordering{ @apply mb-6; }
+.woocommerce-ordering select.orderby,
+select.orderby{ @apply rounded-xl border border-tpg-line bg-tpg-ink px-4 py-2.5 text-sm text-tpg-paper focus:border-tpg-green focus:outline-none; }
+nav.woocommerce-pagination ul{ @apply flex flex-wrap gap-2 !border-0 justify-center mt-10; }
+nav.woocommerce-pagination ul li{ @apply !border-0 overflow-visible; }
+nav.woocommerce-pagination ul li a,
+nav.woocommerce-pagination ul li span{ @apply !rounded-full border border-tpg-line !px-4 !py-2 text-sm !text-tpg-paper hover:border-tpg-green hover:!text-tpg-green; }
+nav.woocommerce-pagination ul li span.current{ @apply !bg-tpg-green !text-tpg-black border-tpg-green; }

@@ -22,8 +22,8 @@ add_action( 'woocommerce_after_main_content', function () {
 remove_action( 'woocommerce_sidebar', 'woocommerce_get_sidebar', 10 );
 
 /** Products per row / per page. */
-add_filter( 'loop_shop_columns', function () { return 4; } );
-add_filter( 'loop_shop_per_page', function () { return 16; } );
+add_filter( 'loop_shop_columns', function () { return 3; } );
+add_filter( 'loop_shop_per_page', function () { return 12; } );
 
 /** Replace "Add to cart" text on archives. */
 add_filter( 'woocommerce_product_add_to_cart_text', function ( $text ) {
