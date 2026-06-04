@@ -51,7 +51,7 @@
 
   .input{ @apply w-full rounded-xl border border-tpg-line bg-tpg-ink px-4 py-3 text-sm text-tpg-paper placeholder:text-tpg-muted focus:border-tpg-green focus:outline-none; }
 
-  /* Long-form content (pages, posts, policies) — no Typography plugin needed */
+  /* Long-form content (pages, posts, policies) - no Typography plugin needed */
   .tpg-prose{ @apply text-tpg-paper/85 leading-relaxed; }
   .tpg-prose > * + *{ @apply mt-4; }
   .tpg-prose h2{ @apply font-display text-2xl font-bold text-tpg-paper mt-10 mb-2; }
