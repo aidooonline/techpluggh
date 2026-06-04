@@ -98,3 +98,33 @@ add_filter( 'body_class', function ( $classes ) {
 	$classes[] = 'tpg-theme';
 	return $classes;
 } );
+
+/**
+ * TEMPORARY deploy diagnostic (admins only) - remove after deploy is verified.
+ * Shows exactly which folder this site serves the theme from and whether assets exist there.
+ */
+add_action( 'admin_notices', 'tpg_deploy_diagnostic' );
+add_action( 'wp_footer', function () {
+	if ( current_user_can( 'manage_options' ) ) {
+		echo "\n<!-- TPG DIAGNOSTIC\n" . esc_html( tpg_deploy_diagnostic( true ) ) . "\n-->\n";
+	}
+} );
+function tpg_deploy_diagnostic( $return = false ) {
+	if ( ! current_user_can( 'manage_options' ) ) { return ''; }
+	$dir   = get_template_directory();
+	$checks = array(
+		'style.css'           => $dir . '/style.css',
+		'assets/css/main.css' => $dir . '/assets/css/main.css',
+		'assets/js/main.js'   => $dir . '/assets/js/main.js',
+	);
+	$lines   = array();
+	$lines[] = 'ABSPATH (WordPress install): ' . ABSPATH;
+	$lines[] = 'Theme dir (filesystem): ' . $dir;
+	$lines[] = 'Theme URI (web): ' . get_template_directory_uri();
+	foreach ( $checks as $label => $path ) {
+		$lines[] = $label . ': ' . ( file_exists( $path ) ? 'EXISTS (' . size_format( filesize( $path ) ) . ')' : 'MISSING' );
+	}
+	$out = implode( "\n", $lines );
+	if ( $return ) { return $out; }
+	echo '<div class="notice notice-warning"><p><strong>TechPlug GH deploy diagnostic</strong></p><pre style="white-space:pre-wrap">' . esc_html( $out ) . '</pre></div>';
+}
