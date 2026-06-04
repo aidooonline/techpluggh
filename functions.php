@@ -84,6 +84,9 @@ add_action( 'widgets_init', 'tpg_widgets' );
 
 /** Includes. */
 require TPG_DIR . '/inc/customizer.php';
+if ( is_admin() ) {
+	require TPG_DIR . '/inc/setup.php';
+}
 require TPG_DIR . '/inc/template-tags.php';
 if ( class_exists( 'WooCommerce' ) ) {
 	require TPG_DIR . '/inc/woocommerce.php';
@@ -141,6 +144,7 @@ function tpg_deploy_diagnostic() {
 		'assets/js/main.js'   => tpg_perms( $dir . '/assets/js/main.js' ),
 	);
 	$fixed = tpg_fix_perms();
+	if ( ! $fixed ) { return; }
 	$lines   = array();
 	$lines[] = 'Theme dir: ' . $dir;
 	$lines[] = 'Permissions BEFORE repair:';

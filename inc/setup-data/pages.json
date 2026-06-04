@@ -1,0 +1,56 @@
+[
+ {
+  "title": "Warranty Policy",
+  "slug": "warranty-policy",
+  "template": "",
+  "content": "<p>Every laptop sold by TechPlug GH is UK used, fully tested and graded before listing.</p>\n<h2>Cover period</h2>\n<p>All laptops carry a warranty of <strong>1 to 3 months</strong> from the date of delivery or pickup. The exact period for each unit is stated on the product page or your receipt.</p>\n<h2>What is covered</h2>\n<p>Hardware faults that were present at the time of sale and not caused by the customer (for example a failing battery, faulty keyboard, screen or storage that was not disclosed).</p>\n<h2>What is not covered</h2>\n<p>Accidental damage, liquid damage, cracked screens, physical abuse, unauthorised repairs or opening of the device, software issues, virus or malware problems, and normal wear of consumable parts such as battery capacity loss over time.</p>\n<h2>How to claim</h2>\n<p>Contact us by phone, WhatsApp or email with your order details and a clear description (photos or a short video help). Where it is a covered fault we will repair the unit, replace it with an equivalent, or offer a fair resolution.</p>\n<h2>Battery note</h2>\n<p>As these are used machines, batteries are sold as is with reasonable working health unless a battery fault is stated. Battery wear is not a warranty fault.</p>"
+ },
+ {
+  "title": "Return & Refund Policy",
+  "slug": "return-policy",
+  "template": "",
+  "content": "<p>We want you to be confident in your purchase.</p>\n<h2>Inspection window</h2>\n<p>You have <strong>48 hours</strong> from delivery or pickup to inspect your laptop and report any verified fault that was not disclosed.</p>\n<h2>Eligible returns</h2>\n<p>Returns within 48 hours are accepted for verified hardware faults present at delivery. The laptop must be returned in the same condition it was received, with all accessories and packaging.</p>\n<h2>Not eligible</h2>\n<p>Change of mind, buyer's remorse, found it cheaper elsewhere, damage caused after delivery, or units with broken seals or tampering.</p>\n<h2>Resolution options</h2>\n<p>For a confirmed eligible fault we will repair, replace with an equivalent unit, or issue a refund, by agreement with the customer.</p>\n<h2>Refund method</h2>\n<p>Approved refunds are paid back through the same channel used to pay (Mobile Money or bank transfer) within a reasonable number of working days after the unit is returned and checked.</p>\n<h2>Return logistics</h2>\n<p>For Accra and Tema we can arrange collection. For other regions, return courier costs are discussed case by case.</p>"
+ },
+ {
+  "title": "Delivery Policy",
+  "slug": "delivery-policy",
+  "template": "",
+  "content": "<h2>Coverage</h2>\n<p>We deliver across Ghana. Accra and Tema are served first, with nationwide delivery by courier.</p>\n<h2>Timing</h2>\n<p>Same-day or next-day within Accra and Tema (order cut-off times apply). Nationwide courier typically takes <strong>2 to 4 working days</strong>.</p>\n<h2>Delivery fees</h2>\n<p>Accra deliveries are charged <strong>GHS 20 to GHS 50</strong> depending on location. Tema and nationwide courier fees are confirmed at checkout or when we confirm your order.</p>\n<h2>Pickup option</h2>\n<p>You may collect your order from our pickup point in Accra. The exact meeting location is confirmed once your order is placed.</p>\n<h2>Order confirmation</h2>\n<p>We confirm stock, delivery zone and the total (including delivery) before dispatch. Please inspect your laptop on delivery. For pay-on-delivery orders, payment is made once you have confirmed the unit.</p>"
+ },
+ {
+  "title": "Privacy Policy",
+  "slug": "privacy-policy",
+  "template": "",
+  "content": "<p>TechPlug GH respects your privacy.</p>\n<h2>What we collect</h2>\n<p>Name, phone number, delivery address, email and order details that you provide when you contact us or place an order.</p>\n<h2>Why we collect it</h2>\n<p>To process and deliver your order, provide support and warranty service, and communicate with you about your purchase.</p>\n<h2>How we use it</h2>\n<p>We use your information only for the purposes above. We do not sell your personal data.</p>\n<h2>Sharing</h2>\n<p>We share delivery details with our courier and dispatch partners only as needed to deliver your order.</p>\n<h2>Storage and your choices</h2>\n<p>We keep your information only as long as needed for orders, records and warranty. You may ask us to update or delete your details, subject to records we must keep for completed sales. For any privacy request, contact info@techpluggh.com.</p>"
+ },
+ {
+  "title": "Terms & Conditions",
+  "slug": "terms",
+  "template": "",
+  "content": "<p>By buying from TechPlug GH you agree to the following.</p>\n<h2>Products</h2>\n<p>All laptops are UK used and graded. Cosmetic condition and specifications are described as accurately as possible on each product page. Minor cosmetic marks consistent with used equipment are normal.</p>\n<h2>Configurations</h2>\n<p>RAM, storage and exact specifications may vary by unit. We confirm the exact configuration of your unit before dispatch. Upgrades are available on request.</p>\n<h2>Payment and pay on delivery</h2>\n<p>Accepted methods: Mobile Money, bank transfer, and pay on delivery (Accra only). Orders are confirmed manually: after you order, we contact you to confirm availability and payment. Pay on delivery is available within Accra at our discretion; you pay on receipt after inspecting the laptop, and we may require a deposit or phone verification for first-time customers. Customers outside Accra pay in full or a deposit as agreed before dispatch. All prices are in Ghana Cedis and may change without notice; the price confirmed at order is the price you pay.</p>\n<h2>Orders, pricing and availability</h2>\n<p>Placing an order is an offer to buy. An order is confirmed only after we verify stock and payment. Stock is limited; if an item sells out after you order, we will offer an alternative or a full refund.</p>\n<h2>Warranty, returns and delivery</h2>\n<p>Governed by the Warranty, Return and Delivery policies.</p>\n<h2>Liability</h2>\n<p>TechPlug GH is not liable for data loss; please back up your data. Our liability is limited to the value of the product purchased.</p>\n<h2>Governing law</h2>\n<p>These terms are governed by the laws of the Republic of Ghana. Contact: info@techpluggh.com.</p>"
+ },
+ {
+  "title": "How to Order",
+  "slug": "how-to-order",
+  "template": "page-templates/page-how-to-order.php",
+  "content": "<p>Ordering from TechPlug GH is simple and secure. Browse our graded laptops, place your order on the site or on WhatsApp, pay by Mobile Money, bank transfer or on delivery in Accra, and we deliver nationwide. If you need help choosing the right laptop for your budget or use, reach out any time.</p>"
+ },
+ {
+  "title": "Deals & Offers",
+  "slug": "deals",
+  "template": "page-templates/page-deals.php",
+  "content": "<p>Discounted units, bulk pricing for teams and student bundles, updated weekly. Any laptop currently on sale appears below.</p>"
+ },
+ {
+  "title": "About",
+  "slug": "about",
+  "template": "",
+  "content": "<p>TechPlug GH supplies quality UK used laptops to students, professionals and businesses across Ghana. Every machine is tested, graded and warranty-backed, so you can buy with confidence.</p>\n<p>We stock trusted business-class brands including HP EliteBook, Dell Latitude and Lenovo ThinkPad, with flexible payment by Mobile Money, bank transfer or pay on delivery in Accra. Plug into quality.</p>"
+ },
+ {
+  "title": "Contact",
+  "slug": "contact",
+  "template": "",
+  "content": "<p>Have a question or ready to order? Reach us through any of the channels below and we will respond quickly.</p>\n<ul>\n<li><strong>Email:</strong> info@techpluggh.com</li>\n<li><strong>Phone / WhatsApp:</strong> shown in the site header and footer once configured</li>\n<li><strong>Location:</strong> Accra, Ghana (pickup point confirmed on order)</li>\n</ul>\n<p>Business hours: Monday to Saturday.</p>"
+ }
+]

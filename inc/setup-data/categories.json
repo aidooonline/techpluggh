@@ -1,0 +1,50 @@
+[
+ {
+  "name": "UK Used Laptops",
+  "slug": "uk-used-laptops",
+  "desc": "Quality UK used laptops, tested and graded. Our full range.",
+  "image": "categories/uk-used-laptops.jpg"
+ },
+ {
+  "name": "Business Laptops",
+  "slug": "business-laptops",
+  "desc": "Business-class machines: HP EliteBook, Dell Latitude and Lenovo ThinkPad.",
+  "image": "categories/business-laptops.jpg"
+ },
+ {
+  "name": "Student Laptops",
+  "slug": "student-laptops",
+  "desc": "Affordable, reliable laptops ideal for students and coursework.",
+  "image": "categories/student-laptops.jpg"
+ },
+ {
+  "name": "MacBooks",
+  "slug": "macbooks",
+  "desc": "Apple MacBook laptops.",
+  "image": "categories/macbooks.jpg"
+ },
+ {
+  "name": "HP Laptops",
+  "slug": "hp-laptops",
+  "desc": "HP EliteBook and other HP laptops.",
+  "image": "categories/hp-laptops.jpg"
+ },
+ {
+  "name": "Dell Laptops",
+  "slug": "dell-laptops",
+  "desc": "Dell Latitude and other Dell laptops.",
+  "image": "categories/dell-laptops.jpg"
+ },
+ {
+  "name": "Lenovo Laptops",
+  "slug": "lenovo-laptops",
+  "desc": "Lenovo ThinkPad, IdeaPad and Yoga laptops.",
+  "image": "categories/lenovo-laptops.jpg"
+ },
+ {
+  "name": "Laptop Accessories",
+  "slug": "laptop-accessories",
+  "desc": "Chargers, bags, docks and other laptop accessories.",
+  "image": "categories/laptop-accessories.jpg"
+ }
+]
