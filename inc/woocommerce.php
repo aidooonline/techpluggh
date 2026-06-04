@@ -85,3 +85,6 @@ add_filter( 'woocommerce_breadcrumb_defaults', function ( $defaults ) {
 } );
 
 /** Currency symbol spacing already handled by WC GHS setting. */
+
+/** Default catalog ordering: alphabetical title sort groups products by brand and model. */
+add_filter( 'woocommerce_default_catalog_orderby', function () { return 'title'; } );

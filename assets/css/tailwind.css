@@ -35,14 +35,16 @@
   .chip { @apply inline-flex items-center gap-1 rounded-full border border-tpg-line bg-tpg-ink px-3 py-1 text-[11px] font-medium text-tpg-muted; }
   .chip-green { @apply chip border-tpg-green/40 text-tpg-green; }
 
-  .tpg-product{ @apply card overflow-hidden flex flex-col h-full transition-all duration-300 hover:border-tpg-green/50 hover:-translate-y-1; }
+  .tpg-product{ @apply card overflow-hidden flex flex-col h-full; }
   .tpg-product__media{ @apply relative block aspect-[4/3] bg-tpg-ink overflow-hidden; }
-  .tpg-product__media img{ @apply w-full h-full object-cover transition-transform duration-500; }
-  .tpg-product:hover .tpg-product__media img{ @apply scale-105; }
-  .tpg-product__body{ @apply flex flex-col gap-2.5 p-5 sm:p-6 flex-1; }
-  .tpg-product__title{ @apply font-display text-base lg:text-lg font-semibold leading-snug line-clamp-2 text-tpg-paper; }
-  .tpg-product .price{ @apply font-display text-tpg-green text-xl lg:text-2xl font-bold; }
-  .tpg-product .price del{ @apply text-tpg-muted text-base font-normal mr-1; }
+  .tpg-product__media img{ @apply w-full h-full object-cover; }
+  .tpg-product__body{ @apply flex flex-col gap-2 p-5 flex-1; }
+  .tpg-product__title{ @apply font-display text-base font-semibold leading-snug text-tpg-paper; }
+  .tpg-product__spec{ @apply text-xs text-tpg-muted leading-relaxed line-clamp-2; }
+  .tpg-product__stock{ @apply text-xs font-medium text-tpg-green; }
+  .tpg-product__stock.is-out{ @apply text-tpg-muted; }
+  .tpg-product .price{ @apply font-display text-tpg-green text-lg font-bold; }
+  .tpg-product .price del{ @apply text-tpg-muted text-sm font-normal mr-1; }
   .tpg-product .price ins{ @apply no-underline; }
 
 
@@ -70,10 +72,14 @@
 
 /* WooCommerce runtime classes: kept OUTSIDE @layer so Tailwind never tree-shakes them
    (these class names only exist in WooCommerce's runtime HTML, not in theme source) */
-/* Product grid: large 3-up cards, Asantey-scale presentation */
+/* Product grid: medium cards, 2/3/4 columns by breakpoint */
 ul.products,
 .woocommerce ul.products,
-.woocommerce-page ul.products{ @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 list-none m-0 p-0; }
+.woocommerce-page ul.products{ @apply grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-5 xl:gap-6 list-none m-0 p-0; }
+/* WooCommerce clearfix pseudo-elements become phantom grid cells: remove them */
+ul.products::before, ul.products::after,
+.woocommerce ul.products::before, .woocommerce ul.products::after,
+.woocommerce-page ul.products::before, .woocommerce-page ul.products::after{ content:none !important; display:none !important; }
 /* Neutralise WooCommerce's float/percentage layout that squeezes grid items */
 ul.products li.product,
 .woocommerce ul.products[class*="columns-"] li.product,
