@@ -43,6 +43,14 @@ function tpg_setup_page() {
 				<p><button type="submit" class="button button-primary button-hero">Run Full Setup</button></p>
 			</form>
 			<hr>
+			<h2>Update product details (researched specs and SEO content)</h2>
+			<p>Rewrites every product with platform-accurate researched content: corrected generation labels, a full specification table (exact CPUs, display panel, ports, wireless, battery, build), positioning copy, a Ghana-specific FAQ block for AI overviews and organic search, and structured WooCommerce attributes shown in the Additional Information tab. Matched by SKU; safe to re-run.</p>
+			<form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>">
+				<input type="hidden" name="action" value="tpg_enrich_products">
+				<?php wp_nonce_field( 'tpg_enrich_products' ); ?>
+				<p><button type="submit" class="button button-primary button-hero">Update Product Details</button></p>
+			</form>
+			<hr>
 			<h2>Product photos from the web</h2>
 			<p>Searches openly licensed photos (CC0 / CC-BY via Openverse) for each laptop model, uploads the best match into the Media Library with attribution, and sets it as the product image. The branded card moves into the product gallery. Runs in batches of 8; click again until all products are processed. Models without a suitable openly licensed photo keep their branded card. You can replace any image per product afterwards.</p>
 			<?php $off = (int) get_option( 'tpg_img_offset', 0 ); $tot = class_exists( 'WooCommerce' ) ? (int) ( wp_count_posts( 'product' )->publish ?? 0 ) : 0; ?>
@@ -280,7 +288,8 @@ function tpg_fetch_images() {
 			continue;
 		}
 		$model = tpg_image_model( $name );
-		$att   = tpg_fetch_openverse_image( $model );
+		$att   = tpg_fetch_commons_image( $model );
+		if ( ! $att ) { $att = tpg_fetch_openverse_image( $model ); }
 		if ( $att ) {
 			$old = (int) $product->get_image_id();
 			if ( $old ) {
@@ -377,6 +386,101 @@ function tpg_fetch_openverse_image( $query ) {
 			'post_content' => $credit,
 		) );
 		update_post_meta( $att, '_tpg_image_source', esc_url_raw( (string) ( $r['foreign_landing_url'] ?? '' ) ) );
+		return (int) $att;
+	}
+	return 0;
+}
+
+/* =========================================================
+   Product enrichment: detailed researched specs, SEO content
+   and WooCommerce attributes, applied by SKU from enrich.json.
+   ========================================================= */
+
+add_action( 'admin_post_tpg_enrich_products', 'tpg_enrich_products' );
+function tpg_enrich_products() {
+	if ( ! current_user_can( 'manage_options' ) ) { wp_die( 'Insufficient permissions.' ); }
+	check_admin_referer( 'tpg_enrich_products' );
+	if ( ! class_exists( 'WooCommerce' ) ) { wp_die( 'WooCommerce must be active.' ); }
+	@set_time_limit( 300 );
+
+	$rows    = tpg_setup_data( 'enrich' );
+	$updated = 0;
+	$missing = array();
+	foreach ( $rows as $row ) {
+		$pid = wc_get_product_id_by_sku( $row['sku'] );
+		if ( ! $pid ) { $missing[] = $row['sku']; continue; }
+		$product = wc_get_product( $pid );
+		if ( ! $product ) { continue; }
+		$product->set_name( $row['name'] );
+		$product->set_short_description( $row['short'] );
+		$product->set_description( $row['desc'] );
+		$attrs = array();
+		$pos   = 0;
+		foreach ( $row['attributes'] as $aname => $aval ) {
+			$a = new WC_Product_Attribute();
+			$a->set_name( $aname );
+			$a->set_options( array( $aval ) );
+			$a->set_position( $pos++ );
+			$a->set_visible( true );
+			$a->set_variation( false );
+			$attrs[] = $a;
+		}
+		$product->set_attributes( $attrs );
+		$product->save();
+		$updated++;
+	}
+	$log   = array();
+	$log[] = sprintf( 'Product details updated: %d of %d (titles corrected to platform-accurate generations, full spec tables, FAQ blocks, and attributes for the Additional Information tab).', $updated, count( $rows ) );
+	if ( $missing ) { $log[] = 'SKUs not found (run Full Setup first): ' . implode( ', ', $missing ); }
+	set_transient( 'tpg_setup_report', implode( "\n", $log ), 300 );
+	wp_safe_redirect( admin_url( 'tools.php?page=tpg-setup' ) );
+	exit;
+}
+
+/**
+ * Wikimedia Commons image search (tried before Openverse).
+ * Freely licensed media with attribution; returns attachment ID or 0.
+ */
+function tpg_fetch_commons_image( $query ) {
+	$api = 'https://commons.wikimedia.org/w/api.php?' . http_build_query( array(
+		'action'       => 'query',
+		'format'       => 'json',
+		'generator'    => 'search',
+		'gsrsearch'    => $query . ' filetype:bitmap',
+		'gsrnamespace' => 6,
+		'gsrlimit'     => 6,
+		'prop'         => 'imageinfo',
+		'iiprop'       => 'url|size|extmetadata',
+		'iiurlwidth'   => 1200,
+	) );
+	$res = wp_remote_get( $api, array( 'timeout' => 25, 'headers' => array( 'User-Agent' => 'TechPlugGH/1.0 (WordPress; +https://techpluggh.com)' ) ) );
+	if ( is_wp_error( $res ) || 200 !== wp_remote_retrieve_response_code( $res ) ) { return 0; }
+	$data = json_decode( wp_remote_retrieve_body( $res ), true );
+	if ( empty( $data['query']['pages'] ) ) { return 0; }
+
+	require_once ABSPATH . 'wp-admin/includes/file.php';
+	require_once ABSPATH . 'wp-admin/includes/media.php';
+	require_once ABSPATH . 'wp-admin/includes/image.php';
+
+	foreach ( $data['query']['pages'] as $page ) {
+		$info = $page['imageinfo'][0] ?? null;
+		if ( ! $info || (int) ( $info['width'] ?? 0 ) < 600 ) { continue; }
+		$img_url = $info['thumburl'] ?? $info['url'] ?? '';
+		if ( ! $img_url ) { continue; }
+		$tmp = download_url( $img_url, 60 );
+		if ( is_wp_error( $tmp ) ) { continue; }
+		$file = array(
+			'name'     => sanitize_title( $query ) . '-' . wp_generate_password( 6, false, false ) . '.jpg',
+			'tmp_name' => $tmp,
+		);
+		$att = media_handle_sideload( $file, 0, $query );
+		if ( is_wp_error( $att ) ) { @unlink( $tmp ); continue; }
+		$meta    = $info['extmetadata'] ?? array();
+		$artist  = isset( $meta['Artist']['value'] ) ? wp_strip_all_tags( $meta['Artist']['value'] ) : 'Wikimedia Commons contributor';
+		$license = isset( $meta['LicenseShortName']['value'] ) ? $meta['LicenseShortName']['value'] : 'free license';
+		$credit  = 'Photo: ' . $artist . ' (' . $license . '). Source: Wikimedia Commons, ' . ( $info['descriptionurl'] ?? $info['url'] );
+		wp_update_post( array( 'ID' => $att, 'post_excerpt' => $credit, 'post_content' => $credit ) );
+		update_post_meta( $att, '_tpg_image_source', esc_url_raw( (string) ( $info['descriptionurl'] ?? '' ) ) );
 		return (int) $att;
 	}
 	return 0;

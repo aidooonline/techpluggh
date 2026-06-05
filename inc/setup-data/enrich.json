@@ -2,693 +2,528 @@
  {
   "sku": "TPG-HP-830G7-I5-NT",
   "name": "HP EliteBook 830 G7 (Non-touch) - Core i5 10th Gen, 8GB, 256GB SSD",
-  "price": "3050",
-  "stock": 5,
-  "weight": "1.2",
-  "featured": false,
   "short": "Intel i5 10th Gen \u00b7 8GB RAM \u00b7 256GB SSD \u00b7 13.3\" FHD \u00b7 Win 11 Pro \u00b7 UK used, tested &amp; warranty-backed.",
   "desc": "<p>The HP EliteBook 830 G7 is a premium business-class laptop sourced from UK corporate fleets, where machines are maintained on strict IT schedules. Every unit sold by TechPlug GH in Accra is tested, graded and backed by our warranty, so you get enterprise build quality at a fraction of the new price, with delivery across Ghana.</p><h3>HP EliteBook 830 G7 key specifications</h3><table><tbody><tr><th>Processor</th><td>Intel Core i5-10210U / i5-10310U, 10th Gen Comet Lake, 4 cores / 8 threads, up to 4.2 GHz</td></tr><tr><th>Memory</th><td>8GB RAM as configured (DDR4-2666, 2 SODIMM slots, upgradable to 64GB)</td></tr><tr><th>Storage</th><td>256GB NVMe SSD as configured, upgrade options available on request</td></tr><tr><th>Display</th><td>13.3\" FHD (1920x1080) IPS anti-glare, 250 nits</td></tr><tr><th>Graphics</th><td>Intel UHD Graphics</td></tr><tr><th>Ports</th><td>1x Thunderbolt 3 / USB-C, 2x USB-A 3.1, HDMI 1.4b, headphone/mic combo</td></tr><tr><th>Wireless</th><td>Intel Wi-Fi 6 AX201, Bluetooth 5</td></tr><tr><th>Battery</th><td>53Wh battery, HP Fast Charge</td></tr><tr><th>Build and weight</th><td>from 1.24 kg, compact aluminium ultrabook, MIL-STD 810G tested</td></tr><tr><th>Keyboard and extras</th><td>IR camera option with privacy shutter, fingerprint reader, backlit keyboard, B&O audio, HP Sure Start</td></tr><tr><th>Operating system</th><td>Windows 11 Pro, activated</td></tr><tr><th>Condition</th><td>UK used, professionally tested and graded; minor cosmetic marks consistent with careful use</td></tr><tr><th>Warranty</th><td>1 to 3 months TechPlug GH warranty, 48-hour return window on verified faults</td></tr></tbody></table><h3>Who the HP EliteBook 830 G7 is for</h3><p>Ideal for professionals, remote workers and students who want a premium, durable ultrabook with strong security features and all-day battery life.</p><h3>Condition, warranty and delivery in Ghana</h3><p>UK used, tested and graded with a TechPlug GH warranty of 1 to 3 months and a 48-hour return window on verified faults. Same or next-day delivery in Accra and Tema, 2 to 4 working days nationwide, or pick up in Accra. Pay by MoMo, bank transfer, or on delivery within Accra.</p><h3>Frequently asked questions</h3><h4>Is this laptop brand new?</h4><p>No. It is UK used: an ex-corporate HP EliteBook 830 G7 that has been professionally tested and graded by TechPlug GH. UK-used laptops are popular in Ghana because corporate fleets are well maintained, giving you premium build quality at a much lower price.</p><h4>Can the RAM or storage be upgraded?</h4><p>In most cases yes. This unit ships with 8GB RAM and a 256GB NVMe SSD; ddr4-2666, 2 sodimm slots, upgradable to 64gb. Ask us on WhatsApp before purchase and we can upgrade it for you.</p><h4>What warranty do I get?</h4><p>Every TechPlug GH laptop carries a 1 to 3 month warranty plus a 48-hour return window for verified faults. Payment is by MoMo, bank transfer, or pay on delivery within Accra, and we deliver nationwide.</p>",
-  "cats": [
-   "UK Used Laptops",
-   "Business Laptops",
-   "HP Laptops"
-  ],
-  "tags": [
-   "HP",
-   "Core i5",
-   "10th Gen",
-   "UK used"
-  ],
-  "image": "products/tpg-hp-830g7-i5-nt.jpg"
+  "attributes": {
+   "Brand": "HP",
+   "Model": "HP EliteBook 830 G7",
+   "Processor": "Intel Core i5-10210U / i5-10310U",
+   "RAM": "8GB DDR4 (upgradable)",
+   "Storage": "256GB NVMe SSD",
+   "Display": "13.3\" FHD (1920x1080) IPS anti-glare",
+   "Graphics": "Intel UHD Graphics",
+   "Operating System": "Windows 11 Pro",
+   "Condition": "UK Used, Tested and Graded"
+  }
  },
  {
   "sku": "TPG-HP-840G7-I5-NT",
   "name": "HP EliteBook 840 G7 (Non-touch) - Core i5 10th Gen, 8GB, 256GB SSD",
-  "price": "3050",
-  "stock": 3,
-  "weight": "1.4",
-  "featured": true,
   "short": "Intel i5 10th Gen \u00b7 8GB RAM \u00b7 256GB SSD \u00b7 14\" FHD \u00b7 Win 11 Pro \u00b7 UK used, tested &amp; warranty-backed.",
   "desc": "<p>The HP EliteBook 840 G7 is a premium business-class laptop sourced from UK corporate fleets, where machines are maintained on strict IT schedules. Every unit sold by TechPlug GH in Accra is tested, graded and backed by our warranty, so you get enterprise build quality at a fraction of the new price, with delivery across Ghana.</p><h3>HP EliteBook 840 G7 key specifications</h3><table><tbody><tr><th>Processor</th><td>Intel Core i5-10210U or i5-10310U, 10th Gen Comet Lake, 4 cores / 8 threads, up to 4.2 GHz</td></tr><tr><th>Memory</th><td>8GB RAM as configured (DDR4-2666, 2 SODIMM slots, upgradable to 64GB)</td></tr><tr><th>Storage</th><td>256GB NVMe SSD as configured, upgrade options available on request</td></tr><tr><th>Display</th><td>14\" FHD (1920x1080) IPS anti-glare, 250 nits (400-nit and Sure View privacy panel options exist)</td></tr><tr><th>Graphics</th><td>Intel UHD Graphics</td></tr><tr><th>Ports</th><td>1x Thunderbolt 3 / USB-C, 2x USB-A 3.1, HDMI 1.4b, headphone/mic combo, optional smart card and nano-SIM</td></tr><tr><th>Wireless</th><td>Intel Wi-Fi 6 AX201, Bluetooth 5</td></tr><tr><th>Battery</th><td>53Wh long-life battery with HP Fast Charge</td></tr><tr><th>Build and weight</th><td>from 1.34 kg, CNC-machined aluminium chassis, MIL-STD 810G tested</td></tr><tr><th>Keyboard and extras</th><td>720p HD camera with IR option and privacy shutter, fingerprint reader, backlit spill-resistant keyboard, Bang & Olufsen audio, HP Sure Start and Sure Click security, vPro options</td></tr><tr><th>Operating system</th><td>Windows 11 Pro, activated</td></tr><tr><th>Condition</th><td>UK used, professionally tested and graded; minor cosmetic marks consistent with careful use</td></tr><tr><th>Warranty</th><td>1 to 3 months TechPlug GH warranty, 48-hour return window on verified faults</td></tr></tbody></table><h3>Who the HP EliteBook 840 G7 is for</h3><p>Ideal for professionals, remote workers and students who want a premium, durable ultrabook with strong security features and all-day battery life.</p><h3>Condition, warranty and delivery in Ghana</h3><p>UK used, tested and graded with a TechPlug GH warranty of 1 to 3 months and a 48-hour return window on verified faults. Same or next-day delivery in Accra and Tema, 2 to 4 working days nationwide, or pick up in Accra. Pay by MoMo, bank transfer, or on delivery within Accra.</p><h3>Frequently asked questions</h3><h4>Is this laptop brand new?</h4><p>No. It is UK used: an ex-corporate HP EliteBook 840 G7 that has been professionally tested and graded by TechPlug GH. UK-used laptops are popular in Ghana because corporate fleets are well maintained, giving you premium build quality at a much lower price.</p><h4>Can the RAM or storage be upgraded?</h4><p>In most cases yes. This unit ships with 8GB RAM and a 256GB NVMe SSD; ddr4-2666, 2 sodimm slots, upgradable to 64gb. Ask us on WhatsApp before purchase and we can upgrade it for you.</p><h4>What warranty do I get?</h4><p>Every TechPlug GH laptop carries a 1 to 3 month warranty plus a 48-hour return window for verified faults. Payment is by MoMo, bank transfer, or pay on delivery within Accra, and we deliver nationwide.</p>",
-  "cats": [
-   "UK Used Laptops",
-   "Business Laptops",
-   "HP Laptops"
-  ],
-  "tags": [
-   "HP",
-   "Core i5",
-   "10th Gen",
-   "UK used"
-  ],
-  "image": "products/tpg-hp-840g7-i5-nt.jpg"
+  "attributes": {
+   "Brand": "HP",
+   "Model": "HP EliteBook 840 G7",
+   "Processor": "Intel Core i5-10210U or i5-10310U",
+   "RAM": "8GB DDR4 (upgradable)",
+   "Storage": "256GB NVMe SSD",
+   "Display": "14\" FHD (1920x1080) IPS anti-glare",
+   "Graphics": "Intel UHD Graphics",
+   "Operating System": "Windows 11 Pro",
+   "Condition": "UK Used, Tested and Graded"
+  }
  },
  {
   "sku": "TPG-HP-840G7-I5-T",
   "name": "HP EliteBook 840 G7 (Touch) - Core i5 10th Gen, 8GB, 256GB SSD",
-  "price": "3250",
-  "stock": 14,
-  "weight": "1.4",
-  "featured": true,
   "short": "Intel i5 10th Gen \u00b7 8GB RAM \u00b7 256GB SSD \u00b7 14\" FHD Touch \u00b7 Win 11 Pro \u00b7 UK used, tested &amp; warranty-backed.",
   "desc": "<p>The HP EliteBook 840 G7 is a premium business-class laptop sourced from UK corporate fleets, where machines are maintained on strict IT schedules. Every unit sold by TechPlug GH in Accra is tested, graded and backed by our warranty, so you get enterprise build quality at a fraction of the new price, with delivery across Ghana.</p><h3>HP EliteBook 840 G7 key specifications</h3><table><tbody><tr><th>Processor</th><td>Intel Core i5-10210U or i5-10310U, 10th Gen Comet Lake, 4 cores / 8 threads, up to 4.2 GHz</td></tr><tr><th>Memory</th><td>8GB RAM as configured (DDR4-2666, 2 SODIMM slots, upgradable to 64GB)</td></tr><tr><th>Storage</th><td>256GB NVMe SSD as configured, upgrade options available on request</td></tr><tr><th>Display</th><td>14\" FHD (1920x1080) IPS anti-glare, 250 nits (400-nit and Sure View privacy panel options exist) with touchscreen</td></tr><tr><th>Graphics</th><td>Intel UHD Graphics</td></tr><tr><th>Ports</th><td>1x Thunderbolt 3 / USB-C, 2x USB-A 3.1, HDMI 1.4b, headphone/mic combo, optional smart card and nano-SIM</td></tr><tr><th>Wireless</th><td>Intel Wi-Fi 6 AX201, Bluetooth 5</td></tr><tr><th>Battery</th><td>53Wh long-life battery with HP Fast Charge</td></tr><tr><th>Build and weight</th><td>from 1.34 kg, CNC-machined aluminium chassis, MIL-STD 810G tested</td></tr><tr><th>Keyboard and extras</th><td>720p HD camera with IR option and privacy shutter, fingerprint reader, backlit spill-resistant keyboard, Bang & Olufsen audio, HP Sure Start and Sure Click security, vPro options</td></tr><tr><th>Operating system</th><td>Windows 11 Pro, activated</td></tr><tr><th>Condition</th><td>UK used, professionally tested and graded; minor cosmetic marks consistent with careful use</td></tr><tr><th>Warranty</th><td>1 to 3 months TechPlug GH warranty, 48-hour return window on verified faults</td></tr></tbody></table><h3>Who the HP EliteBook 840 G7 is for</h3><p>Ideal for professionals, remote workers and students who want a premium, durable ultrabook with strong security features and all-day battery life.</p><h3>Condition, warranty and delivery in Ghana</h3><p>UK used, tested and graded with a TechPlug GH warranty of 1 to 3 months and a 48-hour return window on verified faults. Same or next-day delivery in Accra and Tema, 2 to 4 working days nationwide, or pick up in Accra. Pay by MoMo, bank transfer, or on delivery within Accra.</p><h3>Frequently asked questions</h3><h4>Is this laptop brand new?</h4><p>No. It is UK used: an ex-corporate HP EliteBook 840 G7 that has been professionally tested and graded by TechPlug GH. UK-used laptops are popular in Ghana because corporate fleets are well maintained, giving you premium build quality at a much lower price.</p><h4>Is the screen a touchscreen?</h4><p>Yes, this HP EliteBook 840 G7 variant has a touchscreen display.</p><h4>Can the RAM or storage be upgraded?</h4><p>In most cases yes. This unit ships with 8GB RAM and a 256GB NVMe SSD; ddr4-2666, 2 sodimm slots, upgradable to 64gb. Ask us on WhatsApp before purchase and we can upgrade it for you.</p><h4>What warranty do I get?</h4><p>Every TechPlug GH laptop carries a 1 to 3 month warranty plus a 48-hour return window for verified faults. Payment is by MoMo, bank transfer, or pay on delivery within Accra, and we deliver nationwide.</p>",
-  "cats": [
-   "UK Used Laptops",
-   "Business Laptops",
-   "HP Laptops"
-  ],
-  "tags": [
-   "HP",
-   "Core i5",
-   "10th Gen",
-   "UK used"
-  ],
-  "image": "products/tpg-hp-840g7-i5-t.jpg"
+  "attributes": {
+   "Brand": "HP",
+   "Model": "HP EliteBook 840 G7",
+   "Processor": "Intel Core i5-10210U or i5-10310U",
+   "RAM": "8GB DDR4 (upgradable)",
+   "Storage": "256GB NVMe SSD",
+   "Display": "14\" FHD (1920x1080) IPS anti-glare",
+   "Graphics": "Intel UHD Graphics",
+   "Operating System": "Windows 11 Pro",
+   "Condition": "UK Used, Tested and Graded"
+  }
  },
  {
   "sku": "TPG-HP-830G8-I5-NT",
   "name": "HP EliteBook 830 G8 (Non-touch) - Core i5 11th Gen, 8GB, 256GB SSD",
-  "price": "3050",
-  "stock": 20,
-  "weight": "1.2",
-  "featured": true,
   "short": "Intel i5 11th Gen \u00b7 8GB RAM \u00b7 256GB SSD \u00b7 13.3\" FHD \u00b7 Win 11 Pro \u00b7 UK used, tested &amp; warranty-backed.",
   "desc": "<p>The HP EliteBook 830 G8 is a premium business-class laptop sourced from UK corporate fleets, where machines are maintained on strict IT schedules. Every unit sold by TechPlug GH in Accra is tested, graded and backed by our warranty, so you get enterprise build quality at a fraction of the new price, with delivery across Ghana.</p><h3>HP EliteBook 830 G8 key specifications</h3><table><tbody><tr><th>Processor</th><td>Intel Core i5-1135G7 / i5-1145G7, 11th Gen Tiger Lake, 4 cores / 8 threads, up to 4.4 GHz</td></tr><tr><th>Memory</th><td>8GB RAM as configured (DDR4-3200, 2 SODIMM slots, upgradable to 64GB)</td></tr><tr><th>Storage</th><td>256GB NVMe SSD as configured, upgrade options available on request</td></tr><tr><th>Display</th><td>13.3\" FHD (1920x1080) IPS anti-glare, 250 or 400 nits</td></tr><tr><th>Graphics</th><td>Intel Iris Xe Graphics</td></tr><tr><th>Ports</th><td>2x Thunderbolt 4 / USB-C, 2x USB-A 3.1, HDMI 2.0, headphone/mic combo</td></tr><tr><th>Wireless</th><td>Intel Wi-Fi 6 AX201, Bluetooth 5</td></tr><tr><th>Battery</th><td>53Wh battery, HP Fast Charge</td></tr><tr><th>Build and weight</th><td>from 1.24 kg, premium compact aluminium build, MIL-STD 810H</td></tr><tr><th>Keyboard and extras</th><td>IR camera with privacy shutter, fingerprint reader, backlit keyboard, B&O audio, HP Wolf Security</td></tr><tr><th>Operating system</th><td>Windows 11 Pro, activated</td></tr><tr><th>Condition</th><td>UK used, professionally tested and graded; minor cosmetic marks consistent with careful use</td></tr><tr><th>Warranty</th><td>1 to 3 months TechPlug GH warranty, 48-hour return window on verified faults</td></tr></tbody></table><h3>Who the HP EliteBook 830 G8 is for</h3><p>Ideal for professionals, remote workers and students who want a premium, durable ultrabook with strong security features and all-day battery life.</p><h3>Condition, warranty and delivery in Ghana</h3><p>UK used, tested and graded with a TechPlug GH warranty of 1 to 3 months and a 48-hour return window on verified faults. Same or next-day delivery in Accra and Tema, 2 to 4 working days nationwide, or pick up in Accra. Pay by MoMo, bank transfer, or on delivery within Accra.</p><h3>Frequently asked questions</h3><h4>Is this laptop brand new?</h4><p>No. It is UK used: an ex-corporate HP EliteBook 830 G8 that has been professionally tested and graded by TechPlug GH. UK-used laptops are popular in Ghana because corporate fleets are well maintained, giving you premium build quality at a much lower price.</p><h4>Can the RAM or storage be upgraded?</h4><p>In most cases yes. This unit ships with 8GB RAM and a 256GB NVMe SSD; ddr4-3200, 2 sodimm slots, upgradable to 64gb. Ask us on WhatsApp before purchase and we can upgrade it for you.</p><h4>What warranty do I get?</h4><p>Every TechPlug GH laptop carries a 1 to 3 month warranty plus a 48-hour return window for verified faults. Payment is by MoMo, bank transfer, or pay on delivery within Accra, and we deliver nationwide.</p>",
-  "cats": [
-   "UK Used Laptops",
-   "Business Laptops",
-   "HP Laptops"
-  ],
-  "tags": [
-   "HP",
-   "Core i5",
-   "11th Gen",
-   "UK used"
-  ],
-  "image": "products/tpg-hp-830g8-i5-nt.jpg"
+  "attributes": {
+   "Brand": "HP",
+   "Model": "HP EliteBook 830 G8",
+   "Processor": "Intel Core i5-1135G7 / i5-1145G7",
+   "RAM": "8GB DDR4 (upgradable)",
+   "Storage": "256GB NVMe SSD",
+   "Display": "13.3\" FHD (1920x1080) IPS anti-glare",
+   "Graphics": "Intel Iris Xe Graphics",
+   "Operating System": "Windows 11 Pro",
+   "Condition": "UK Used, Tested and Graded"
+  }
  },
  {
   "sku": "TPG-DE-5440-I5-X",
   "name": "Dell Latitude 5440 - Core i5 13th Gen, 8GB, 256GB SSD",
-  "price": "2750",
-  "stock": 19,
-  "weight": "1.4",
-  "featured": true,
   "short": "Intel i5 11th Gen \u00b7 8GB RAM \u00b7 256GB SSD \u00b7 14\" FHD \u00b7 Win 11 Pro \u00b7 UK used, tested &amp; warranty-backed.",
   "desc": "<p>The Dell Latitude 5440 is a business-class laptop sourced from UK corporate fleets, where machines are maintained on strict IT schedules. Every unit sold by TechPlug GH in Accra is tested, graded and backed by our warranty, so you get enterprise build quality at a fraction of the new price, with delivery across Ghana.</p><h3>Dell Latitude 5440 key specifications</h3><table><tbody><tr><th>Processor</th><td>Intel Core i5-1335U / i5-1345U, 13th Gen Raptor Lake, 10 cores / 12 threads, up to 4.6 GHz</td></tr><tr><th>Memory</th><td>8GB RAM as configured (DDR4-3200, 2 SODIMM slots, upgradable to 64GB)</td></tr><tr><th>Storage</th><td>256GB NVMe SSD as configured, upgrade options available on request</td></tr><tr><th>Display</th><td>14\" FHD (1920x1080) IPS anti-glare, 250 nits</td></tr><tr><th>Graphics</th><td>Intel Iris Xe Graphics</td></tr><tr><th>Ports</th><td>2x Thunderbolt 4 / USB-C, 2x USB-A 3.2, HDMI 2.0, microSD reader, optional RJ45 and smart card</td></tr><tr><th>Wireless</th><td>Intel Wi-Fi 6E AX211, Bluetooth 5.2</td></tr><tr><th>Battery</th><td>54Wh battery with ExpressCharge</td></tr><tr><th>Build and weight</th><td>from 1.36 kg</td></tr><tr><th>Keyboard and extras</th><td>FHD camera options with shutter, backlit keyboard, Dell Optimizer AI tuning, TPM 2.0, optional fingerprint and NFC</td></tr><tr><th>Operating system</th><td>Windows 11 Pro, activated</td></tr><tr><th>Condition</th><td>UK used, professionally tested and graded; minor cosmetic marks consistent with careful use</td></tr><tr><th>Warranty</th><td>1 to 3 months TechPlug GH warranty, 48-hour return window on verified faults</td></tr></tbody></table><h3>Who the Dell Latitude 5440 is for</h3><p>A dependable choice for office work, accounting, sales teams, students and everyday productivity, with the serviceability that makes Latitudes a corporate standard.</p><h3>Condition, warranty and delivery in Ghana</h3><p>UK used, tested and graded with a TechPlug GH warranty of 1 to 3 months and a 48-hour return window on verified faults. Same or next-day delivery in Accra and Tema, 2 to 4 working days nationwide, or pick up in Accra. Pay by MoMo, bank transfer, or on delivery within Accra.</p><h3>Frequently asked questions</h3><h4>Is this laptop brand new?</h4><p>No. It is UK used: an ex-corporate Dell Latitude 5440 that has been professionally tested and graded by TechPlug GH. UK-used laptops are popular in Ghana because corporate fleets are well maintained, giving you premium build quality at a much lower price.</p><h4>Can the RAM or storage be upgraded?</h4><p>In most cases yes. This unit ships with 8GB RAM and a 256GB NVMe SSD; ddr4-3200, 2 sodimm slots, upgradable to 64gb. Ask us on WhatsApp before purchase and we can upgrade it for you.</p><h4>What warranty do I get?</h4><p>Every TechPlug GH laptop carries a 1 to 3 month warranty plus a 48-hour return window for verified faults. Payment is by MoMo, bank transfer, or pay on delivery within Accra, and we deliver nationwide.</p>",
-  "cats": [
-   "UK Used Laptops",
-   "Business Laptops",
-   "Dell Laptops"
-  ],
-  "tags": [
-   "Dell",
-   "Core i5",
-   "11th Gen",
-   "UK used"
-  ],
-  "image": "products/tpg-de-5440-i5-x.jpg"
+  "attributes": {
+   "Brand": "Dell",
+   "Model": "Dell Latitude 5440",
+   "Processor": "Intel Core i5-1335U / i5-1345U",
+   "RAM": "8GB DDR4 (upgradable)",
+   "Storage": "256GB NVMe SSD",
+   "Display": "14\" FHD (1920x1080) IPS anti-glare",
+   "Graphics": "Intel Iris Xe Graphics",
+   "Operating System": "Windows 11 Pro",
+   "Condition": "UK Used, Tested and Graded"
+  }
  },
  {
   "sku": "TPG-DE-5300-I5-X",
   "name": "Dell Latitude 5300 - Core i5 8th Gen, 8GB, 256GB SSD",
-  "price": "1650",
-  "stock": 23,
-  "weight": "1.2",
-  "featured": false,
   "short": "Intel i5 8th Gen \u00b7 8GB RAM \u00b7 256GB SSD \u00b7 13.3\" FHD \u00b7 Win 11 Pro \u00b7 UK used, tested &amp; warranty-backed.",
   "desc": "<p>The Dell Latitude 5300 is a business-class laptop sourced from UK corporate fleets, where machines are maintained on strict IT schedules. Every unit sold by TechPlug GH in Accra is tested, graded and backed by our warranty, so you get enterprise build quality at a fraction of the new price, with delivery across Ghana.</p><h3>Dell Latitude 5300 key specifications</h3><table><tbody><tr><th>Processor</th><td>Intel Core i5-8265U / i5-8365U vPro, 8th Gen Whiskey Lake, 4 cores / 8 threads, up to 3.9 GHz</td></tr><tr><th>Memory</th><td>8GB RAM as configured (DDR4-2400, 2 SODIMM slots, upgradable to 32GB)</td></tr><tr><th>Storage</th><td>256GB NVMe SSD as configured, upgrade options available on request</td></tr><tr><th>Display</th><td>13.3\" FHD (1920x1080) anti-glare</td></tr><tr><th>Graphics</th><td>Intel UHD Graphics 620</td></tr><tr><th>Ports</th><td>1x USB-C 3.1 with DisplayPort and Power Delivery, 2x USB-A 3.1, HDMI 1.4, microSD, optional smart card</td></tr><tr><th>Wireless</th><td>Intel Wireless-AC 9560, Bluetooth 5</td></tr><tr><th>Battery</th><td>42Wh or 60Wh, ExpressCharge capable</td></tr><tr><th>Build and weight</th><td>from 1.25 kg, compact business travel laptop</td></tr><tr><th>Keyboard and extras</th><td>Backlit keyboard option, TPM 2.0, optional fingerprint reader</td></tr><tr><th>Operating system</th><td>Windows 11 Pro, activated</td></tr><tr><th>Condition</th><td>UK used, professionally tested and graded; minor cosmetic marks consistent with careful use</td></tr><tr><th>Warranty</th><td>1 to 3 months TechPlug GH warranty, 48-hour return window on verified faults</td></tr></tbody></table><h3>Who the Dell Latitude 5300 is for</h3><p>A dependable choice for office work, accounting, sales teams, students and everyday productivity, with the serviceability that makes Latitudes a corporate standard.</p><h3>Condition, warranty and delivery in Ghana</h3><p>UK used, tested and graded with a TechPlug GH warranty of 1 to 3 months and a 48-hour return window on verified faults. Same or next-day delivery in Accra and Tema, 2 to 4 working days nationwide, or pick up in Accra. Pay by MoMo, bank transfer, or on delivery within Accra.</p><h3>Frequently asked questions</h3><h4>Is this laptop brand new?</h4><p>No. It is UK used: an ex-corporate Dell Latitude 5300 that has been professionally tested and graded by TechPlug GH. UK-used laptops are popular in Ghana because corporate fleets are well maintained, giving you premium build quality at a much lower price.</p><h4>Can the RAM or storage be upgraded?</h4><p>In most cases yes. This unit ships with 8GB RAM and a 256GB NVMe SSD; ddr4-2400, 2 sodimm slots, upgradable to 32gb. Ask us on WhatsApp before purchase and we can upgrade it for you.</p><h4>What warranty do I get?</h4><p>Every TechPlug GH laptop carries a 1 to 3 month warranty plus a 48-hour return window for verified faults. Payment is by MoMo, bank transfer, or pay on delivery within Accra, and we deliver nationwide.</p>",
-  "cats": [
-   "UK Used Laptops",
-   "Business Laptops",
-   "Dell Laptops",
-   "Student Laptops"
-  ],
-  "tags": [
-   "Dell",
-   "Core i5",
-   "8th Gen",
-   "UK used"
-  ],
-  "image": "products/tpg-de-5300-i5-x.jpg"
+  "attributes": {
+   "Brand": "Dell",
+   "Model": "Dell Latitude 5300",
+   "Processor": "Intel Core i5-8265U / i5-8365U vPro",
+   "RAM": "8GB DDR4 (upgradable)",
+   "Storage": "256GB NVMe SSD",
+   "Display": "13.3\" FHD (1920x1080) anti-glare",
+   "Graphics": "Intel UHD Graphics 620",
+   "Operating System": "Windows 11 Pro",
+   "Condition": "UK Used, Tested and Graded"
+  }
  },
  {
   "sku": "TPG-DE-7490-I5-X",
   "name": "Dell Latitude 7490 - Core i5 8th Gen, 8GB, 256GB SSD",
-  "price": "2750",
-  "stock": 1,
-  "weight": "1.4",
-  "featured": false,
   "short": "Intel i5 11th Gen \u00b7 8GB RAM \u00b7 256GB SSD \u00b7 14\" FHD \u00b7 Win 11 Pro \u00b7 UK used, tested &amp; warranty-backed.",
   "desc": "<p>The Dell Latitude 7490 is a premium business-class laptop sourced from UK corporate fleets, where machines are maintained on strict IT schedules. Every unit sold by TechPlug GH in Accra is tested, graded and backed by our warranty, so you get enterprise build quality at a fraction of the new price, with delivery across Ghana.</p><h3>Dell Latitude 7490 key specifications</h3><table><tbody><tr><th>Processor</th><td>Intel Core i5-8350U vPro, 8th Gen Kaby Lake R, 4 cores / 8 threads, up to 3.6 GHz</td></tr><tr><th>Memory</th><td>8GB RAM as configured (DDR4-2400, 2 SODIMM slots, upgradable to 32GB)</td></tr><tr><th>Storage</th><td>256GB NVMe SSD as configured, upgrade options available on request</td></tr><tr><th>Display</th><td>14\" FHD (1920x1080) anti-glare</td></tr><tr><th>Graphics</th><td>Intel UHD Graphics 620</td></tr><tr><th>Ports</th><td>1x USB-C 3.1 with DisplayPort and PD, 2x USB-A 3.1, HDMI 1.4, RJ45, microSD, optional smart card</td></tr><tr><th>Wireless</th><td>Intel Wireless-AC 8265, Bluetooth 4.2</td></tr><tr><th>Battery</th><td>42Wh or 60Wh</td></tr><tr><th>Build and weight</th><td>from 1.40 kg, carbon-fibre reinforced business classic</td></tr><tr><th>Keyboard and extras</th><td>A proven corporate favourite known for durability and serviceability</td></tr><tr><th>Operating system</th><td>Windows 11 Pro, activated</td></tr><tr><th>Condition</th><td>UK used, professionally tested and graded; minor cosmetic marks consistent with careful use</td></tr><tr><th>Warranty</th><td>1 to 3 months TechPlug GH warranty, 48-hour return window on verified faults</td></tr></tbody></table><h3>Who the Dell Latitude 7490 is for</h3><p>A dependable choice for office work, accounting, sales teams, students and everyday productivity, with the serviceability that makes Latitudes a corporate standard.</p><h3>Condition, warranty and delivery in Ghana</h3><p>UK used, tested and graded with a TechPlug GH warranty of 1 to 3 months and a 48-hour return window on verified faults. Same or next-day delivery in Accra and Tema, 2 to 4 working days nationwide, or pick up in Accra. Pay by MoMo, bank transfer, or on delivery within Accra.</p><h3>Frequently asked questions</h3><h4>Is this laptop brand new?</h4><p>No. It is UK used: an ex-corporate Dell Latitude 7490 that has been professionally tested and graded by TechPlug GH. UK-used laptops are popular in Ghana because corporate fleets are well maintained, giving you premium build quality at a much lower price.</p><h4>Can the RAM or storage be upgraded?</h4><p>In most cases yes. This unit ships with 8GB RAM and a 256GB NVMe SSD; ddr4-2400, 2 sodimm slots, upgradable to 32gb. Ask us on WhatsApp before purchase and we can upgrade it for you.</p><h4>What warranty do I get?</h4><p>Every TechPlug GH laptop carries a 1 to 3 month warranty plus a 48-hour return window for verified faults. Payment is by MoMo, bank transfer, or pay on delivery within Accra, and we deliver nationwide.</p>",
-  "cats": [
-   "UK Used Laptops",
-   "Business Laptops",
-   "Dell Laptops"
-  ],
-  "tags": [
-   "Dell",
-   "Core i5",
-   "11th Gen",
-   "UK used"
-  ],
-  "image": "products/tpg-de-7490-i5-x.jpg"
+  "attributes": {
+   "Brand": "Dell",
+   "Model": "Dell Latitude 7490",
+   "Processor": "Intel Core i5-8350U vPro",
+   "RAM": "8GB DDR4 (upgradable)",
+   "Storage": "256GB NVMe SSD",
+   "Display": "14\" FHD (1920x1080) anti-glare",
+   "Graphics": "Intel UHD Graphics 620",
+   "Operating System": "Windows 11 Pro",
+   "Condition": "UK Used, Tested and Graded"
+  }
  },
  {
   "sku": "TPG-DE-7420-I5-X",
   "name": "Dell Latitude 7420 - Core i5 11th Gen, 8GB, 256GB SSD",
-  "price": "2750",
-  "stock": 1,
-  "weight": "1.4",
-  "featured": false,
   "short": "Intel i5 11th Gen \u00b7 8GB RAM \u00b7 256GB SSD \u00b7 14\" FHD \u00b7 Win 11 Pro \u00b7 UK used, tested &amp; warranty-backed.",
   "desc": "<p>The Dell Latitude 7420 is a premium business-class laptop sourced from UK corporate fleets, where machines are maintained on strict IT schedules. Every unit sold by TechPlug GH in Accra is tested, graded and backed by our warranty, so you get enterprise build quality at a fraction of the new price, with delivery across Ghana.</p><h3>Dell Latitude 7420 key specifications</h3><table><tbody><tr><th>Processor</th><td>Intel Core i5-1135G7 / i5-1145G7 vPro, 11th Gen Tiger Lake, 4 cores / 8 threads, up to 4.4 GHz</td></tr><tr><th>Memory</th><td>8GB RAM as configured (LPDDR4x onboard (as configured))</td></tr><tr><th>Storage</th><td>256GB NVMe SSD as configured, upgrade options available on request</td></tr><tr><th>Display</th><td>14\" FHD (1920x1080) anti-glare, premium low-power panel options</td></tr><tr><th>Graphics</th><td>Intel Iris Xe Graphics</td></tr><tr><th>Ports</th><td>2x Thunderbolt 4 / USB-C, 2x USB-A 3.2, HDMI 2.0, microSD</td></tr><tr><th>Wireless</th><td>Intel Wi-Fi 6 AX201, Bluetooth 5.1</td></tr><tr><th>Battery</th><td>up to 63Wh ExpressCharge</td></tr><tr><th>Build and weight</th><td>from 1.25 kg, aluminium or carbon fibre executive chassis</td></tr><tr><th>Keyboard and extras</th><td>Premium 7000-series: thin, light, quiet, with top-tier security and vPro</td></tr><tr><th>Operating system</th><td>Windows 11 Pro, activated</td></tr><tr><th>Condition</th><td>UK used, professionally tested and graded; minor cosmetic marks consistent with careful use</td></tr><tr><th>Warranty</th><td>1 to 3 months TechPlug GH warranty, 48-hour return window on verified faults</td></tr></tbody></table><h3>Who the Dell Latitude 7420 is for</h3><p>A dependable choice for office work, accounting, sales teams, students and everyday productivity, with the serviceability that makes Latitudes a corporate standard.</p><h3>Condition, warranty and delivery in Ghana</h3><p>UK used, tested and graded with a TechPlug GH warranty of 1 to 3 months and a 48-hour return window on verified faults. Same or next-day delivery in Accra and Tema, 2 to 4 working days nationwide, or pick up in Accra. Pay by MoMo, bank transfer, or on delivery within Accra.</p><h3>Frequently asked questions</h3><h4>Is this laptop brand new?</h4><p>No. It is UK used: an ex-corporate Dell Latitude 7420 that has been professionally tested and graded by TechPlug GH. UK-used laptops are popular in Ghana because corporate fleets are well maintained, giving you premium build quality at a much lower price.</p><h4>Can the RAM or storage be upgraded?</h4><p>In most cases yes. This unit ships with 8GB RAM and a 256GB NVMe SSD; lpddr4x onboard (as configured). Ask us on WhatsApp before purchase and we can upgrade it for you.</p><h4>What warranty do I get?</h4><p>Every TechPlug GH laptop carries a 1 to 3 month warranty plus a 48-hour return window for verified faults. Payment is by MoMo, bank transfer, or pay on delivery within Accra, and we deliver nationwide.</p>",
-  "cats": [
-   "UK Used Laptops",
-   "Business Laptops",
-   "Dell Laptops"
-  ],
-  "tags": [
-   "Dell",
-   "Core i5",
-   "11th Gen",
-   "UK used"
-  ],
-  "image": "products/tpg-de-7420-i5-x.jpg"
+  "attributes": {
+   "Brand": "Dell",
+   "Model": "Dell Latitude 7420",
+   "Processor": "Intel Core i5-1135G7 / i5-1145G7 vPro",
+   "RAM": "8GB DDR4 (upgradable)",
+   "Storage": "256GB NVMe SSD",
+   "Display": "14\" FHD (1920x1080) anti-glare",
+   "Graphics": "Intel Iris Xe Graphics",
+   "Operating System": "Windows 11 Pro",
+   "Condition": "UK Used, Tested and Graded"
+  }
  },
  {
   "sku": "TPG-DE-5320-I7-X",
   "name": "Dell Latitude 5320 - Core i7 11th Gen, 8GB, 256GB SSD",
-  "price": "2900",
-  "stock": 11,
-  "weight": "1.2",
-  "featured": true,
   "short": "Intel i7 11th Gen \u00b7 8GB RAM \u00b7 256GB SSD \u00b7 13.3\" FHD \u00b7 Win 11 Pro \u00b7 UK used, tested &amp; warranty-backed.",
   "desc": "<p>The Dell Latitude 5320 is a business-class laptop sourced from UK corporate fleets, where machines are maintained on strict IT schedules. Every unit sold by TechPlug GH in Accra is tested, graded and backed by our warranty, so you get enterprise build quality at a fraction of the new price, with delivery across Ghana.</p><h3>Dell Latitude 5320 key specifications</h3><table><tbody><tr><th>Processor</th><td>Intel Core i7-1185G7, 11th Gen, up to 4.8 GHz</td></tr><tr><th>Memory</th><td>8GB RAM as configured (LPDDR4x onboard (as configured))</td></tr><tr><th>Storage</th><td>256GB NVMe SSD as configured, upgrade options available on request</td></tr><tr><th>Display</th><td>13.3\" FHD (1920x1080) IPS anti-glare, 250 nits (touch and FHD+ options exist)</td></tr><tr><th>Graphics</th><td>Intel Iris Xe Graphics</td></tr><tr><th>Ports</th><td>2x Thunderbolt 4 / USB-C, 1x USB-A 3.2, HDMI 2.0, microSD, optional smart card</td></tr><tr><th>Wireless</th><td>Intel Wi-Fi 6 AX201, Bluetooth 5.1</td></tr><tr><th>Battery</th><td>41Wh or 63Wh, ExpressCharge</td></tr><tr><th>Build and weight</th><td>from 1.18 kg, ultraportable business design</td></tr><tr><th>Keyboard and extras</th><td>Camera shutter, backlit keyboard, Dell Optimizer, MIL-STD 810H tested</td></tr><tr><th>Operating system</th><td>Windows 11 Pro, activated</td></tr><tr><th>Condition</th><td>UK used, professionally tested and graded; minor cosmetic marks consistent with careful use</td></tr><tr><th>Warranty</th><td>1 to 3 months TechPlug GH warranty, 48-hour return window on verified faults</td></tr></tbody></table><h3>Who the Dell Latitude 5320 is for</h3><p>A dependable choice for office work, accounting, sales teams, students and everyday productivity, with the serviceability that makes Latitudes a corporate standard.</p><h3>Condition, warranty and delivery in Ghana</h3><p>UK used, tested and graded with a TechPlug GH warranty of 1 to 3 months and a 48-hour return window on verified faults. Same or next-day delivery in Accra and Tema, 2 to 4 working days nationwide, or pick up in Accra. Pay by MoMo, bank transfer, or on delivery within Accra.</p><h3>Frequently asked questions</h3><h4>Is this laptop brand new?</h4><p>No. It is UK used: an ex-corporate Dell Latitude 5320 that has been professionally tested and graded by TechPlug GH. UK-used laptops are popular in Ghana because corporate fleets are well maintained, giving you premium build quality at a much lower price.</p><h4>Can the RAM or storage be upgraded?</h4><p>In most cases yes. This unit ships with 8GB RAM and a 256GB NVMe SSD; lpddr4x onboard (as configured). Ask us on WhatsApp before purchase and we can upgrade it for you.</p><h4>What warranty do I get?</h4><p>Every TechPlug GH laptop carries a 1 to 3 month warranty plus a 48-hour return window for verified faults. Payment is by MoMo, bank transfer, or pay on delivery within Accra, and we deliver nationwide.</p>",
-  "cats": [
-   "UK Used Laptops",
-   "Business Laptops",
-   "Dell Laptops"
-  ],
-  "tags": [
-   "Dell",
-   "Core i7",
-   "11th Gen",
-   "UK used"
-  ],
-  "image": "products/tpg-de-5320-i7-x.jpg"
+  "attributes": {
+   "Brand": "Dell",
+   "Model": "Dell Latitude 5320",
+   "Processor": "Intel Core i7-1185G7",
+   "RAM": "8GB DDR4 (upgradable)",
+   "Storage": "256GB NVMe SSD",
+   "Display": "13.3\" FHD (1920x1080) IPS anti-glare",
+   "Graphics": "Intel Iris Xe Graphics",
+   "Operating System": "Windows 11 Pro",
+   "Condition": "UK Used, Tested and Graded"
+  }
  },
  {
   "sku": "TPG-HP-840G8-I5-NT",
   "name": "HP EliteBook 840 G8 (Non-touch) - Core i5 11th Gen, 8GB, 256GB SSD",
-  "price": "3050",
-  "stock": 5,
-  "weight": "1.4",
-  "featured": false,
   "short": "Intel i5 11th Gen \u00b7 8GB RAM \u00b7 256GB SSD \u00b7 14\" FHD \u00b7 Win 11 Pro \u00b7 UK used, tested &amp; warranty-backed.",
   "desc": "<p>The HP EliteBook 840 G8 is a premium business-class laptop sourced from UK corporate fleets, where machines are maintained on strict IT schedules. Every unit sold by TechPlug GH in Accra is tested, graded and backed by our warranty, so you get enterprise build quality at a fraction of the new price, with delivery across Ghana.</p><h3>HP EliteBook 840 G8 key specifications</h3><table><tbody><tr><th>Processor</th><td>Intel Core i5-1135G7 or i5-1145G7, 11th Gen Tiger Lake, 4 cores / 8 threads, up to 4.4 GHz</td></tr><tr><th>Memory</th><td>8GB RAM as configured (DDR4-3200, 2 SODIMM slots, upgradable to 64GB)</td></tr><tr><th>Storage</th><td>256GB NVMe SSD as configured, upgrade options available on request</td></tr><tr><th>Display</th><td>14\" FHD (1920x1080) IPS anti-glare, 250 nits (400-nit and Sure View options exist)</td></tr><tr><th>Graphics</th><td>Intel Iris Xe Graphics</td></tr><tr><th>Ports</th><td>2x Thunderbolt 4 / USB-C, 2x USB-A 3.1, HDMI 2.0, headphone/mic combo, optional smart card and nano-SIM</td></tr><tr><th>Wireless</th><td>Intel Wi-Fi 6 AX201, Bluetooth 5</td></tr><tr><th>Battery</th><td>53Wh battery with HP Fast Charge</td></tr><tr><th>Build and weight</th><td>from 1.32 kg, aluminium chassis, MIL-STD 810H tested</td></tr><tr><th>Keyboard and extras</th><td>720p camera with IR and privacy shutter, fingerprint reader, backlit spill-resistant keyboard, B&O audio, HP Wolf Security platform</td></tr><tr><th>Operating system</th><td>Windows 11 Pro, activated</td></tr><tr><th>Condition</th><td>UK used, professionally tested and graded; minor cosmetic marks consistent with careful use</td></tr><tr><th>Warranty</th><td>1 to 3 months TechPlug GH warranty, 48-hour return window on verified faults</td></tr></tbody></table><h3>Who the HP EliteBook 840 G8 is for</h3><p>Ideal for professionals, remote workers and students who want a premium, durable ultrabook with strong security features and all-day battery life.</p><h3>Condition, warranty and delivery in Ghana</h3><p>UK used, tested and graded with a TechPlug GH warranty of 1 to 3 months and a 48-hour return window on verified faults. Same or next-day delivery in Accra and Tema, 2 to 4 working days nationwide, or pick up in Accra. Pay by MoMo, bank transfer, or on delivery within Accra.</p><h3>Frequently asked questions</h3><h4>Is this laptop brand new?</h4><p>No. It is UK used: an ex-corporate HP EliteBook 840 G8 that has been professionally tested and graded by TechPlug GH. UK-used laptops are popular in Ghana because corporate fleets are well maintained, giving you premium build quality at a much lower price.</p><h4>Can the RAM or storage be upgraded?</h4><p>In most cases yes. This unit ships with 8GB RAM and a 256GB NVMe SSD; ddr4-3200, 2 sodimm slots, upgradable to 64gb. Ask us on WhatsApp before purchase and we can upgrade it for you.</p><h4>What warranty do I get?</h4><p>Every TechPlug GH laptop carries a 1 to 3 month warranty plus a 48-hour return window for verified faults. Payment is by MoMo, bank transfer, or pay on delivery within Accra, and we deliver nationwide.</p>",
-  "cats": [
-   "UK Used Laptops",
-   "Business Laptops",
-   "HP Laptops"
-  ],
-  "tags": [
-   "HP",
-   "Core i5",
-   "11th Gen",
-   "UK used"
-  ],
-  "image": "products/tpg-hp-840g8-i5-nt.jpg"
+  "attributes": {
+   "Brand": "HP",
+   "Model": "HP EliteBook 840 G8",
+   "Processor": "Intel Core i5-1135G7 or i5-1145G7",
+   "RAM": "8GB DDR4 (upgradable)",
+   "Storage": "256GB NVMe SSD",
+   "Display": "14\" FHD (1920x1080) IPS anti-glare",
+   "Graphics": "Intel Iris Xe Graphics",
+   "Operating System": "Windows 11 Pro",
+   "Condition": "UK Used, Tested and Graded"
+  }
  },
  {
   "sku": "TPG-HP-830G8-I5-T",
   "name": "HP EliteBook 830 G8 (Touch) - Core i5 11th Gen, 8GB, 256GB SSD",
-  "price": "3250",
-  "stock": 3,
-  "weight": "1.2",
-  "featured": true,
   "short": "Intel i5 11th Gen \u00b7 8GB RAM \u00b7 256GB SSD \u00b7 13.3\" FHD Touch \u00b7 Win 11 Pro \u00b7 UK used, tested &amp; warranty-backed.",
   "desc": "<p>The HP EliteBook 830 G8 is a premium business-class laptop sourced from UK corporate fleets, where machines are maintained on strict IT schedules. Every unit sold by TechPlug GH in Accra is tested, graded and backed by our warranty, so you get enterprise build quality at a fraction of the new price, with delivery across Ghana.</p><h3>HP EliteBook 830 G8 key specifications</h3><table><tbody><tr><th>Processor</th><td>Intel Core i5-1135G7 / i5-1145G7, 11th Gen Tiger Lake, 4 cores / 8 threads, up to 4.4 GHz</td></tr><tr><th>Memory</th><td>8GB RAM as configured (DDR4-3200, 2 SODIMM slots, upgradable to 64GB)</td></tr><tr><th>Storage</th><td>256GB NVMe SSD as configured, upgrade options available on request</td></tr><tr><th>Display</th><td>13.3\" FHD (1920x1080) IPS anti-glare, 250 or 400 nits with touchscreen</td></tr><tr><th>Graphics</th><td>Intel Iris Xe Graphics</td></tr><tr><th>Ports</th><td>2x Thunderbolt 4 / USB-C, 2x USB-A 3.1, HDMI 2.0, headphone/mic combo</td></tr><tr><th>Wireless</th><td>Intel Wi-Fi 6 AX201, Bluetooth 5</td></tr><tr><th>Battery</th><td>53Wh battery, HP Fast Charge</td></tr><tr><th>Build and weight</th><td>from 1.24 kg, premium compact aluminium build, MIL-STD 810H</td></tr><tr><th>Keyboard and extras</th><td>IR camera with privacy shutter, fingerprint reader, backlit keyboard, B&O audio, HP Wolf Security</td></tr><tr><th>Operating system</th><td>Windows 11 Pro, activated</td></tr><tr><th>Condition</th><td>UK used, professionally tested and graded; minor cosmetic marks consistent with careful use</td></tr><tr><th>Warranty</th><td>1 to 3 months TechPlug GH warranty, 48-hour return window on verified faults</td></tr></tbody></table><h3>Who the HP EliteBook 830 G8 is for</h3><p>Ideal for professionals, remote workers and students who want a premium, durable ultrabook with strong security features and all-day battery life.</p><h3>Condition, warranty and delivery in Ghana</h3><p>UK used, tested and graded with a TechPlug GH warranty of 1 to 3 months and a 48-hour return window on verified faults. Same or next-day delivery in Accra and Tema, 2 to 4 working days nationwide, or pick up in Accra. Pay by MoMo, bank transfer, or on delivery within Accra.</p><h3>Frequently asked questions</h3><h4>Is this laptop brand new?</h4><p>No. It is UK used: an ex-corporate HP EliteBook 830 G8 that has been professionally tested and graded by TechPlug GH. UK-used laptops are popular in Ghana because corporate fleets are well maintained, giving you premium build quality at a much lower price.</p><h4>Is the screen a touchscreen?</h4><p>Yes, this HP EliteBook 830 G8 variant has a touchscreen display.</p><h4>Can the RAM or storage be upgraded?</h4><p>In most cases yes. This unit ships with 8GB RAM and a 256GB NVMe SSD; ddr4-3200, 2 sodimm slots, upgradable to 64gb. Ask us on WhatsApp before purchase and we can upgrade it for you.</p><h4>What warranty do I get?</h4><p>Every TechPlug GH laptop carries a 1 to 3 month warranty plus a 48-hour return window for verified faults. Payment is by MoMo, bank transfer, or pay on delivery within Accra, and we deliver nationwide.</p>",
-  "cats": [
-   "UK Used Laptops",
-   "Business Laptops",
-   "HP Laptops"
-  ],
-  "tags": [
-   "HP",
-   "Core i5",
-   "11th Gen",
-   "UK used"
-  ],
-  "image": "products/tpg-hp-830g8-i5-t.jpg"
+  "attributes": {
+   "Brand": "HP",
+   "Model": "HP EliteBook 830 G8",
+   "Processor": "Intel Core i5-1135G7 / i5-1145G7",
+   "RAM": "8GB DDR4 (upgradable)",
+   "Storage": "256GB NVMe SSD",
+   "Display": "13.3\" FHD (1920x1080) IPS anti-glare",
+   "Graphics": "Intel Iris Xe Graphics",
+   "Operating System": "Windows 11 Pro",
+   "Condition": "UK Used, Tested and Graded"
+  }
  },
  {
   "sku": "TPG-DE-5400-I5-X",
   "name": "Dell Latitude 5400 - Core i5 8th Gen, 8GB, 256GB SSD",
-  "price": "1650",
-  "stock": 8,
-  "weight": "1.4",
-  "featured": false,
   "short": "Intel i5 8th Gen \u00b7 8GB RAM \u00b7 256GB SSD \u00b7 14\" FHD \u00b7 Win 11 Pro \u00b7 UK used, tested &amp; warranty-backed.",
   "desc": "<p>The Dell Latitude 5400 is a business-class laptop sourced from UK corporate fleets, where machines are maintained on strict IT schedules. Every unit sold by TechPlug GH in Accra is tested, graded and backed by our warranty, so you get enterprise build quality at a fraction of the new price, with delivery across Ghana.</p><h3>Dell Latitude 5400 key specifications</h3><table><tbody><tr><th>Processor</th><td>Intel Core i5-8265U / i5-8365U vPro, 8th Gen Whiskey Lake, 4 cores / 8 threads, up to 3.9 GHz</td></tr><tr><th>Memory</th><td>8GB RAM as configured (DDR4-2400, 2 SODIMM slots, upgradable to 32GB)</td></tr><tr><th>Storage</th><td>256GB NVMe SSD as configured, upgrade options available on request</td></tr><tr><th>Display</th><td>14\" FHD (1920x1080) anti-glare</td></tr><tr><th>Graphics</th><td>Intel UHD Graphics 620</td></tr><tr><th>Ports</th><td>1x USB-C 3.1 with DisplayPort and Power Delivery, 3x USB-A 3.1, HDMI 1.4, RJ45, microSD</td></tr><tr><th>Wireless</th><td>Intel Wireless-AC 9560, Bluetooth 5</td></tr><tr><th>Battery</th><td>42Wh or 68Wh, ExpressCharge</td></tr><tr><th>Build and weight</th><td>from 1.48 kg, dependable mainstream business workhorse</td></tr><tr><th>Keyboard and extras</th><td>Backlit keyboard option, TPM 2.0, spill-resistant keyboard</td></tr><tr><th>Operating system</th><td>Windows 11 Pro, activated</td></tr><tr><th>Condition</th><td>UK used, professionally tested and graded; minor cosmetic marks consistent with careful use</td></tr><tr><th>Warranty</th><td>1 to 3 months TechPlug GH warranty, 48-hour return window on verified faults</td></tr></tbody></table><h3>Who the Dell Latitude 5400 is for</h3><p>A dependable choice for office work, accounting, sales teams, students and everyday productivity, with the serviceability that makes Latitudes a corporate standard.</p><h3>Condition, warranty and delivery in Ghana</h3><p>UK used, tested and graded with a TechPlug GH warranty of 1 to 3 months and a 48-hour return window on verified faults. Same or next-day delivery in Accra and Tema, 2 to 4 working days nationwide, or pick up in Accra. Pay by MoMo, bank transfer, or on delivery within Accra.</p><h3>Frequently asked questions</h3><h4>Is this laptop brand new?</h4><p>No. It is UK used: an ex-corporate Dell Latitude 5400 that has been professionally tested and graded by TechPlug GH. UK-used laptops are popular in Ghana because corporate fleets are well maintained, giving you premium build quality at a much lower price.</p><h4>Can the RAM or storage be upgraded?</h4><p>In most cases yes. This unit ships with 8GB RAM and a 256GB NVMe SSD; ddr4-2400, 2 sodimm slots, upgradable to 32gb. Ask us on WhatsApp before purchase and we can upgrade it for you.</p><h4>What warranty do I get?</h4><p>Every TechPlug GH laptop carries a 1 to 3 month warranty plus a 48-hour return window for verified faults. Payment is by MoMo, bank transfer, or pay on delivery within Accra, and we deliver nationwide.</p>",
-  "cats": [
-   "UK Used Laptops",
-   "Business Laptops",
-   "Dell Laptops",
-   "Student Laptops"
-  ],
-  "tags": [
-   "Dell",
-   "Core i5",
-   "8th Gen",
-   "UK used"
-  ],
-  "image": "products/tpg-de-5400-i5-x.jpg"
+  "attributes": {
+   "Brand": "Dell",
+   "Model": "Dell Latitude 5400",
+   "Processor": "Intel Core i5-8265U / i5-8365U vPro",
+   "RAM": "8GB DDR4 (upgradable)",
+   "Storage": "256GB NVMe SSD",
+   "Display": "14\" FHD (1920x1080) anti-glare",
+   "Graphics": "Intel UHD Graphics 620",
+   "Operating System": "Windows 11 Pro",
+   "Condition": "UK Used, Tested and Graded"
+  }
  },
  {
   "sku": "TPG-DE-5500-I5-X",
   "name": "Dell Latitude 5500 - Core i5 8th Gen, 8GB, 256GB SSD",
-  "price": "1650",
-  "stock": 1,
-  "weight": "1.8",
-  "featured": false,
   "short": "Intel i5 8th Gen \u00b7 8GB RAM \u00b7 256GB SSD \u00b7 15.6\" FHD \u00b7 Win 11 Pro \u00b7 UK used, tested &amp; warranty-backed.",
   "desc": "<p>The Dell Latitude 5500 is a business-class laptop sourced from UK corporate fleets, where machines are maintained on strict IT schedules. Every unit sold by TechPlug GH in Accra is tested, graded and backed by our warranty, so you get enterprise build quality at a fraction of the new price, with delivery across Ghana.</p><h3>Dell Latitude 5500 key specifications</h3><table><tbody><tr><th>Processor</th><td>Intel Core i5-8265U / i5-8365U vPro, 8th Gen Whiskey Lake, 4 cores / 8 threads, up to 3.9 GHz</td></tr><tr><th>Memory</th><td>8GB RAM as configured (DDR4-2400, 2 SODIMM slots, upgradable to 32GB)</td></tr><tr><th>Storage</th><td>256GB NVMe SSD as configured, upgrade options available on request</td></tr><tr><th>Display</th><td>15.6\" FHD (1920x1080) anti-glare</td></tr><tr><th>Graphics</th><td>Intel UHD Graphics 620</td></tr><tr><th>Ports</th><td>1x USB-C 3.1 DP/PD, 3x USB-A, HDMI 1.4, RJ45, microSD</td></tr><tr><th>Wireless</th><td>Intel Wireless-AC 9560, Bluetooth 5</td></tr><tr><th>Battery</th><td>42Wh or 68Wh</td></tr><tr><th>Build and weight</th><td>from 1.78 kg, full-size keyboard with number pad</td></tr><tr><th>Keyboard and extras</th><td>Large display for office work, TPM 2.0</td></tr><tr><th>Operating system</th><td>Windows 11 Pro, activated</td></tr><tr><th>Condition</th><td>UK used, professionally tested and graded; minor cosmetic marks consistent with careful use</td></tr><tr><th>Warranty</th><td>1 to 3 months TechPlug GH warranty, 48-hour return window on verified faults</td></tr></tbody></table><h3>Who the Dell Latitude 5500 is for</h3><p>A dependable choice for office work, accounting, sales teams, students and everyday productivity, with the serviceability that makes Latitudes a corporate standard.</p><h3>Condition, warranty and delivery in Ghana</h3><p>UK used, tested and graded with a TechPlug GH warranty of 1 to 3 months and a 48-hour return window on verified faults. Same or next-day delivery in Accra and Tema, 2 to 4 working days nationwide, or pick up in Accra. Pay by MoMo, bank transfer, or on delivery within Accra.</p><h3>Frequently asked questions</h3><h4>Is this laptop brand new?</h4><p>No. It is UK used: an ex-corporate Dell Latitude 5500 that has been professionally tested and graded by TechPlug GH. UK-used laptops are popular in Ghana because corporate fleets are well maintained, giving you premium build quality at a much lower price.</p><h4>Can the RAM or storage be upgraded?</h4><p>In most cases yes. This unit ships with 8GB RAM and a 256GB NVMe SSD; ddr4-2400, 2 sodimm slots, upgradable to 32gb. Ask us on WhatsApp before purchase and we can upgrade it for you.</p><h4>What warranty do I get?</h4><p>Every TechPlug GH laptop carries a 1 to 3 month warranty plus a 48-hour return window for verified faults. Payment is by MoMo, bank transfer, or pay on delivery within Accra, and we deliver nationwide.</p>",
-  "cats": [
-   "UK Used Laptops",
-   "Business Laptops",
-   "Dell Laptops",
-   "Student Laptops"
-  ],
-  "tags": [
-   "Dell",
-   "Core i5",
-   "8th Gen",
-   "UK used"
-  ],
-  "image": "products/tpg-de-5500-i5-x.jpg"
+  "attributes": {
+   "Brand": "Dell",
+   "Model": "Dell Latitude 5500",
+   "Processor": "Intel Core i5-8265U / i5-8365U vPro",
+   "RAM": "8GB DDR4 (upgradable)",
+   "Storage": "256GB NVMe SSD",
+   "Display": "15.6\" FHD (1920x1080) anti-glare",
+   "Graphics": "Intel UHD Graphics 620",
+   "Operating System": "Windows 11 Pro",
+   "Condition": "UK Used, Tested and Graded"
+  }
  },
  {
   "sku": "TPG-DE-5440-I7-X",
   "name": "Dell Latitude 5440 - Core i7 13th Gen, 8GB, 256GB SSD",
-  "price": "2950",
-  "stock": 1,
-  "weight": "1.4",
-  "featured": true,
   "short": "Intel i7 11th Gen \u00b7 8GB RAM \u00b7 256GB SSD \u00b7 14\" FHD \u00b7 Win 11 Pro \u00b7 UK used, tested &amp; warranty-backed.",
   "desc": "<p>The Dell Latitude 5440 is a business-class laptop sourced from UK corporate fleets, where machines are maintained on strict IT schedules. Every unit sold by TechPlug GH in Accra is tested, graded and backed by our warranty, so you get enterprise build quality at a fraction of the new price, with delivery across Ghana.</p><h3>Dell Latitude 5440 key specifications</h3><table><tbody><tr><th>Processor</th><td>Intel Core i7-1355U / i7-1365U, 13th Gen, 10 cores / 12 threads, up to 5.0 GHz</td></tr><tr><th>Memory</th><td>8GB RAM as configured (DDR4-3200, 2 SODIMM slots, upgradable to 64GB)</td></tr><tr><th>Storage</th><td>256GB NVMe SSD as configured, upgrade options available on request</td></tr><tr><th>Display</th><td>14\" FHD (1920x1080) IPS anti-glare, 250 nits</td></tr><tr><th>Graphics</th><td>Intel Iris Xe Graphics</td></tr><tr><th>Ports</th><td>2x Thunderbolt 4 / USB-C, 2x USB-A 3.2, HDMI 2.0, microSD reader, optional RJ45 and smart card</td></tr><tr><th>Wireless</th><td>Intel Wi-Fi 6E AX211, Bluetooth 5.2</td></tr><tr><th>Battery</th><td>54Wh battery with ExpressCharge</td></tr><tr><th>Build and weight</th><td>from 1.36 kg</td></tr><tr><th>Keyboard and extras</th><td>FHD camera options with shutter, backlit keyboard, Dell Optimizer AI tuning, TPM 2.0, optional fingerprint and NFC</td></tr><tr><th>Operating system</th><td>Windows 11 Pro, activated</td></tr><tr><th>Condition</th><td>UK used, professionally tested and graded; minor cosmetic marks consistent with careful use</td></tr><tr><th>Warranty</th><td>1 to 3 months TechPlug GH warranty, 48-hour return window on verified faults</td></tr></tbody></table><h3>Who the Dell Latitude 5440 is for</h3><p>A dependable choice for office work, accounting, sales teams, students and everyday productivity, with the serviceability that makes Latitudes a corporate standard.</p><h3>Condition, warranty and delivery in Ghana</h3><p>UK used, tested and graded with a TechPlug GH warranty of 1 to 3 months and a 48-hour return window on verified faults. Same or next-day delivery in Accra and Tema, 2 to 4 working days nationwide, or pick up in Accra. Pay by MoMo, bank transfer, or on delivery within Accra.</p><h3>Frequently asked questions</h3><h4>Is this laptop brand new?</h4><p>No. It is UK used: an ex-corporate Dell Latitude 5440 that has been professionally tested and graded by TechPlug GH. UK-used laptops are popular in Ghana because corporate fleets are well maintained, giving you premium build quality at a much lower price.</p><h4>Can the RAM or storage be upgraded?</h4><p>In most cases yes. This unit ships with 8GB RAM and a 256GB NVMe SSD; ddr4-3200, 2 sodimm slots, upgradable to 64gb. Ask us on WhatsApp before purchase and we can upgrade it for you.</p><h4>What warranty do I get?</h4><p>Every TechPlug GH laptop carries a 1 to 3 month warranty plus a 48-hour return window for verified faults. Payment is by MoMo, bank transfer, or pay on delivery within Accra, and we deliver nationwide.</p>",
-  "cats": [
-   "UK Used Laptops",
-   "Business Laptops",
-   "Dell Laptops"
-  ],
-  "tags": [
-   "Dell",
-   "Core i7",
-   "11th Gen",
-   "UK used"
-  ],
-  "image": "products/tpg-de-5440-i7-x.jpg"
+  "attributes": {
+   "Brand": "Dell",
+   "Model": "Dell Latitude 5440",
+   "Processor": "Intel Core i7-1355U / i7-1365U",
+   "RAM": "8GB DDR4 (upgradable)",
+   "Storage": "256GB NVMe SSD",
+   "Display": "14\" FHD (1920x1080) IPS anti-glare",
+   "Graphics": "Intel Iris Xe Graphics",
+   "Operating System": "Windows 11 Pro",
+   "Condition": "UK Used, Tested and Graded"
+  }
  },
  {
   "sku": "TPG-DE-5520-I5-X",
   "name": "Dell Latitude 5520 - Core i5 11th Gen, 8GB, 256GB SSD",
-  "price": "2750",
-  "stock": 1,
-  "weight": "1.8",
-  "featured": false,
   "short": "Intel i5 11th Gen \u00b7 8GB RAM \u00b7 256GB SSD \u00b7 15.6\" FHD \u00b7 Win 11 Pro \u00b7 UK used, tested &amp; warranty-backed.",
   "desc": "<p>The Dell Latitude 5520 is a business-class laptop sourced from UK corporate fleets, where machines are maintained on strict IT schedules. Every unit sold by TechPlug GH in Accra is tested, graded and backed by our warranty, so you get enterprise build quality at a fraction of the new price, with delivery across Ghana.</p><h3>Dell Latitude 5520 key specifications</h3><table><tbody><tr><th>Processor</th><td>Intel Core i5-1135G7 / i5-1145G7 vPro, 11th Gen Tiger Lake, 4 cores / 8 threads, up to 4.4 GHz</td></tr><tr><th>Memory</th><td>8GB RAM as configured (DDR4-3200, 2 SODIMM slots, upgradable to 64GB)</td></tr><tr><th>Storage</th><td>256GB NVMe SSD as configured, upgrade options available on request</td></tr><tr><th>Display</th><td>15.6\" FHD (1920x1080) WVA anti-glare, 250 nits</td></tr><tr><th>Graphics</th><td>Intel Iris Xe Graphics</td></tr><tr><th>Ports</th><td>2x Thunderbolt 4 / USB-C, 2x USB-A 3.2, HDMI 2.0, RJ45, microSD</td></tr><tr><th>Wireless</th><td>Intel Wi-Fi 6, Bluetooth 5.1</td></tr><tr><th>Battery</th><td>42Wh or 63Wh ExpressCharge</td></tr><tr><th>Build and weight</th><td>from 1.59 kg, full-size keyboard with number pad</td></tr><tr><th>Keyboard and extras</th><td>Big-screen comfort for spreadsheets and multitasking, privacy shutter, TPM 2.0</td></tr><tr><th>Operating system</th><td>Windows 11 Pro, activated</td></tr><tr><th>Condition</th><td>UK used, professionally tested and graded; minor cosmetic marks consistent with careful use</td></tr><tr><th>Warranty</th><td>1 to 3 months TechPlug GH warranty, 48-hour return window on verified faults</td></tr></tbody></table><h3>Who the Dell Latitude 5520 is for</h3><p>A dependable choice for office work, accounting, sales teams, students and everyday productivity, with the serviceability that makes Latitudes a corporate standard.</p><h3>Condition, warranty and delivery in Ghana</h3><p>UK used, tested and graded with a TechPlug GH warranty of 1 to 3 months and a 48-hour return window on verified faults. Same or next-day delivery in Accra and Tema, 2 to 4 working days nationwide, or pick up in Accra. Pay by MoMo, bank transfer, or on delivery within Accra.</p><h3>Frequently asked questions</h3><h4>Is this laptop brand new?</h4><p>No. It is UK used: an ex-corporate Dell Latitude 5520 that has been professionally tested and graded by TechPlug GH. UK-used laptops are popular in Ghana because corporate fleets are well maintained, giving you premium build quality at a much lower price.</p><h4>Can the RAM or storage be upgraded?</h4><p>In most cases yes. This unit ships with 8GB RAM and a 256GB NVMe SSD; ddr4-3200, 2 sodimm slots, upgradable to 64gb. Ask us on WhatsApp before purchase and we can upgrade it for you.</p><h4>What warranty do I get?</h4><p>Every TechPlug GH laptop carries a 1 to 3 month warranty plus a 48-hour return window for verified faults. Payment is by MoMo, bank transfer, or pay on delivery within Accra, and we deliver nationwide.</p>",
-  "cats": [
-   "UK Used Laptops",
-   "Business Laptops",
-   "Dell Laptops"
-  ],
-  "tags": [
-   "Dell",
-   "Core i5",
-   "11th Gen",
-   "UK used"
-  ],
-  "image": "products/tpg-de-5520-i5-x.jpg"
+  "attributes": {
+   "Brand": "Dell",
+   "Model": "Dell Latitude 5520",
+   "Processor": "Intel Core i5-1135G7 / i5-1145G7 vPro",
+   "RAM": "8GB DDR4 (upgradable)",
+   "Storage": "256GB NVMe SSD",
+   "Display": "15.6\" FHD (1920x1080) WVA anti-glare",
+   "Graphics": "Intel Iris Xe Graphics",
+   "Operating System": "Windows 11 Pro",
+   "Condition": "UK Used, Tested and Graded"
+  }
  },
  {
   "sku": "TPG-DE-5420-I5-X",
   "name": "Dell Latitude 5420 - Core i5 11th Gen, 8GB, 256GB SSD",
-  "price": "2750",
-  "stock": 1,
-  "weight": "1.4",
-  "featured": false,
   "short": "Intel i5 11th Gen \u00b7 8GB RAM \u00b7 256GB SSD \u00b7 14\" FHD \u00b7 Win 11 Pro \u00b7 UK used, tested &amp; warranty-backed.",
   "desc": "<p>The Dell Latitude 5420 is a business-class laptop sourced from UK corporate fleets, where machines are maintained on strict IT schedules. Every unit sold by TechPlug GH in Accra is tested, graded and backed by our warranty, so you get enterprise build quality at a fraction of the new price, with delivery across Ghana.</p><h3>Dell Latitude 5420 key specifications</h3><table><tbody><tr><th>Processor</th><td>Intel Core i5-1135G7 / i5-1145G7 vPro, 11th Gen Tiger Lake, 4 cores / 8 threads, up to 4.4 GHz</td></tr><tr><th>Memory</th><td>8GB RAM as configured (DDR4-3200, 2 SODIMM slots, upgradable to 64GB)</td></tr><tr><th>Storage</th><td>256GB NVMe SSD as configured, upgrade options available on request</td></tr><tr><th>Display</th><td>14\" FHD (1920x1080) IPS anti-glare, 250 nits</td></tr><tr><th>Graphics</th><td>Intel Iris Xe Graphics</td></tr><tr><th>Ports</th><td>2x Thunderbolt 4 / USB-C, 2x USB-A 3.2, HDMI 2.0, microSD, optional smart card</td></tr><tr><th>Wireless</th><td>Intel Wi-Fi 6 AX201, Bluetooth 5.1</td></tr><tr><th>Battery</th><td>42Wh or 63Wh with ExpressCharge</td></tr><tr><th>Build and weight</th><td>from 1.37 kg, MIL-STD 810H tested</td></tr><tr><th>Keyboard and extras</th><td>Camera privacy shutter, backlit keyboard option, Dell Optimizer, TPM 2.0</td></tr><tr><th>Operating system</th><td>Windows 11 Pro, activated</td></tr><tr><th>Condition</th><td>UK used, professionally tested and graded; minor cosmetic marks consistent with careful use</td></tr><tr><th>Warranty</th><td>1 to 3 months TechPlug GH warranty, 48-hour return window on verified faults</td></tr></tbody></table><h3>Who the Dell Latitude 5420 is for</h3><p>A dependable choice for office work, accounting, sales teams, students and everyday productivity, with the serviceability that makes Latitudes a corporate standard.</p><h3>Condition, warranty and delivery in Ghana</h3><p>UK used, tested and graded with a TechPlug GH warranty of 1 to 3 months and a 48-hour return window on verified faults. Same or next-day delivery in Accra and Tema, 2 to 4 working days nationwide, or pick up in Accra. Pay by MoMo, bank transfer, or on delivery within Accra.</p><h3>Frequently asked questions</h3><h4>Is this laptop brand new?</h4><p>No. It is UK used: an ex-corporate Dell Latitude 5420 that has been professionally tested and graded by TechPlug GH. UK-used laptops are popular in Ghana because corporate fleets are well maintained, giving you premium build quality at a much lower price.</p><h4>Can the RAM or storage be upgraded?</h4><p>In most cases yes. This unit ships with 8GB RAM and a 256GB NVMe SSD; ddr4-3200, 2 sodimm slots, upgradable to 64gb. Ask us on WhatsApp before purchase and we can upgrade it for you.</p><h4>What warranty do I get?</h4><p>Every TechPlug GH laptop carries a 1 to 3 month warranty plus a 48-hour return window for verified faults. Payment is by MoMo, bank transfer, or pay on delivery within Accra, and we deliver nationwide.</p>",
-  "cats": [
-   "UK Used Laptops",
-   "Business Laptops",
-   "Dell Laptops"
-  ],
-  "tags": [
-   "Dell",
-   "Core i5",
-   "11th Gen",
-   "UK used"
-  ],
-  "image": "products/tpg-de-5420-i5-x.jpg"
+  "attributes": {
+   "Brand": "Dell",
+   "Model": "Dell Latitude 5420",
+   "Processor": "Intel Core i5-1135G7 / i5-1145G7 vPro",
+   "RAM": "8GB DDR4 (upgradable)",
+   "Storage": "256GB NVMe SSD",
+   "Display": "14\" FHD (1920x1080) IPS anti-glare",
+   "Graphics": "Intel Iris Xe Graphics",
+   "Operating System": "Windows 11 Pro",
+   "Condition": "UK Used, Tested and Graded"
+  }
  },
  {
   "sku": "TPG-HP-830G8-I7-NT",
   "name": "HP EliteBook 830 G8 (Non-touch) - Core i7 11th Gen, 8GB, 256GB SSD",
-  "price": "3050",
-  "stock": 1,
-  "weight": "1.2",
-  "featured": true,
   "short": "Intel i7 11th Gen \u00b7 8GB RAM \u00b7 256GB SSD \u00b7 13.3\" FHD \u00b7 Win 11 Pro \u00b7 UK used, tested &amp; warranty-backed.",
   "desc": "<p>The HP EliteBook 830 G8 is a premium business-class laptop sourced from UK corporate fleets, where machines are maintained on strict IT schedules. Every unit sold by TechPlug GH in Accra is tested, graded and backed by our warranty, so you get enterprise build quality at a fraction of the new price, with delivery across Ghana.</p><h3>HP EliteBook 830 G8 key specifications</h3><table><tbody><tr><th>Processor</th><td>Intel Core i7-1165G7, 11th Gen Tiger Lake, up to 4.7 GHz</td></tr><tr><th>Memory</th><td>8GB RAM as configured (DDR4-3200, 2 SODIMM slots, upgradable to 64GB)</td></tr><tr><th>Storage</th><td>256GB NVMe SSD as configured, upgrade options available on request</td></tr><tr><th>Display</th><td>13.3\" FHD (1920x1080) IPS anti-glare, 250 or 400 nits</td></tr><tr><th>Graphics</th><td>Intel Iris Xe Graphics</td></tr><tr><th>Ports</th><td>2x Thunderbolt 4 / USB-C, 2x USB-A 3.1, HDMI 2.0, headphone/mic combo</td></tr><tr><th>Wireless</th><td>Intel Wi-Fi 6 AX201, Bluetooth 5</td></tr><tr><th>Battery</th><td>53Wh battery, HP Fast Charge</td></tr><tr><th>Build and weight</th><td>from 1.24 kg, premium compact aluminium build, MIL-STD 810H</td></tr><tr><th>Keyboard and extras</th><td>IR camera with privacy shutter, fingerprint reader, backlit keyboard, B&O audio, HP Wolf Security</td></tr><tr><th>Operating system</th><td>Windows 11 Pro, activated</td></tr><tr><th>Condition</th><td>UK used, professionally tested and graded; minor cosmetic marks consistent with careful use</td></tr><tr><th>Warranty</th><td>1 to 3 months TechPlug GH warranty, 48-hour return window on verified faults</td></tr></tbody></table><h3>Who the HP EliteBook 830 G8 is for</h3><p>Ideal for professionals, remote workers and students who want a premium, durable ultrabook with strong security features and all-day battery life.</p><h3>Condition, warranty and delivery in Ghana</h3><p>UK used, tested and graded with a TechPlug GH warranty of 1 to 3 months and a 48-hour return window on verified faults. Same or next-day delivery in Accra and Tema, 2 to 4 working days nationwide, or pick up in Accra. Pay by MoMo, bank transfer, or on delivery within Accra.</p><h3>Frequently asked questions</h3><h4>Is this laptop brand new?</h4><p>No. It is UK used: an ex-corporate HP EliteBook 830 G8 that has been professionally tested and graded by TechPlug GH. UK-used laptops are popular in Ghana because corporate fleets are well maintained, giving you premium build quality at a much lower price.</p><h4>Can the RAM or storage be upgraded?</h4><p>In most cases yes. This unit ships with 8GB RAM and a 256GB NVMe SSD; ddr4-3200, 2 sodimm slots, upgradable to 64gb. Ask us on WhatsApp before purchase and we can upgrade it for you.</p><h4>What warranty do I get?</h4><p>Every TechPlug GH laptop carries a 1 to 3 month warranty plus a 48-hour return window for verified faults. Payment is by MoMo, bank transfer, or pay on delivery within Accra, and we deliver nationwide.</p>",
-  "cats": [
-   "UK Used Laptops",
-   "Business Laptops",
-   "HP Laptops"
-  ],
-  "tags": [
-   "HP",
-   "Core i7",
-   "11th Gen",
-   "UK used"
-  ],
-  "image": "products/tpg-hp-830g8-i7-nt.jpg"
+  "attributes": {
+   "Brand": "HP",
+   "Model": "HP EliteBook 830 G8",
+   "Processor": "Intel Core i7-1165G7",
+   "RAM": "8GB DDR4 (upgradable)",
+   "Storage": "256GB NVMe SSD",
+   "Display": "13.3\" FHD (1920x1080) IPS anti-glare",
+   "Graphics": "Intel Iris Xe Graphics",
+   "Operating System": "Windows 11 Pro",
+   "Condition": "UK Used, Tested and Graded"
+  }
  },
  {
   "sku": "TPG-LE-L14-I5-X",
   "name": "Lenovo ThinkPad L14 - Core i5 11th Gen, 8GB, 256GB SSD",
-  "price": "2750",
-  "stock": 4,
-  "weight": "1.4",
-  "featured": false,
   "short": "Intel i5 11th Gen \u00b7 8GB RAM \u00b7 256GB SSD \u00b7 14\" FHD \u00b7 Win 11 Pro \u00b7 UK used, tested &amp; warranty-backed.",
   "desc": "<p>The Lenovo ThinkPad L14 is a business-class laptop sourced from UK corporate fleets, where machines are maintained on strict IT schedules. Every unit sold by TechPlug GH in Accra is tested, graded and backed by our warranty, so you get enterprise build quality at a fraction of the new price, with delivery across Ghana.</p><h3>Lenovo ThinkPad L14 key specifications</h3><table><tbody><tr><th>Processor</th><td>Intel Core i5-1135G7, 11th Gen Tiger Lake, 4 cores / 8 threads, up to 4.2 GHz</td></tr><tr><th>Memory</th><td>8GB RAM as configured (DDR4-3200, 2 SODIMM slots, upgradable to 64GB)</td></tr><tr><th>Storage</th><td>256GB NVMe SSD as configured, upgrade options available on request</td></tr><tr><th>Display</th><td>14\" FHD (1920x1080) IPS anti-glare, 250 nits</td></tr><tr><th>Graphics</th><td>Intel Iris Xe Graphics</td></tr><tr><th>Ports</th><td>1x Thunderbolt 4 / USB-C, 1x USB-C 3.2, 2x USB-A 3.1, HDMI 2.0, RJ45, microSD</td></tr><tr><th>Wireless</th><td>Intel Wi-Fi 6, Bluetooth 5.2</td></tr><tr><th>Battery</th><td>45Wh Rapid Charge</td></tr><tr><th>Build and weight</th><td>from 1.59 kg, MIL-SPEC tested</td></tr><tr><th>Keyboard and extras</th><td>ThinkPad keyboard and TrackPoint, ThinkShutter, dTPM 2.0, Iris Xe graphics for light creative work</td></tr><tr><th>Operating system</th><td>Windows 11 Pro, activated</td></tr><tr><th>Condition</th><td>UK used, professionally tested and graded; minor cosmetic marks consistent with careful use</td></tr><tr><th>Warranty</th><td>1 to 3 months TechPlug GH warranty, 48-hour return window on verified faults</td></tr></tbody></table><h3>Who the Lenovo ThinkPad L14 is for</h3><p>Perfect for writers, developers, students and anyone who types all day: the ThinkPad keyboard remains the benchmark, and the chassis is MIL-SPEC tough.</p><h3>Condition, warranty and delivery in Ghana</h3><p>UK used, tested and graded with a TechPlug GH warranty of 1 to 3 months and a 48-hour return window on verified faults. Same or next-day delivery in Accra and Tema, 2 to 4 working days nationwide, or pick up in Accra. Pay by MoMo, bank transfer, or on delivery within Accra.</p><h3>Frequently asked questions</h3><h4>Is this laptop brand new?</h4><p>No. It is UK used: an ex-corporate Lenovo ThinkPad L14 that has been professionally tested and graded by TechPlug GH. UK-used laptops are popular in Ghana because corporate fleets are well maintained, giving you premium build quality at a much lower price.</p><h4>Can the RAM or storage be upgraded?</h4><p>In most cases yes. This unit ships with 8GB RAM and a 256GB NVMe SSD; ddr4-3200, 2 sodimm slots, upgradable to 64gb. Ask us on WhatsApp before purchase and we can upgrade it for you.</p><h4>What warranty do I get?</h4><p>Every TechPlug GH laptop carries a 1 to 3 month warranty plus a 48-hour return window for verified faults. Payment is by MoMo, bank transfer, or pay on delivery within Accra, and we deliver nationwide.</p>",
-  "cats": [
-   "UK Used Laptops",
-   "Business Laptops",
-   "Lenovo Laptops"
-  ],
-  "tags": [
-   "Lenovo",
-   "Core i5",
-   "11th Gen",
-   "UK used"
-  ],
-  "image": "products/tpg-le-l14-i5-x.jpg"
+  "attributes": {
+   "Brand": "Lenovo",
+   "Model": "Lenovo ThinkPad L14",
+   "Processor": "Intel Core i5-1135G7",
+   "RAM": "8GB DDR4 (upgradable)",
+   "Storage": "256GB NVMe SSD",
+   "Display": "14\" FHD (1920x1080) IPS anti-glare",
+   "Graphics": "Intel Iris Xe Graphics",
+   "Operating System": "Windows 11 Pro",
+   "Condition": "UK Used, Tested and Graded"
+  }
  },
  {
   "sku": "TPG-LE-L14-I5-10-X",
   "name": "Lenovo ThinkPad L14 - Core i5 10th Gen, 8GB, 256GB SSD",
-  "price": "2450",
-  "stock": 1,
-  "weight": "1.4",
-  "featured": false,
   "short": "Intel i5 10th Gen \u00b7 8GB RAM \u00b7 256GB SSD \u00b7 14\" FHD \u00b7 Win 11 Pro \u00b7 UK used, tested &amp; warranty-backed.",
   "desc": "<p>The Lenovo ThinkPad L14 is a business-class laptop sourced from UK corporate fleets, where machines are maintained on strict IT schedules. Every unit sold by TechPlug GH in Accra is tested, graded and backed by our warranty, so you get enterprise build quality at a fraction of the new price, with delivery across Ghana.</p><h3>Lenovo ThinkPad L14 key specifications</h3><table><tbody><tr><th>Processor</th><td>Intel Core i5-10210U, 10th Gen Comet Lake, 4 cores / 8 threads, up to 4.2 GHz</td></tr><tr><th>Memory</th><td>8GB RAM as configured (DDR4-2666, 2 SODIMM slots, upgradable to 64GB)</td></tr><tr><th>Storage</th><td>256GB NVMe SSD as configured, upgrade options available on request</td></tr><tr><th>Display</th><td>14\" FHD (1920x1080) IPS anti-glare, 250 nits</td></tr><tr><th>Graphics</th><td>Intel UHD Graphics</td></tr><tr><th>Ports</th><td>2x USB-C 3.2 (power and DisplayPort), 2x USB-A 3.1, HDMI 1.4b, RJ45, microSD</td></tr><tr><th>Wireless</th><td>Intel Wi-Fi 6, Bluetooth 5</td></tr><tr><th>Battery</th><td>45Wh with Rapid Charge</td></tr><tr><th>Build and weight</th><td>from 1.61 kg, MIL-SPEC tested ThinkPad durability</td></tr><tr><th>Keyboard and extras</th><td>The famous ThinkPad keyboard and TrackPoint, ThinkShutter camera cover, dTPM 2.0</td></tr><tr><th>Operating system</th><td>Windows 11 Pro, activated</td></tr><tr><th>Condition</th><td>UK used, professionally tested and graded; minor cosmetic marks consistent with careful use</td></tr><tr><th>Warranty</th><td>1 to 3 months TechPlug GH warranty, 48-hour return window on verified faults</td></tr></tbody></table><h3>Who the Lenovo ThinkPad L14 is for</h3><p>Perfect for writers, developers, students and anyone who types all day: the ThinkPad keyboard remains the benchmark, and the chassis is MIL-SPEC tough.</p><h3>Condition, warranty and delivery in Ghana</h3><p>UK used, tested and graded with a TechPlug GH warranty of 1 to 3 months and a 48-hour return window on verified faults. Same or next-day delivery in Accra and Tema, 2 to 4 working days nationwide, or pick up in Accra. Pay by MoMo, bank transfer, or on delivery within Accra.</p><h3>Frequently asked questions</h3><h4>Is this laptop brand new?</h4><p>No. It is UK used: an ex-corporate Lenovo ThinkPad L14 that has been professionally tested and graded by TechPlug GH. UK-used laptops are popular in Ghana because corporate fleets are well maintained, giving you premium build quality at a much lower price.</p><h4>Can the RAM or storage be upgraded?</h4><p>In most cases yes. This unit ships with 8GB RAM and a 256GB NVMe SSD; ddr4-2666, 2 sodimm slots, upgradable to 64gb. Ask us on WhatsApp before purchase and we can upgrade it for you.</p><h4>What warranty do I get?</h4><p>Every TechPlug GH laptop carries a 1 to 3 month warranty plus a 48-hour return window for verified faults. Payment is by MoMo, bank transfer, or pay on delivery within Accra, and we deliver nationwide.</p>",
-  "cats": [
-   "UK Used Laptops",
-   "Business Laptops",
-   "Lenovo Laptops",
-   "Student Laptops"
-  ],
-  "tags": [
-   "Lenovo",
-   "Core i5",
-   "10th Gen",
-   "UK used"
-  ],
-  "image": "products/tpg-le-l14-i5-10-x.jpg"
+  "attributes": {
+   "Brand": "Lenovo",
+   "Model": "Lenovo ThinkPad L14",
+   "Processor": "Intel Core i5-10210U",
+   "RAM": "8GB DDR4 (upgradable)",
+   "Storage": "256GB NVMe SSD",
+   "Display": "14\" FHD (1920x1080) IPS anti-glare",
+   "Graphics": "Intel UHD Graphics",
+   "Operating System": "Windows 11 Pro",
+   "Condition": "UK Used, Tested and Graded"
+  }
  },
  {
   "sku": "TPG-LE-T14-I5-X",
   "name": "Lenovo ThinkPad T14 - Core i5 10th Gen, 8GB, 256GB SSD",
-  "price": "2450",
-  "stock": 5,
-  "weight": "1.4",
-  "featured": true,
   "short": "Intel i5 10th Gen \u00b7 8GB RAM \u00b7 256GB SSD \u00b7 14\" FHD \u00b7 Win 11 Pro \u00b7 UK used, tested &amp; warranty-backed.",
   "desc": "<p>The Lenovo ThinkPad T14 is a premium business-class laptop sourced from UK corporate fleets, where machines are maintained on strict IT schedules. Every unit sold by TechPlug GH in Accra is tested, graded and backed by our warranty, so you get enterprise build quality at a fraction of the new price, with delivery across Ghana.</p><h3>Lenovo ThinkPad T14 key specifications</h3><table><tbody><tr><th>Processor</th><td>Intel Core i5-10210U / i5-10310U vPro, 10th Gen Comet Lake, 4 cores / 8 threads, up to 4.2 GHz</td></tr><tr><th>Memory</th><td>8GB RAM as configured (8GB soldered + 1 SODIMM slot, up to 48GB)</td></tr><tr><th>Storage</th><td>256GB NVMe SSD as configured, upgrade options available on request</td></tr><tr><th>Display</th><td>14\" FHD (1920x1080) IPS anti-glare, 250 nits (400-nit and low-power options exist)</td></tr><tr><th>Graphics</th><td>Intel UHD Graphics</td></tr><tr><th>Ports</th><td>1x Thunderbolt 3 / USB-C, 1x USB-C 3.2, 2x USB-A 3.1, HDMI 2.0, RJ45 via side connector, microSD</td></tr><tr><th>Wireless</th><td>Intel Wi-Fi 6 AX201, Bluetooth 5</td></tr><tr><th>Battery</th><td>50Wh with Rapid Charge</td></tr><tr><th>Build and weight</th><td>from 1.46 kg, the premium ThinkPad T-series workhorse</td></tr><tr><th>Keyboard and extras</th><td>Legendary T-series keyboard, ThinkShutter, MIL-SPEC 810G, fingerprint reader, dTPM 2.0</td></tr><tr><th>Operating system</th><td>Windows 11 Pro, activated</td></tr><tr><th>Condition</th><td>UK used, professionally tested and graded; minor cosmetic marks consistent with careful use</td></tr><tr><th>Warranty</th><td>1 to 3 months TechPlug GH warranty, 48-hour return window on verified faults</td></tr></tbody></table><h3>Who the Lenovo ThinkPad T14 is for</h3><p>Perfect for writers, developers, students and anyone who types all day: the ThinkPad keyboard remains the benchmark, and the chassis is MIL-SPEC tough.</p><h3>Condition, warranty and delivery in Ghana</h3><p>UK used, tested and graded with a TechPlug GH warranty of 1 to 3 months and a 48-hour return window on verified faults. Same or next-day delivery in Accra and Tema, 2 to 4 working days nationwide, or pick up in Accra. Pay by MoMo, bank transfer, or on delivery within Accra.</p><h3>Frequently asked questions</h3><h4>Is this laptop brand new?</h4><p>No. It is UK used: an ex-corporate Lenovo ThinkPad T14 that has been professionally tested and graded by TechPlug GH. UK-used laptops are popular in Ghana because corporate fleets are well maintained, giving you premium build quality at a much lower price.</p><h4>Can the RAM or storage be upgraded?</h4><p>In most cases yes. This unit ships with 8GB RAM and a 256GB NVMe SSD; 8gb soldered + 1 sodimm slot, up to 48gb. Ask us on WhatsApp before purchase and we can upgrade it for you.</p><h4>What warranty do I get?</h4><p>Every TechPlug GH laptop carries a 1 to 3 month warranty plus a 48-hour return window for verified faults. Payment is by MoMo, bank transfer, or pay on delivery within Accra, and we deliver nationwide.</p>",
-  "cats": [
-   "UK Used Laptops",
-   "Business Laptops",
-   "Lenovo Laptops",
-   "Student Laptops"
-  ],
-  "tags": [
-   "Lenovo",
-   "Core i5",
-   "10th Gen",
-   "UK used"
-  ],
-  "image": "products/tpg-le-t14-i5-x.jpg"
+  "attributes": {
+   "Brand": "Lenovo",
+   "Model": "Lenovo ThinkPad T14",
+   "Processor": "Intel Core i5-10210U / i5-10310U vPro",
+   "RAM": "8GB DDR4 (upgradable)",
+   "Storage": "256GB NVMe SSD",
+   "Display": "14\" FHD (1920x1080) IPS anti-glare",
+   "Graphics": "Intel UHD Graphics",
+   "Operating System": "Windows 11 Pro",
+   "Condition": "UK Used, Tested and Graded"
+  }
  },
  {
   "sku": "TPG-LE-IDEAPAD15-I5-X",
   "name": "Lenovo Ideapad 15 - Core i5 10th Gen, 8GB, 256GB SSD",
-  "price": "2450",
-  "stock": 1,
-  "weight": "1.8",
-  "featured": false,
   "short": "Intel i5 10th Gen \u00b7 8GB RAM \u00b7 256GB SSD \u00b7 15.6\" FHD \u00b7 Win 11 Pro \u00b7 UK used, tested &amp; warranty-backed.",
   "desc": "<p>The Lenovo Ideapad 15 is a business-class laptop sourced from UK corporate fleets, where machines are maintained on strict IT schedules. Every unit sold by TechPlug GH in Accra is tested, graded and backed by our warranty, so you get enterprise build quality at a fraction of the new price, with delivery across Ghana.</p><h3>Lenovo Ideapad 15 key specifications</h3><table><tbody><tr><th>Processor</th><td>Intel Core 10th Gen (i5-10210U class), 4 cores / 8 threads</td></tr><tr><th>Memory</th><td>8GB RAM as configured (DDR4 (as configured))</td></tr><tr><th>Storage</th><td>256GB NVMe SSD as configured, upgrade options available on request</td></tr><tr><th>Display</th><td>15.6\" HD or FHD anti-glare</td></tr><tr><th>Graphics</th><td>Intel UHD Graphics</td></tr><tr><th>Ports</th><td>USB-C, 2x USB-A 3.1, HDMI 1.4, SD card reader</td></tr><tr><th>Wireless</th><td>Wi-Fi 5/6 depending on build, Bluetooth</td></tr><tr><th>Battery</th><td>35-45Wh typical</td></tr><tr><th>Build and weight</th><td>around 1.85 kg, comfortable full-size home and study laptop</td></tr><tr><th>Keyboard and extras</th><td>Big screen and number pad for coursework, browsing and office apps</td></tr><tr><th>Operating system</th><td>Windows 11 Pro, activated</td></tr><tr><th>Condition</th><td>UK used, professionally tested and graded; minor cosmetic marks consistent with careful use</td></tr><tr><th>Warranty</th><td>1 to 3 months TechPlug GH warranty, 48-hour return window on verified faults</td></tr></tbody></table><h3>Who the Lenovo Ideapad 15 is for</h3><p>A budget-friendly big-screen laptop for students, home use, browsing and office applications.</p><h3>Condition, warranty and delivery in Ghana</h3><p>UK used, tested and graded with a TechPlug GH warranty of 1 to 3 months and a 48-hour return window on verified faults. Same or next-day delivery in Accra and Tema, 2 to 4 working days nationwide, or pick up in Accra. Pay by MoMo, bank transfer, or on delivery within Accra.</p><h3>Frequently asked questions</h3><h4>Is this laptop brand new?</h4><p>No. It is UK used: an ex-corporate Lenovo Ideapad 15 that has been professionally tested and graded by TechPlug GH. UK-used laptops are popular in Ghana because corporate fleets are well maintained, giving you premium build quality at a much lower price.</p><h4>Can the RAM or storage be upgraded?</h4><p>In most cases yes. This unit ships with 8GB RAM and a 256GB NVMe SSD; ddr4 (as configured). Ask us on WhatsApp before purchase and we can upgrade it for you.</p><h4>What warranty do I get?</h4><p>Every TechPlug GH laptop carries a 1 to 3 month warranty plus a 48-hour return window for verified faults. Payment is by MoMo, bank transfer, or pay on delivery within Accra, and we deliver nationwide.</p>",
-  "cats": [
-   "UK Used Laptops",
-   "Business Laptops",
-   "Lenovo Laptops",
-   "Student Laptops"
-  ],
-  "tags": [
-   "Lenovo",
-   "Core i5",
-   "10th Gen",
-   "UK used"
-  ],
-  "image": "products/tpg-le-ideapad15-i5-x.jpg"
+  "attributes": {
+   "Brand": "Lenovo",
+   "Model": "Lenovo Ideapad 15",
+   "Processor": "Intel Core 10th Gen (i5-10210U class)",
+   "RAM": "8GB DDR4 (upgradable)",
+   "Storage": "256GB NVMe SSD",
+   "Display": "15.6\" HD or FHD anti-glare",
+   "Graphics": "Intel UHD Graphics",
+   "Operating System": "Windows 11 Pro",
+   "Condition": "UK Used, Tested and Graded"
+  }
  },
  {
   "sku": "TPG-LE-YOGAL390-I7-X",
   "name": "Lenovo Yoga L390 - Core i7 8th Gen, 8GB, 256GB SSD",
-  "price": "2850",
-  "stock": 1,
-  "weight": "1.2",
-  "featured": false,
   "short": "Intel i7 8th Gen \u00b7 8GB RAM \u00b7 256GB SSD \u00b7 13.3\" FHD touchscreen \u00b7 Win 11 Pro \u00b7 UK used, tested &amp; warranty-backed.",
   "desc": "<p>The Lenovo Yoga L390 is a business-class laptop sourced from UK corporate fleets, where machines are maintained on strict IT schedules. Every unit sold by TechPlug GH in Accra is tested, graded and backed by our warranty, so you get enterprise build quality at a fraction of the new price, with delivery across Ghana.</p><h3>Lenovo Yoga L390 key specifications</h3><table><tbody><tr><th>Processor</th><td>Intel Core i7-8565U, 8th Gen Whiskey Lake, 4 cores / 8 threads, up to 4.6 GHz</td></tr><tr><th>Memory</th><td>8GB RAM as configured (DDR4 (as configured))</td></tr><tr><th>Storage</th><td>256GB NVMe SSD as configured, upgrade options available on request</td></tr><tr><th>Display</th><td>13.3\" FHD (1920x1080) IPS touchscreen, 360-degree convertible hinge</td></tr><tr><th>Graphics</th><td>Intel UHD Graphics 620</td></tr><tr><th>Ports</th><td>2x USB-C 3.1 (power and DisplayPort), 2x USB-A 3.1, HDMI 1.4b, microSD</td></tr><tr><th>Wireless</th><td>Intel Wireless-AC, Bluetooth 5</td></tr><tr><th>Battery</th><td>45Wh with Rapid Charge</td></tr><tr><th>Build and weight</th><td>from 1.56 kg, flip it into laptop, tent, stand or tablet mode</td></tr><tr><th>Keyboard and extras</th><td>Touchscreen with optional pen support, ThinkShutter camera cover, spill-resistant backlit keyboard</td></tr><tr><th>Operating system</th><td>Windows 11 Pro, activated</td></tr><tr><th>Condition</th><td>UK used, professionally tested and graded; minor cosmetic marks consistent with careful use</td></tr><tr><th>Warranty</th><td>1 to 3 months TechPlug GH warranty, 48-hour return window on verified faults</td></tr></tbody></table><h3>Who the Lenovo Yoga L390 is for</h3><p>Ideal for note-takers, designers and presenters who want a touchscreen that flips into tablet, tent or stand mode, with pen support.</p><h3>Condition, warranty and delivery in Ghana</h3><p>UK used, tested and graded with a TechPlug GH warranty of 1 to 3 months and a 48-hour return window on verified faults. Same or next-day delivery in Accra and Tema, 2 to 4 working days nationwide, or pick up in Accra. Pay by MoMo, bank transfer, or on delivery within Accra.</p><h3>Frequently asked questions</h3><h4>Is this laptop brand new?</h4><p>No. It is UK used: an ex-corporate Lenovo Yoga L390 that has been professionally tested and graded by TechPlug GH. UK-used laptops are popular in Ghana because corporate fleets are well maintained, giving you premium build quality at a much lower price.</p><h4>Can the RAM or storage be upgraded?</h4><p>In most cases yes. This unit ships with 8GB RAM and a 256GB NVMe SSD; ddr4 (as configured). Ask us on WhatsApp before purchase and we can upgrade it for you.</p><h4>What warranty do I get?</h4><p>Every TechPlug GH laptop carries a 1 to 3 month warranty plus a 48-hour return window for verified faults. Payment is by MoMo, bank transfer, or pay on delivery within Accra, and we deliver nationwide.</p>",
-  "cats": [
-   "UK Used Laptops",
-   "Business Laptops",
-   "Lenovo Laptops"
-  ],
-  "tags": [
-   "Lenovo",
-   "Core i7",
-   "8th Gen",
-   "UK used"
-  ],
-  "image": "products/tpg-le-yogal390-i7-x.jpg"
+  "attributes": {
+   "Brand": "Lenovo",
+   "Model": "Lenovo Yoga L390",
+   "Processor": "Intel Core i7-8565U",
+   "RAM": "8GB DDR4 (upgradable)",
+   "Storage": "256GB NVMe SSD",
+   "Display": "13.3\" FHD (1920x1080) IPS touchscreen",
+   "Graphics": "Intel UHD Graphics 620",
+   "Operating System": "Windows 11 Pro",
+   "Condition": "UK Used, Tested and Graded"
+  }
  },
  {
   "sku": "TPG-DE-3310-I5-X",
   "name": "Dell Latitude 3310 - Core i5 8th Gen, 8GB, 256GB SSD",
-  "price": "2450",
-  "stock": 25,
-  "weight": "1.2",
-  "featured": false,
   "short": "Intel i5 9th Gen \u00b7 8GB RAM \u00b7 256GB SSD \u00b7 13.3\" FHD \u00b7 Win 11 Pro \u00b7 UK used, tested &amp; warranty-backed.",
   "desc": "<p>The Dell Latitude 3310 is a business-class laptop sourced from UK corporate fleets, where machines are maintained on strict IT schedules. Every unit sold by TechPlug GH in Accra is tested, graded and backed by our warranty, so you get enterprise build quality at a fraction of the new price, with delivery across Ghana.</p><h3>Dell Latitude 3310 key specifications</h3><table><tbody><tr><th>Processor</th><td>Intel Core i5-8265U / i5-8365U, 8th Gen Whiskey Lake, 4 cores / 8 threads, up to 3.9 GHz</td></tr><tr><th>Memory</th><td>8GB RAM as configured (DDR4-2400 (LPDDR3 on some 2-in-1 builds), as configured)</td></tr><tr><th>Storage</th><td>256GB NVMe SSD as configured, upgrade options available on request</td></tr><tr><th>Display</th><td>13.3\" display: HD anti-glare or FHD (1920x1080) touch on the 2-in-1 variant</td></tr><tr><th>Graphics</th><td>Intel UHD Graphics 620</td></tr><tr><th>Ports</th><td>1x USB-C 3.1 with DisplayPort Alt Mode, 2x USB-A 3.1 (one with PowerShare), HDMI 1.4a, headphone/mic</td></tr><tr><th>Wireless</th><td>Intel Wireless-AC 9560, Bluetooth 5</td></tr><tr><th>Battery</th><td>42Wh with ExpressCharge</td></tr><tr><th>Build and weight</th><td>from 1.36 kg, aluminium body built for education and small business</td></tr><tr><th>Keyboard and extras</th><td>Durable chassis, optional touchscreen 2-in-1 with 360-degree hinge</td></tr><tr><th>Operating system</th><td>Windows 11 Pro, activated</td></tr><tr><th>Condition</th><td>UK used, professionally tested and graded; minor cosmetic marks consistent with careful use</td></tr><tr><th>Warranty</th><td>1 to 3 months TechPlug GH warranty, 48-hour return window on verified faults</td></tr></tbody></table><h3>Who the Dell Latitude 3310 is for</h3><p>A dependable choice for office work, accounting, sales teams, students and everyday productivity, with the serviceability that makes Latitudes a corporate standard.</p><h3>Condition, warranty and delivery in Ghana</h3><p>UK used, tested and graded with a TechPlug GH warranty of 1 to 3 months and a 48-hour return window on verified faults. Same or next-day delivery in Accra and Tema, 2 to 4 working days nationwide, or pick up in Accra. Pay by MoMo, bank transfer, or on delivery within Accra.</p><h3>Frequently asked questions</h3><h4>Is this laptop brand new?</h4><p>No. It is UK used: an ex-corporate Dell Latitude 3310 that has been professionally tested and graded by TechPlug GH. UK-used laptops are popular in Ghana because corporate fleets are well maintained, giving you premium build quality at a much lower price.</p><h4>Can the RAM or storage be upgraded?</h4><p>In most cases yes. This unit ships with 8GB RAM and a 256GB NVMe SSD; ddr4-2400 (lpddr3 on some 2-in-1 builds), as configured. Ask us on WhatsApp before purchase and we can upgrade it for you.</p><h4>What warranty do I get?</h4><p>Every TechPlug GH laptop carries a 1 to 3 month warranty plus a 48-hour return window for verified faults. Payment is by MoMo, bank transfer, or pay on delivery within Accra, and we deliver nationwide.</p>",
-  "cats": [
-   "UK Used Laptops",
-   "Business Laptops",
-   "Dell Laptops",
-   "Student Laptops"
-  ],
-  "tags": [
-   "Dell",
-   "Core i5",
-   "9th Gen",
-   "UK used"
-  ],
-  "image": "products/tpg-de-3310-i5-x.jpg"
+  "attributes": {
+   "Brand": "Dell",
+   "Model": "Dell Latitude 3310",
+   "Processor": "Intel Core i5-8265U / i5-8365U",
+   "RAM": "8GB DDR4 (upgradable)",
+   "Storage": "256GB NVMe SSD",
+   "Display": "13.3\" display: HD anti-glare or FHD (1920x1080) touch on the 2-in-1 variant",
+   "Graphics": "Intel UHD Graphics 620",
+   "Operating System": "Windows 11 Pro",
+   "Condition": "UK Used, Tested and Graded"
+  }
  },
  {
   "sku": "TPG-DE-5530-I5-X",
   "name": "Dell Latitude 5530 - Core i5 12th Gen, 8GB, 256GB SSD",
-  "price": "2750",
-  "stock": 1,
-  "weight": "1.8",
-  "featured": false,
   "short": "Intel i5 14th Gen \u00b7 8GB RAM \u00b7 256GB SSD \u00b7 15.6\" FHD \u00b7 Win 11 Pro \u00b7 UK used, tested &amp; warranty-backed.",
   "desc": "<p>The Dell Latitude 5530 is a business-class laptop sourced from UK corporate fleets, where machines are maintained on strict IT schedules. Every unit sold by TechPlug GH in Accra is tested, graded and backed by our warranty, so you get enterprise build quality at a fraction of the new price, with delivery across Ghana.</p><h3>Dell Latitude 5530 key specifications</h3><table><tbody><tr><th>Processor</th><td>Intel Core i5-1235U / i5-1245U vPro, 12th Gen Alder Lake, 10 cores / 12 threads, up to 4.4 GHz</td></tr><tr><th>Memory</th><td>8GB RAM as configured (DDR4-3200, 2 SODIMM slots, upgradable to 64GB)</td></tr><tr><th>Storage</th><td>256GB NVMe SSD as configured, upgrade options available on request</td></tr><tr><th>Display</th><td>15.6\" FHD (1920x1080) WVA IPS anti-glare, 250 nits (400-nit low-power option exists)</td></tr><tr><th>Graphics</th><td>Intel Iris Xe Graphics</td></tr><tr><th>Ports</th><td>2x Thunderbolt 4 / USB-C, 2x USB-A 3.2, HDMI 2.0, RJ45, microSD</td></tr><tr><th>Wireless</th><td>Intel Wi-Fi 6E, Bluetooth 5.2</td></tr><tr><th>Battery</th><td>up to 64Wh ExpressCharge</td></tr><tr><th>Build and weight</th><td>from 1.59 kg</td></tr><tr><th>Keyboard and extras</th><td>Hybrid 12th Gen architecture with performance and efficiency cores, dual M.2 slots (one PCIe Gen 4), privacy shutter</td></tr><tr><th>Operating system</th><td>Windows 11 Pro, activated</td></tr><tr><th>Condition</th><td>UK used, professionally tested and graded; minor cosmetic marks consistent with careful use</td></tr><tr><th>Warranty</th><td>1 to 3 months TechPlug GH warranty, 48-hour return window on verified faults</td></tr></tbody></table><h3>Who the Dell Latitude 5530 is for</h3><p>A dependable choice for office work, accounting, sales teams, students and everyday productivity, with the serviceability that makes Latitudes a corporate standard.</p><h3>Condition, warranty and delivery in Ghana</h3><p>UK used, tested and graded with a TechPlug GH warranty of 1 to 3 months and a 48-hour return window on verified faults. Same or next-day delivery in Accra and Tema, 2 to 4 working days nationwide, or pick up in Accra. Pay by MoMo, bank transfer, or on delivery within Accra.</p><h3>Frequently asked questions</h3><h4>Is this laptop brand new?</h4><p>No. It is UK used: an ex-corporate Dell Latitude 5530 that has been professionally tested and graded by TechPlug GH. UK-used laptops are popular in Ghana because corporate fleets are well maintained, giving you premium build quality at a much lower price.</p><h4>Can the RAM or storage be upgraded?</h4><p>In most cases yes. This unit ships with 8GB RAM and a 256GB NVMe SSD; ddr4-3200, 2 sodimm slots, upgradable to 64gb. Ask us on WhatsApp before purchase and we can upgrade it for you.</p><h4>What warranty do I get?</h4><p>Every TechPlug GH laptop carries a 1 to 3 month warranty plus a 48-hour return window for verified faults. Payment is by MoMo, bank transfer, or pay on delivery within Accra, and we deliver nationwide.</p>",
-  "cats": [
-   "UK Used Laptops",
-   "Business Laptops",
-   "Dell Laptops"
-  ],
-  "tags": [
-   "Dell",
-   "Core i5",
-   "14th Gen",
-   "UK used"
-  ],
-  "image": "products/tpg-de-5530-i5-x.jpg"
+  "attributes": {
+   "Brand": "Dell",
+   "Model": "Dell Latitude 5530",
+   "Processor": "Intel Core i5-1235U / i5-1245U vPro",
+   "RAM": "8GB DDR4 (upgradable)",
+   "Storage": "256GB NVMe SSD",
+   "Display": "15.6\" FHD (1920x1080) WVA IPS anti-glare",
+   "Graphics": "Intel Iris Xe Graphics",
+   "Operating System": "Windows 11 Pro",
+   "Condition": "UK Used, Tested and Graded"
+  }
  },
  {
   "sku": "TPG-DE-3400-I5-X",
   "name": "Dell Latitude 3400 - Core i5 8th Gen, 8GB, 256GB SSD",
-  "price": "2450",
-  "stock": 8,
-  "weight": "1.4",
-  "featured": false,
   "short": "Intel i5 10th Gen \u00b7 8GB RAM \u00b7 256GB SSD \u00b7 14\" FHD \u00b7 Win 11 Pro \u00b7 UK used, tested &amp; warranty-backed.",
   "desc": "<p>The Dell Latitude 3400 is a business-class laptop sourced from UK corporate fleets, where machines are maintained on strict IT schedules. Every unit sold by TechPlug GH in Accra is tested, graded and backed by our warranty, so you get enterprise build quality at a fraction of the new price, with delivery across Ghana.</p><h3>Dell Latitude 3400 key specifications</h3><table><tbody><tr><th>Processor</th><td>Intel Core i5-8265U, 8th Gen Whiskey Lake, 4 cores / 8 threads, up to 3.9 GHz</td></tr><tr><th>Memory</th><td>8GB RAM as configured (DDR4-2400, 2 SODIMM slots, upgradable to 32GB)</td></tr><tr><th>Storage</th><td>256GB NVMe SSD as configured, upgrade options available on request</td></tr><tr><th>Display</th><td>14\" HD or FHD (1920x1080) anti-glare</td></tr><tr><th>Graphics</th><td>Intel UHD Graphics 620</td></tr><tr><th>Ports</th><td>1x USB-C 3.1 with DisplayPort and Power Delivery, 2x USB-A 3.1, HDMI 1.4, RJ45, microSD</td></tr><tr><th>Wireless</th><td>Intel Wireless-AC 9560, Bluetooth 5</td></tr><tr><th>Battery</th><td>42Wh, ExpressCharge capable</td></tr><tr><th>Build and weight</th><td>from 1.65 kg, sleek small-business 14-inch design</td></tr><tr><th>Keyboard and extras</th><td>Great value business laptop with full port selection</td></tr><tr><th>Operating system</th><td>Windows 11 Pro, activated</td></tr><tr><th>Condition</th><td>UK used, professionally tested and graded; minor cosmetic marks consistent with careful use</td></tr><tr><th>Warranty</th><td>1 to 3 months TechPlug GH warranty, 48-hour return window on verified faults</td></tr></tbody></table><h3>Who the Dell Latitude 3400 is for</h3><p>A dependable choice for office work, accounting, sales teams, students and everyday productivity, with the serviceability that makes Latitudes a corporate standard.</p><h3>Condition, warranty and delivery in Ghana</h3><p>UK used, tested and graded with a TechPlug GH warranty of 1 to 3 months and a 48-hour return window on verified faults. Same or next-day delivery in Accra and Tema, 2 to 4 working days nationwide, or pick up in Accra. Pay by MoMo, bank transfer, or on delivery within Accra.</p><h3>Frequently asked questions</h3><h4>Is this laptop brand new?</h4><p>No. It is UK used: an ex-corporate Dell Latitude 3400 that has been professionally tested and graded by TechPlug GH. UK-used laptops are popular in Ghana because corporate fleets are well maintained, giving you premium build quality at a much lower price.</p><h4>Can the RAM or storage be upgraded?</h4><p>In most cases yes. This unit ships with 8GB RAM and a 256GB NVMe SSD; ddr4-2400, 2 sodimm slots, upgradable to 32gb. Ask us on WhatsApp before purchase and we can upgrade it for you.</p><h4>What warranty do I get?</h4><p>Every TechPlug GH laptop carries a 1 to 3 month warranty plus a 48-hour return window for verified faults. Payment is by MoMo, bank transfer, or pay on delivery within Accra, and we deliver nationwide.</p>",
-  "cats": [
-   "UK Used Laptops",
-   "Business Laptops",
-   "Dell Laptops",
-   "Student Laptops"
-  ],
-  "tags": [
-   "Dell",
-   "Core i5",
-   "10th Gen",
-   "UK used"
-  ],
-  "image": "products/tpg-de-3400-i5-x.jpg"
+  "attributes": {
+   "Brand": "Dell",
+   "Model": "Dell Latitude 3400",
+   "Processor": "Intel Core i5-8265U",
+   "RAM": "8GB DDR4 (upgradable)",
+   "Storage": "256GB NVMe SSD",
+   "Display": "14\" HD or FHD (1920x1080) anti-glare",
+   "Graphics": "Intel UHD Graphics 620",
+   "Operating System": "Windows 11 Pro",
+   "Condition": "UK Used, Tested and Graded"
+  }
  },
  {
   "sku": "TPG-DE-5501-I5-X",
   "name": "Dell Latitude 5501 - Core i5 9th Gen, 8GB, 256GB SSD",
-  "price": "2450",
-  "stock": 6,
-  "weight": "1.8",
-  "featured": false,
   "short": "Intel i5 11th Gen \u00b7 8GB RAM \u00b7 256GB SSD \u00b7 15.6\" FHD \u00b7 Win 11 Pro \u00b7 UK used, tested &amp; warranty-backed.",
   "desc": "<p>The Dell Latitude 5501 is a business-class laptop sourced from UK corporate fleets, where machines are maintained on strict IT schedules. Every unit sold by TechPlug GH in Accra is tested, graded and backed by our warranty, so you get enterprise build quality at a fraction of the new price, with delivery across Ghana.</p><h3>Dell Latitude 5501 key specifications</h3><table><tbody><tr><th>Processor</th><td>Intel Core i5-9400H, 9th Gen H-series, 4 cores / 8 threads, up to 4.3 GHz</td></tr><tr><th>Memory</th><td>8GB RAM as configured (DDR4-2666, 2 SODIMM slots, upgradable to 64GB)</td></tr><tr><th>Storage</th><td>256GB NVMe SSD as configured, upgrade options available on request</td></tr><tr><th>Display</th><td>15.6\" FHD (1920x1080) anti-glare (touch variants exist)</td></tr><tr><th>Graphics</th><td>Intel UHD Graphics 630 (optional NVIDIA MX150)</td></tr><tr><th>Ports</th><td>1x Thunderbolt 3 / USB-C, USB-A 3.1 ports with PowerShare, HDMI, RJ45, microSD</td></tr><tr><th>Wireless</th><td>Intel Wi-Fi 6 AX200 option, Bluetooth 5</td></tr><tr><th>Battery</th><td>up to 97Wh ExpressCharge (charges to about 80 percent in one hour)</td></tr><tr><th>Build and weight</th><td>around 1.9 kg, performance-class 15-inch chassis</td></tr><tr><th>Keyboard and extras</th><td>H-series desktop-class performance, backlit keyboard with number pad, Modern Standby</td></tr><tr><th>Operating system</th><td>Windows 11 Pro, activated</td></tr><tr><th>Condition</th><td>UK used, professionally tested and graded; minor cosmetic marks consistent with careful use</td></tr><tr><th>Warranty</th><td>1 to 3 months TechPlug GH warranty, 48-hour return window on verified faults</td></tr></tbody></table><h3>Who the Dell Latitude 5501 is for</h3><p>A dependable choice for office work, accounting, sales teams, students and everyday productivity, with the serviceability that makes Latitudes a corporate standard.</p><h3>Condition, warranty and delivery in Ghana</h3><p>UK used, tested and graded with a TechPlug GH warranty of 1 to 3 months and a 48-hour return window on verified faults. Same or next-day delivery in Accra and Tema, 2 to 4 working days nationwide, or pick up in Accra. Pay by MoMo, bank transfer, or on delivery within Accra.</p><h3>Frequently asked questions</h3><h4>Is this laptop brand new?</h4><p>No. It is UK used: an ex-corporate Dell Latitude 5501 that has been professionally tested and graded by TechPlug GH. UK-used laptops are popular in Ghana because corporate fleets are well maintained, giving you premium build quality at a much lower price.</p><h4>Can the RAM or storage be upgraded?</h4><p>In most cases yes. This unit ships with 8GB RAM and a 256GB NVMe SSD; ddr4-2666, 2 sodimm slots, upgradable to 64gb. Ask us on WhatsApp before purchase and we can upgrade it for you.</p><h4>What warranty do I get?</h4><p>Every TechPlug GH laptop carries a 1 to 3 month warranty plus a 48-hour return window for verified faults. Payment is by MoMo, bank transfer, or pay on delivery within Accra, and we deliver nationwide.</p>",
-  "cats": [
-   "UK Used Laptops",
-   "Business Laptops",
-   "Dell Laptops",
-   "Student Laptops"
-  ],
-  "tags": [
-   "Dell",
-   "Core i5",
-   "11th Gen",
-   "UK used"
-  ],
-  "image": "products/tpg-de-5501-i5-x.jpg"
+  "attributes": {
+   "Brand": "Dell",
+   "Model": "Dell Latitude 5501",
+   "Processor": "Intel Core i5-9400H",
+   "RAM": "8GB DDR4 (upgradable)",
+   "Storage": "256GB NVMe SSD",
+   "Display": "15.6\" FHD (1920x1080) anti-glare (touch variants exist)",
+   "Graphics": "Intel UHD Graphics 630 (optional NVIDIA MX150)",
+   "Operating System": "Windows 11 Pro",
+   "Condition": "UK Used, Tested and Graded"
+  }
  },
  {
   "sku": "TPG-DE-5320-I5-X",
   "name": "Dell Latitude 5320 - Core i5 11th Gen, 8GB, 256GB SSD",
-  "price": "2750",
-  "stock": 10,
-  "weight": "1.2",
-  "featured": true,
   "short": "Intel i5 11th Gen \u00b7 8GB RAM \u00b7 256GB SSD \u00b7 13.3\" FHD \u00b7 Win 11 Pro \u00b7 UK used, tested &amp; warranty-backed.",
   "desc": "<p>The Dell Latitude 5320 is a business-class laptop sourced from UK corporate fleets, where machines are maintained on strict IT schedules. Every unit sold by TechPlug GH in Accra is tested, graded and backed by our warranty, so you get enterprise build quality at a fraction of the new price, with delivery across Ghana.</p><h3>Dell Latitude 5320 key specifications</h3><table><tbody><tr><th>Processor</th><td>Intel Core i5-1135G7 / i5-1145G7 vPro, 11th Gen Tiger Lake, 4 cores / 8 threads, up to 4.4 GHz</td></tr><tr><th>Memory</th><td>8GB RAM as configured (LPDDR4x onboard (as configured))</td></tr><tr><th>Storage</th><td>256GB NVMe SSD as configured, upgrade options available on request</td></tr><tr><th>Display</th><td>13.3\" FHD (1920x1080) IPS anti-glare, 250 nits (touch and FHD+ options exist)</td></tr><tr><th>Graphics</th><td>Intel Iris Xe Graphics</td></tr><tr><th>Ports</th><td>2x Thunderbolt 4 / USB-C, 1x USB-A 3.2, HDMI 2.0, microSD, optional smart card</td></tr><tr><th>Wireless</th><td>Intel Wi-Fi 6 AX201, Bluetooth 5.1</td></tr><tr><th>Battery</th><td>41Wh or 63Wh, ExpressCharge</td></tr><tr><th>Build and weight</th><td>from 1.18 kg, ultraportable business design</td></tr><tr><th>Keyboard and extras</th><td>Camera shutter, backlit keyboard, Dell Optimizer, MIL-STD 810H tested</td></tr><tr><th>Operating system</th><td>Windows 11 Pro, activated</td></tr><tr><th>Condition</th><td>UK used, professionally tested and graded; minor cosmetic marks consistent with careful use</td></tr><tr><th>Warranty</th><td>1 to 3 months TechPlug GH warranty, 48-hour return window on verified faults</td></tr></tbody></table><h3>Who the Dell Latitude 5320 is for</h3><p>A dependable choice for office work, accounting, sales teams, students and everyday productivity, with the serviceability that makes Latitudes a corporate standard.</p><h3>Condition, warranty and delivery in Ghana</h3><p>UK used, tested and graded with a TechPlug GH warranty of 1 to 3 months and a 48-hour return window on verified faults. Same or next-day delivery in Accra and Tema, 2 to 4 working days nationwide, or pick up in Accra. Pay by MoMo, bank transfer, or on delivery within Accra.</p><h3>Frequently asked questions</h3><h4>Is this laptop brand new?</h4><p>No. It is UK used: an ex-corporate Dell Latitude 5320 that has been professionally tested and graded by TechPlug GH. UK-used laptops are popular in Ghana because corporate fleets are well maintained, giving you premium build quality at a much lower price.</p><h4>Can the RAM or storage be upgraded?</h4><p>In most cases yes. This unit ships with 8GB RAM and a 256GB NVMe SSD; lpddr4x onboard (as configured). Ask us on WhatsApp before purchase and we can upgrade it for you.</p><h4>What warranty do I get?</h4><p>Every TechPlug GH laptop carries a 1 to 3 month warranty plus a 48-hour return window for verified faults. Payment is by MoMo, bank transfer, or pay on delivery within Accra, and we deliver nationwide.</p>",
-  "cats": [
-   "UK Used Laptops",
-   "Business Laptops",
-   "Dell Laptops"
-  ],
-  "tags": [
-   "Dell",
-   "Core i5",
-   "11th Gen",
-   "UK used"
-  ],
-  "image": "products/tpg-de-5320-i5-x.jpg"
+  "attributes": {
+   "Brand": "Dell",
+   "Model": "Dell Latitude 5320",
+   "Processor": "Intel Core i5-1135G7 / i5-1145G7 vPro",
+   "RAM": "8GB DDR4 (upgradable)",
+   "Storage": "256GB NVMe SSD",
+   "Display": "13.3\" FHD (1920x1080) IPS anti-glare",
+   "Graphics": "Intel Iris Xe Graphics",
+   "Operating System": "Windows 11 Pro",
+   "Condition": "UK Used, Tested and Graded"
+  }
  },
  {
   "sku": "TPG-DE-7400-I7-X",
   "name": "Dell Latitude 7400 - Core i7 10th Gen, 8GB, 256GB SSD",
-  "price": "2950",
-  "stock": 3,
-  "weight": "1.4",
-  "featured": true,
   "short": "Intel i7 10th Gen \u00b7 8GB RAM \u00b7 256GB SSD \u00b7 14\" FHD \u00b7 Win 11 Pro \u00b7 UK used, tested &amp; warranty-backed.",
   "desc": "<p>The Dell Latitude 7400 is a premium business-class laptop sourced from UK corporate fleets, where machines are maintained on strict IT schedules. Every unit sold by TechPlug GH in Accra is tested, graded and backed by our warranty, so you get enterprise build quality at a fraction of the new price, with delivery across Ghana.</p><h3>Dell Latitude 7400 key specifications</h3><table><tbody><tr><th>Processor</th><td>Intel Core i7-8665U vPro, 8th Gen, up to 4.8 GHz</td></tr><tr><th>Memory</th><td>8GB RAM as configured (LPDDR3 onboard (as configured))</td></tr><tr><th>Storage</th><td>256GB NVMe SSD as configured, upgrade options available on request</td></tr><tr><th>Display</th><td>14\" FHD (1920x1080) anti-glare, slim-bezel premium panel</td></tr><tr><th>Graphics</th><td>Intel UHD Graphics 620</td></tr><tr><th>Ports</th><td>2x Thunderbolt 3 / USB-C, 2x USB-A 3.1, HDMI 1.4, microSD, optional smart card</td></tr><tr><th>Wireless</th><td>Intel Wireless-AC 9560, Bluetooth 5</td></tr><tr><th>Battery</th><td>up to 78Wh, exceptional battery life</td></tr><tr><th>Build and weight</th><td>from 1.36 kg, machined aluminium or carbon fibre executive build</td></tr><tr><th>Keyboard and extras</th><td>Dell premium 7000-series flagship, ExpressSign-in proximity sensor option, superb keyboard</td></tr><tr><th>Operating system</th><td>Windows 11 Pro, activated</td></tr><tr><th>Condition</th><td>UK used, professionally tested and graded; minor cosmetic marks consistent with careful use</td></tr><tr><th>Warranty</th><td>1 to 3 months TechPlug GH warranty, 48-hour return window on verified faults</td></tr></tbody></table><h3>Who the Dell Latitude 7400 is for</h3><p>A dependable choice for office work, accounting, sales teams, students and everyday productivity, with the serviceability that makes Latitudes a corporate standard.</p><h3>Condition, warranty and delivery in Ghana</h3><p>UK used, tested and graded with a TechPlug GH warranty of 1 to 3 months and a 48-hour return window on verified faults. Same or next-day delivery in Accra and Tema, 2 to 4 working days nationwide, or pick up in Accra. Pay by MoMo, bank transfer, or on delivery within Accra.</p><h3>Frequently asked questions</h3><h4>Is this laptop brand new?</h4><p>No. It is UK used: an ex-corporate Dell Latitude 7400 that has been professionally tested and graded by TechPlug GH. UK-used laptops are popular in Ghana because corporate fleets are well maintained, giving you premium build quality at a much lower price.</p><h4>Can the RAM or storage be upgraded?</h4><p>In most cases yes. This unit ships with 8GB RAM and a 256GB NVMe SSD; lpddr3 onboard (as configured). Ask us on WhatsApp before purchase and we can upgrade it for you.</p><h4>What warranty do I get?</h4><p>Every TechPlug GH laptop carries a 1 to 3 month warranty plus a 48-hour return window for verified faults. Payment is by MoMo, bank transfer, or pay on delivery within Accra, and we deliver nationwide.</p>",
-  "cats": [
-   "UK Used Laptops",
-   "Business Laptops",
-   "Dell Laptops"
-  ],
-  "tags": [
-   "Dell",
-   "Core i7",
-   "10th Gen",
-   "UK used"
-  ],
-  "image": "products/tpg-de-7400-i7-x.jpg"
+  "attributes": {
+   "Brand": "Dell",
+   "Model": "Dell Latitude 7400",
+   "Processor": "Intel Core i7-8665U vPro",
+   "RAM": "8GB DDR4 (upgradable)",
+   "Storage": "256GB NVMe SSD",
+   "Display": "14\" FHD (1920x1080) anti-glare",
+   "Graphics": "Intel UHD Graphics 620",
+   "Operating System": "Windows 11 Pro",
+   "Condition": "UK Used, Tested and Graded"
+  }
  },
  {
   "sku": "TPG-DE-5421-I7-X",
   "name": "Dell Latitude 5421 - Core i7 11th Gen, 8GB, 256GB SSD",
-  "price": "2950",
-  "stock": 1,
-  "weight": "1.4",
-  "featured": false,
   "short": "Intel i7 11th Gen \u00b7 8GB RAM \u00b7 256GB SSD \u00b7 14\" FHD \u00b7 Win 11 Pro \u00b7 UK used, tested &amp; warranty-backed.",
   "desc": "<p>The Dell Latitude 5421 is a business-class laptop sourced from UK corporate fleets, where machines are maintained on strict IT schedules. Every unit sold by TechPlug GH in Accra is tested, graded and backed by our warranty, so you get enterprise build quality at a fraction of the new price, with delivery across Ghana.</p><h3>Dell Latitude 5421 key specifications</h3><table><tbody><tr><th>Processor</th><td>Intel Core i7-11850H, 11th Gen H-series, 8 cores / 16 threads, up to 4.8 GHz</td></tr><tr><th>Memory</th><td>8GB RAM as configured (DDR4-3200, 2 SODIMM slots, upgradable to 64GB)</td></tr><tr><th>Storage</th><td>256GB NVMe SSD as configured, upgrade options available on request</td></tr><tr><th>Display</th><td>14\" FHD (1920x1080) IPS anti-glare</td></tr><tr><th>Graphics</th><td>Intel Iris Xe Graphics (optional NVIDIA MX450)</td></tr><tr><th>Ports</th><td>2x Thunderbolt 4 / USB-C, 2x USB-A 3.2, HDMI 2.0, microSD</td></tr><tr><th>Wireless</th><td>Intel Wi-Fi 6, Bluetooth 5.1</td></tr><tr><th>Battery</th><td>up to 63Wh ExpressCharge</td></tr><tr><th>Build and weight</th><td>from 1.39 kg</td></tr><tr><th>Keyboard and extras</th><td>H-series performance CPU in a 14-inch business chassis, backlit keyboard, privacy shutter</td></tr><tr><th>Operating system</th><td>Windows 11 Pro, activated</td></tr><tr><th>Condition</th><td>UK used, professionally tested and graded; minor cosmetic marks consistent with careful use</td></tr><tr><th>Warranty</th><td>1 to 3 months TechPlug GH warranty, 48-hour return window on verified faults</td></tr></tbody></table><h3>Who the Dell Latitude 5421 is for</h3><p>A dependable choice for office work, accounting, sales teams, students and everyday productivity, with the serviceability that makes Latitudes a corporate standard.</p><h3>Condition, warranty and delivery in Ghana</h3><p>UK used, tested and graded with a TechPlug GH warranty of 1 to 3 months and a 48-hour return window on verified faults. Same or next-day delivery in Accra and Tema, 2 to 4 working days nationwide, or pick up in Accra. Pay by MoMo, bank transfer, or on delivery within Accra.</p><h3>Frequently asked questions</h3><h4>Is this laptop brand new?</h4><p>No. It is UK used: an ex-corporate Dell Latitude 5421 that has been professionally tested and graded by TechPlug GH. UK-used laptops are popular in Ghana because corporate fleets are well maintained, giving you premium build quality at a much lower price.</p><h4>Can the RAM or storage be upgraded?</h4><p>In most cases yes. This unit ships with 8GB RAM and a 256GB NVMe SSD; ddr4-3200, 2 sodimm slots, upgradable to 64gb. Ask us on WhatsApp before purchase and we can upgrade it for you.</p><h4>What warranty do I get?</h4><p>Every TechPlug GH laptop carries a 1 to 3 month warranty plus a 48-hour return window for verified faults. Payment is by MoMo, bank transfer, or pay on delivery within Accra, and we deliver nationwide.</p>",
-  "cats": [
-   "UK Used Laptops",
-   "Business Laptops",
-   "Dell Laptops"
-  ],
-  "tags": [
-   "Dell",
-   "Core i7",
-   "11th Gen",
-   "UK used"
-  ],
-  "image": "products/tpg-de-5421-i7-x.jpg"
+  "attributes": {
+   "Brand": "Dell",
+   "Model": "Dell Latitude 5421",
+   "Processor": "Intel Core i7-11850H",
+   "RAM": "8GB DDR4 (upgradable)",
+   "Storage": "256GB NVMe SSD",
+   "Display": "14\" FHD (1920x1080) IPS anti-glare",
+   "Graphics": "Intel Iris Xe Graphics (optional NVIDIA MX450)",
+   "Operating System": "Windows 11 Pro",
+   "Condition": "UK Used, Tested and Graded"
+  }
  },
  {
   "sku": "TPG-DE-3300-I5-X",
   "name": "Dell Latitude 3300 - Core i5 10th Gen, 8GB, 256GB SSD",
-  "price": "1650",
-  "stock": 1,
-  "weight": "1.2",
-  "featured": false,
   "short": "Intel i5 10th Gen \u00b7 8GB RAM \u00b7 256GB SSD \u00b7 13.3\" FHD \u00b7 Win 11 Pro \u00b7 UK used, tested &amp; warranty-backed.",
   "desc": "<p>The Dell Latitude 3300 is a business-class laptop sourced from UK corporate fleets, where machines are maintained on strict IT schedules. Every unit sold by TechPlug GH in Accra is tested, graded and backed by our warranty, so you get enterprise build quality at a fraction of the new price, with delivery across Ghana.</p><h3>Dell Latitude 3300 key specifications</h3><table><tbody><tr><th>Processor</th><td>Intel Core i5-8265U, 8th Gen Whiskey Lake, 4 cores / 8 threads, up to 3.9 GHz</td></tr><tr><th>Memory</th><td>8GB RAM as configured (DDR4-2400, as configured)</td></tr><tr><th>Storage</th><td>256GB NVMe SSD as configured, upgrade options available on request</td></tr><tr><th>Display</th><td>13.3\" HD or FHD anti-glare</td></tr><tr><th>Graphics</th><td>Intel UHD Graphics 620</td></tr><tr><th>Ports</th><td>USB-C with DisplayPort, 2x USB-A 3.1, HDMI 1.4, headphone/mic</td></tr><tr><th>Wireless</th><td>Intel Wireless-AC, Bluetooth 5</td></tr><tr><th>Battery</th><td>42Wh</td></tr><tr><th>Build and weight</th><td>around 1.36 kg, compact and budget friendly</td></tr><tr><th>Keyboard and extras</th><td>Simple, durable small-business design</td></tr><tr><th>Operating system</th><td>Windows 11 Pro, activated</td></tr><tr><th>Condition</th><td>UK used, professionally tested and graded; minor cosmetic marks consistent with careful use</td></tr><tr><th>Warranty</th><td>1 to 3 months TechPlug GH warranty, 48-hour return window on verified faults</td></tr></tbody></table><h3>Who the Dell Latitude 3300 is for</h3><p>A dependable choice for office work, accounting, sales teams, students and everyday productivity, with the serviceability that makes Latitudes a corporate standard.</p><h3>Condition, warranty and delivery in Ghana</h3><p>UK used, tested and graded with a TechPlug GH warranty of 1 to 3 months and a 48-hour return window on verified faults. Same or next-day delivery in Accra and Tema, 2 to 4 working days nationwide, or pick up in Accra. Pay by MoMo, bank transfer, or on delivery within Accra.</p><h3>Frequently asked questions</h3><h4>Is this laptop brand new?</h4><p>No. It is UK used: an ex-corporate Dell Latitude 3300 that has been professionally tested and graded by TechPlug GH. UK-used laptops are popular in Ghana because corporate fleets are well maintained, giving you premium build quality at a much lower price.</p><h4>Can the RAM or storage be upgraded?</h4><p>In most cases yes. This unit ships with 8GB RAM and a 256GB NVMe SSD; ddr4-2400, as configured. Ask us on WhatsApp before purchase and we can upgrade it for you.</p><h4>What warranty do I get?</h4><p>Every TechPlug GH laptop carries a 1 to 3 month warranty plus a 48-hour return window for verified faults. Payment is by MoMo, bank transfer, or pay on delivery within Accra, and we deliver nationwide.</p>",
-  "cats": [
-   "UK Used Laptops",
-   "Business Laptops",
-   "Dell Laptops",
-   "Student Laptops"
-  ],
-  "tags": [
-   "Dell",
-   "Core i5",
-   "10th Gen",
-   "UK used"
-  ],
-  "image": "products/tpg-de-3300-i5-x.jpg"
+  "attributes": {
+   "Brand": "Dell",
+   "Model": "Dell Latitude 3300",
+   "Processor": "Intel Core i5-8265U",
+   "RAM": "8GB DDR4 (upgradable)",
+   "Storage": "256GB NVMe SSD",
+   "Display": "13.3\" HD or FHD anti-glare",
+   "Graphics": "Intel UHD Graphics 620",
+   "Operating System": "Windows 11 Pro",
+   "Condition": "UK Used, Tested and Graded"
+  }
  },
  {
   "sku": "TPG-DE-3420-I5-X",
   "name": "Dell Latitude 3420 - Core i5 11th Gen, 8GB, 256GB SSD",
-  "price": "2750",
-  "stock": 1,
-  "weight": "1.4",
-  "featured": false,
   "short": "Intel i5 10th Gen \u00b7 8GB RAM \u00b7 256GB SSD \u00b7 14\" FHD \u00b7 Win 11 Pro \u00b7 UK used, tested &amp; warranty-backed.",
   "desc": "<p>The Dell Latitude 3420 is a business-class laptop sourced from UK corporate fleets, where machines are maintained on strict IT schedules. Every unit sold by TechPlug GH in Accra is tested, graded and backed by our warranty, so you get enterprise build quality at a fraction of the new price, with delivery across Ghana.</p><h3>Dell Latitude 3420 key specifications</h3><table><tbody><tr><th>Processor</th><td>Intel Core i5-1135G7, 11th Gen Tiger Lake, 4 cores / 8 threads, up to 4.2 GHz</td></tr><tr><th>Memory</th><td>8GB RAM as configured (DDR4-3200, 2 SODIMM slots, upgradable to 64GB)</td></tr><tr><th>Storage</th><td>256GB NVMe SSD as configured, upgrade options available on request</td></tr><tr><th>Display</th><td>14\" HD or FHD (1920x1080) anti-glare</td></tr><tr><th>Graphics</th><td>Intel Iris Xe Graphics</td></tr><tr><th>Ports</th><td>1x Thunderbolt 4 / USB-C (on Core i5/i7), 2x USB-A 3.2, HDMI 1.4, RJ45, microSD</td></tr><tr><th>Wireless</th><td>Wi-Fi 6, Bluetooth 5.1</td></tr><tr><th>Battery</th><td>41Wh or 54Wh ExpressCharge</td></tr><tr><th>Build and weight</th><td>from 1.52 kg</td></tr><tr><th>Keyboard and extras</th><td>Modern 11th Gen platform at a value price point</td></tr><tr><th>Operating system</th><td>Windows 11 Pro, activated</td></tr><tr><th>Condition</th><td>UK used, professionally tested and graded; minor cosmetic marks consistent with careful use</td></tr><tr><th>Warranty</th><td>1 to 3 months TechPlug GH warranty, 48-hour return window on verified faults</td></tr></tbody></table><h3>Who the Dell Latitude 3420 is for</h3><p>A dependable choice for office work, accounting, sales teams, students and everyday productivity, with the serviceability that makes Latitudes a corporate standard.</p><h3>Condition, warranty and delivery in Ghana</h3><p>UK used, tested and graded with a TechPlug GH warranty of 1 to 3 months and a 48-hour return window on verified faults. Same or next-day delivery in Accra and Tema, 2 to 4 working days nationwide, or pick up in Accra. Pay by MoMo, bank transfer, or on delivery within Accra.</p><h3>Frequently asked questions</h3><h4>Is this laptop brand new?</h4><p>No. It is UK used: an ex-corporate Dell Latitude 3420 that has been professionally tested and graded by TechPlug GH. UK-used laptops are popular in Ghana because corporate fleets are well maintained, giving you premium build quality at a much lower price.</p><h4>Can the RAM or storage be upgraded?</h4><p>In most cases yes. This unit ships with 8GB RAM and a 256GB NVMe SSD; ddr4-3200, 2 sodimm slots, upgradable to 64gb. Ask us on WhatsApp before purchase and we can upgrade it for you.</p><h4>What warranty do I get?</h4><p>Every TechPlug GH laptop carries a 1 to 3 month warranty plus a 48-hour return window for verified faults. Payment is by MoMo, bank transfer, or pay on delivery within Accra, and we deliver nationwide.</p>",
-  "cats": [
-   "UK Used Laptops",
-   "Business Laptops",
-   "Dell Laptops"
-  ],
-  "tags": [
-   "Dell",
-   "Core i5",
-   "10th Gen",
-   "UK used"
-  ],
-  "image": "products/tpg-de-3420-i5-x.jpg"
+  "attributes": {
+   "Brand": "Dell",
+   "Model": "Dell Latitude 3420",
+   "Processor": "Intel Core i5-1135G7",
+   "RAM": "8GB DDR4 (upgradable)",
+   "Storage": "256GB NVMe SSD",
+   "Display": "14\" HD or FHD (1920x1080) anti-glare",
+   "Graphics": "Intel Iris Xe Graphics",
+   "Operating System": "Windows 11 Pro",
+   "Condition": "UK Used, Tested and Graded"
+  }
  }
 ]
