@@ -4,8 +4,6 @@
  * @package TechPlugGH
  */
 if ( ! defined( 'ABSPATH' ) ) { exit; }
-$cart_count = ( function_exists( 'WC' ) && WC()->cart ) ? WC()->cart->get_cart_contents_count() : 0;
-$cart_url   = function_exists( 'wc_get_cart_url' ) ? wc_get_cart_url() : home_url( '/cart' );
 $shop_url   = function_exists( 'wc_get_page_permalink' ) ? wc_get_page_permalink( 'shop' ) : home_url( '/shop' );
 ?>
 <!DOCTYPE html>
