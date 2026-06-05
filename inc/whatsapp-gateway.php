@@ -145,3 +145,111 @@ add_filter( 'woocommerce_payment_gateways', function ( $methods ) {
 	$methods[] = 'TPG_Gateway_WhatsApp';
 	return $methods;
 } );
+
+/* =========================================================
+   Buy on WhatsApp: direct purchase flow.
+   Creates a pending WooCommerce order (for tracking, reporting
+   and printing), then redirects the buyer straight to WhatsApp
+   with the device details and the order reference.
+   ========================================================= */
+
+/** Endpoint URL for a product's Buy on WhatsApp button. */
+function tpg_wa_buy_url( $product_id ) {
+	return add_query_arg( 'tpg_wa_buy', (int) $product_id, home_url( '/' ) );
+}
+
+add_action( 'template_redirect', 'tpg_wa_buy_redirect' );
+function tpg_wa_buy_redirect() {
+	if ( empty( $_GET['tpg_wa_buy'] ) ) { return; }
+	$pid     = absint( $_GET['tpg_wa_buy'] );
+	$product = wc_get_product( $pid );
+	$number  = function_exists( 'tpg_wa_number' ) ? tpg_wa_number() : '';
+	if ( ! $product || '' === $number ) {
+		wp_safe_redirect( home_url( '/' ) );
+		exit;
+	}
+
+	/* One tracked order per product per visitor per hour, light IP rate limit. */
+	$order  = null;
+	$cookie = 'tpg_wa_order_' . $pid;
+	if ( ! empty( $_COOKIE[ $cookie ] ) ) {
+		$existing = wc_get_order( absint( $_COOKIE[ $cookie ] ) );
+		if ( $existing && 'pending' === $existing->get_status() ) { $order = $existing; }
+	}
+	if ( ! $order ) {
+		$ip  = isset( $_SERVER['REMOTE_ADDR'] ) ? sanitize_text_field( wp_unslash( $_SERVER['REMOTE_ADDR'] ) ) : '';
+		$key = 'tpg_wa_rl_' . md5( $ip );
+		if ( ! get_transient( $key ) ) {
+			set_transient( $key, 1, MINUTE_IN_SECONDS );
+			$maybe = wc_create_order( array( 'status' => 'pending', 'created_via' => 'whatsapp_button' ) );
+			if ( ! is_wp_error( $maybe ) ) {
+				$maybe->add_product( $product, 1 );
+				$maybe->calculate_totals();
+				$maybe->add_order_note( __( 'Created from a Buy on WhatsApp click. Confirm details with the customer in chat, then update the order status.', 'techpluggh' ) );
+				$maybe->save();
+				$order = $maybe;
+				setcookie( $cookie, (string) $order->get_id(), time() + HOUR_IN_SECONDS, COOKIEPATH ? COOKIEPATH : '/', COOKIE_DOMAIN );
+			}
+		}
+	}
+
+	$price = html_entity_decode( wp_strip_all_tags( wc_price( $product->get_price() ) ), ENT_QUOTES, 'UTF-8' );
+	$spec  = trim( wp_strip_all_tags( $product->get_short_description() ) );
+
+	$lines   = array();
+	$lines[] = 'Hello TechPlug GH, I want to buy this laptop:';
+	$lines[] = '';
+	$lines[] = $product->get_name();
+	if ( $spec ) { $lines[] = $spec; }
+	$lines[] = 'Price: ' . $price;
+	if ( $product->get_sku() ) { $lines[] = 'SKU: ' . $product->get_sku(); }
+	$lines[] = get_permalink( $pid );
+	if ( $order ) {
+		$lines[] = '';
+		$lines[] = 'Order ref: #' . $order->get_order_number();
+	}
+
+	wp_redirect( 'https://wa.me/' . $number . '?text=' . rawurlencode( implode( "\n", $lines ) ) );
+	exit;
+}
+
+/* =========================================================
+   Checkout Blocks support for the Order via WhatsApp gateway
+   (the block checkout hides classic gateways otherwise).
+   ========================================================= */
+add_action( 'woocommerce_blocks_loaded', function () {
+	if ( ! class_exists( 'Automattic\WooCommerce\Blocks\Payments\Integrations\AbstractPaymentMethodType' ) ) { return; }
+
+	class TPG_Gateway_WhatsApp_Blocks extends Automattic\WooCommerce\Blocks\Payments\Integrations\AbstractPaymentMethodType {
+		protected $name = 'tpg_whatsapp';
+		public function initialize() {
+			$this->settings = get_option( 'woocommerce_tpg_whatsapp_settings', array() );
+		}
+		public function is_active() {
+			$gateways = WC()->payment_gateways ? WC()->payment_gateways->payment_gateways() : array();
+			return isset( $gateways['tpg_whatsapp'] ) && $gateways['tpg_whatsapp']->is_available();
+		}
+		public function get_payment_method_script_handles() {
+			wp_register_script(
+				'tpg-whatsapp-blocks',
+				TPG_URI . '/assets/js/whatsapp-checkout-block.js',
+				array( 'wc-blocks-registry', 'wc-settings', 'wp-element', 'wp-html-entities' ),
+				TPG_VERSION,
+				true
+			);
+			return array( 'tpg-whatsapp-blocks' );
+		}
+		public function get_payment_method_data() {
+			$gateways = WC()->payment_gateways ? WC()->payment_gateways->payment_gateways() : array();
+			$g        = isset( $gateways['tpg_whatsapp'] ) ? $gateways['tpg_whatsapp'] : null;
+			return array(
+				'title'       => $g ? $g->get_option( 'title' ) : __( 'Order via WhatsApp', 'techpluggh' ),
+				'description' => $g ? $g->get_option( 'description' ) : '',
+			);
+		}
+	}
+
+	add_action( 'woocommerce_blocks_payment_method_type_registration', function ( $registry ) {
+		$registry->register( new TPG_Gateway_WhatsApp_Blocks() );
+	} );
+} );

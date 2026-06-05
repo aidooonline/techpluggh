@@ -63,6 +63,9 @@ $spec = trim( wp_strip_all_tags( $product->get_short_description() ) );
 					?>
 				</div>
 				<a href="<?php the_permalink(); ?>" class="btn-ghost w-full text-xs !py-2.5"><?php esc_html_e( 'View details', 'techpluggh' ); ?></a>
+				<?php if ( function_exists( 'tpg_wa_number' ) && '' !== tpg_wa_number() && function_exists( 'tpg_wa_buy_url' ) && $product->is_in_stock() ) : ?>
+					<a href="<?php echo esc_url( tpg_wa_buy_url( $product->get_id() ) ); ?>" class="btn-wa w-full text-xs !py-2.5"><?php esc_html_e( 'Buy on WhatsApp', 'techpluggh' ); ?></a>
+				<?php endif; ?>
 			</div>
 		</div>
 	</div>

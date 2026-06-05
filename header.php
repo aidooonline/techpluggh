@@ -54,10 +54,6 @@ $shop_url   = function_exists( 'wc_get_page_permalink' ) ? wc_get_page_permalink
 			<button id="tpg-search-toggle" class="text-tpg-paper/80 hover:text-tpg-green p-2" aria-label="<?php esc_attr_e( 'Search', 'techpluggh' ); ?>">
 				<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3" stroke-linecap="round"/></svg>
 			</button>
-			<a href="<?php echo esc_url( $cart_url ); ?>" class="relative text-tpg-paper/80 hover:text-tpg-green p-2" aria-label="<?php esc_attr_e( 'Cart', 'techpluggh' ); ?>">
-				<svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6h15l-1.5 9h-12z" stroke-linejoin="round"/><circle cx="9" cy="20" r="1.4"/><circle cx="18" cy="20" r="1.4"/><path d="M6 6L5 3H2" stroke-linecap="round"/></svg>
-				<span class="tpg-cart-bubble absolute -top-0.5 -right-0.5 min-w-[18px] h-[18px] px-1 rounded-full bg-tpg-green text-tpg-black text-[10px] font-bold grid place-items-center<?php echo $cart_count ? '' : ' opacity-0'; ?>"><span class="tpg-cart-count" data-count="<?php echo esc_attr( $cart_count ); ?>"><?php echo esc_html( $cart_count ); ?></span></span>
-			</a>
 			<a href="<?php echo esc_url( $shop_url ); ?>" class="hidden sm:inline-flex btn-primary text-xs px-5 py-2.5"><?php esc_html_e( 'Shop laptops', 'techpluggh' ); ?></a>
 		</div>
 	</div>

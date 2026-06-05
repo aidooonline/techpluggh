@@ -54,25 +54,25 @@ add_filter( 'woocommerce_add_to_cart_fragments', function ( $fragments ) {
 } );
 
 /**
- * WhatsApp "Order on WhatsApp" button on single product (only if number set).
+ * WhatsApp-first purchase flow on the single product page.
+ * Replaces the add-to-cart form with stock info and a direct
+ * Buy on WhatsApp button (creates a tracked pending order,
+ * then redirects to WhatsApp with the device details).
  */
-add_action( 'woocommerce_after_add_to_cart_button', function () {
+remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30 );
+add_action( 'woocommerce_single_product_summary', function () {
 	global $product;
-	if ( ! tpg_wa_number() || ! $product ) {
-		return;
-	}
-	$msg = sprintf(
-		/* translators: 1: product name 2: url */
-		__( "Hi TechPlug GH, I'm interested in: %1\$s - %2\$s", 'techpluggh' ),
-		wp_strip_all_tags( $product->get_name() ),
-		get_permalink( $product->get_id() )
-	);
+	if ( ! $product ) { return; }
+	echo wp_kses_post( wc_get_stock_html( $product ) );
+	if ( ! function_exists( 'tpg_wa_number' ) || '' === tpg_wa_number() || ! function_exists( 'tpg_wa_buy_url' ) ) { return; }
+	if ( ! $product->is_in_stock() ) { return; }
 	printf(
-		'<a href="%s" target="_blank" rel="noopener" class="btn-wa w-full mt-3"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.045z"/></svg>%s</a>',
-		tpg_wa_link( $msg ),
-		esc_html__( 'Order on WhatsApp', 'techpluggh' )
+		'<a href="%s" class="btn-wa w-full mt-6 !text-base !py-4"><svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.946C.16 5.335 5.495 0 12.05 0a11.82 11.82 0 018.413 3.488 11.82 11.82 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.86 9.86 0 001.51 5.26l-.999 3.648 3.978-1.045z"/></svg>%s</a>',
+		esc_url( tpg_wa_buy_url( $product->get_id() ) ),
+		esc_html__( 'Buy on WhatsApp', 'techpluggh' )
 	);
-}, 15 );
+	echo '<p class="text-sm text-tpg-muted mt-3">' . esc_html__( 'Tap to send this laptop to us on WhatsApp. Pay by MoMo, bank transfer, or on delivery within Accra.', 'techpluggh' ) . '</p>';
+}, 30 );
 
 /** Move sale flash & rating styling handled in CSS; reposition not required. */
 

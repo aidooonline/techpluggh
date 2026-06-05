@@ -12,10 +12,21 @@ function tpg_opt( $key, $default = '' ) {
 	return get_theme_mod( $key, $default );
 }
 
-/** Sanitised, digits-only WhatsApp number. */
+/**
+ * Sanitised, digits-only WhatsApp number.
+ * Sources: Customizer field first, then the WhatsApp gateway setting.
+ * Accepts a raw number or a wa.me / WhatsApp profile link.
+ */
 function tpg_wa_number() {
-	$raw = preg_replace( '/\D+/', '', (string) tpg_opt( 'tpg_whatsapp' ) );
-	return $raw;
+	$raw = trim( (string) tpg_opt( 'tpg_whatsapp' ) );
+	if ( '' === $raw ) {
+		$gw  = get_option( 'woocommerce_tpg_whatsapp_settings', array() );
+		$raw = isset( $gw['whatsapp'] ) ? trim( (string) $gw['whatsapp'] ) : '';
+	}
+	if ( preg_match( '~(?:wa\.me/|api\.whatsapp\.com/send[^ ]*phone=)\+?(\d+)~i', $raw, $m ) ) {
+		return $m[1];
+	}
+	return preg_replace( '/\D+/', '', $raw );
 }
 
 /** Build a wa.me link with an optional prefilled message. */
