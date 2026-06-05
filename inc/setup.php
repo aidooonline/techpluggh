@@ -288,8 +288,7 @@ function tpg_fetch_images() {
 			continue;
 		}
 		$model = tpg_image_model( $name );
-		$att   = tpg_fetch_commons_image( $model );
-		if ( ! $att ) { $att = tpg_fetch_openverse_image( $model ); }
+		$att   = tpg_fetch_model_image( $model );
 		if ( $att ) {
 			$old = (int) $product->get_image_id();
 			if ( $old ) {
@@ -482,6 +481,76 @@ function tpg_fetch_commons_image( $query ) {
 		wp_update_post( array( 'ID' => $att, 'post_excerpt' => $credit, 'post_content' => $credit ) );
 		update_post_meta( $att, '_tpg_image_source', esc_url_raw( (string) ( $info['descriptionurl'] ?? '' ) ) );
 		return (int) $att;
+	}
+	return 0;
+}
+
+/**
+ * Same-chassis aliases: models that share an identical body, so a photo of
+ * one honestly represents the other. Tried only when the exact model fails.
+ */
+function tpg_image_aliases( $model ) {
+	$map = array(
+		'HP EliteBook 840 G8' => array( 'HP EliteBook 840 G7' ),
+		'HP EliteBook 840 G7' => array( 'HP EliteBook 840 G8' ),
+		'HP EliteBook 830 G8' => array( 'HP EliteBook 830 G7', 'HP EliteBook 840 G8' ),
+		'HP EliteBook 830 G7' => array( 'HP EliteBook 830 G8', 'HP EliteBook 840 G7' ),
+		'Dell Latitude 5320'  => array( 'Dell Latitude 5420', 'Dell Latitude 5520' ),
+		'Dell Latitude 5420'  => array( 'Dell Latitude 5520', 'Dell Latitude 5320' ),
+		'Dell Latitude 5520'  => array( 'Dell Latitude 5420', 'Dell Latitude 5320' ),
+		'Dell Latitude 5421'  => array( 'Dell Latitude 5420', 'Dell Latitude 5520' ),
+		'Dell Latitude 5300'  => array( 'Dell Latitude 5400', 'Dell Latitude 5500' ),
+		'Dell Latitude 5400'  => array( 'Dell Latitude 5500', 'Dell Latitude 5300' ),
+		'Dell Latitude 5500'  => array( 'Dell Latitude 5400', 'Dell Latitude 5501' ),
+		'Dell Latitude 5501'  => array( 'Dell Latitude 5500' ),
+		'Dell Latitude 3300'  => array( 'Dell Latitude 3310', 'Dell Latitude 3400' ),
+		'Dell Latitude 3310'  => array( 'Dell Latitude 3300', 'Dell Latitude 3400' ),
+		'Dell Latitude 3400'  => array( 'Dell Latitude 3310' ),
+		'Dell Latitude 3420'  => array( 'Dell Latitude 3400' ),
+		'Dell Latitude 7420'  => array( 'Dell Latitude 7400' ),
+		'Dell Latitude 7400'  => array( 'Dell Latitude 7420' ),
+		'Dell Latitude 7490'  => array( 'Dell Latitude 7480' ),
+		'Lenovo ThinkPad L14' => array( 'Lenovo ThinkPad T14', 'Lenovo ThinkPad L15' ),
+		'Lenovo ThinkPad T14' => array( 'Lenovo ThinkPad T490', 'Lenovo ThinkPad L14' ),
+	);
+	$base = trim( str_replace( ' laptop', '', $model ) );
+	return isset( $map[ $base ] ) ? $map[ $base ] : array();
+}
+
+/** Find an attachment previously fetched for a query (avoids re-downloading). */
+function tpg_existing_query_image( $query ) {
+	$found = get_posts( array(
+		'post_type'   => 'attachment',
+		'numberposts' => 1,
+		'fields'      => 'ids',
+		'meta_key'    => '_tpg_setup_query',
+		'meta_value'  => $query,
+	) );
+	return $found ? (int) $found[0] : 0;
+}
+
+/**
+ * Resolve a model image: exact model first (Commons, then Openverse),
+ * then same-chassis aliases, reusing prior downloads where possible.
+ */
+function tpg_fetch_model_image( $model ) {
+	$try = array_merge( array( $model ), array_map( function ( $a ) { return $a . ' laptop'; }, tpg_image_aliases( $model ) ) );
+	foreach ( $try as $i => $query ) {
+		$alias = $i > 0;
+		$att   = tpg_existing_query_image( $query );
+		if ( ! $att ) { $att = tpg_fetch_commons_image( $query ); }
+		if ( ! $att ) { $att = tpg_fetch_openverse_image( $query ); }
+		if ( $att ) {
+			update_post_meta( $att, '_tpg_setup_query', $query );
+			if ( $alias ) {
+				$post = get_post( $att );
+				$note = ' Representative image of the same chassis family.';
+				if ( $post && false === strpos( (string) $post->post_excerpt, 'Representative image' ) ) {
+					wp_update_post( array( 'ID' => $att, 'post_excerpt' => $post->post_excerpt . $note ) );
+				}
+			}
+			return (int) $att;
+		}
 	}
 	return 0;
 }
