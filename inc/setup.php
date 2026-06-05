@@ -42,6 +42,16 @@ function tpg_setup_page() {
 				<?php wp_nonce_field( 'tpg_run_setup' ); ?>
 				<p><button type="submit" class="button button-primary button-hero">Run Full Setup</button></p>
 			</form>
+			<hr>
+			<h2>Product photos from the web</h2>
+			<p>Searches openly licensed photos (CC0 / CC-BY via Openverse) for each laptop model, uploads the best match into the Media Library with attribution, and sets it as the product image. The branded card moves into the product gallery. Runs in batches of 8; click again until all products are processed. Models without a suitable openly licensed photo keep their branded card. You can replace any image per product afterwards.</p>
+			<?php $off = (int) get_option( 'tpg_img_offset', 0 ); $tot = class_exists( 'WooCommerce' ) ? (int) ( wp_count_posts( 'product' )->publish ?? 0 ) : 0; ?>
+			<p><em>Progress: <?php echo esc_html( $off ); ?> of <?php echo esc_html( $tot ); ?> products scanned this pass.</em></p>
+			<form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>">
+				<input type="hidden" name="action" value="tpg_fetch_images">
+				<?php wp_nonce_field( 'tpg_fetch_images' ); ?>
+				<p><button type="submit" class="button button-secondary button-hero">Fetch web images (next batch)</button></p>
+			</form>
 		<?php endif; ?>
 	</div>
 	<?php
@@ -232,4 +242,142 @@ function tpg_setup_attach_image( $rel, $title ) {
 	}
 	update_post_meta( $id, '_tpg_setup_image', $rel );
 	return (int) $id;
+}
+
+/* =========================================================
+   Web product images (Openverse, CC0/CC-BY only)
+   Fetched server-side into the Media Library with attribution,
+   set as featured image; the branded card moves to the gallery.
+   ========================================================= */
+
+add_action( 'admin_post_tpg_fetch_images', 'tpg_fetch_images' );
+function tpg_fetch_images() {
+	if ( ! current_user_can( 'manage_options' ) ) { wp_die( 'Insufficient permissions.' ); }
+	check_admin_referer( 'tpg_fetch_images' );
+	if ( ! class_exists( 'WooCommerce' ) ) { wp_die( 'WooCommerce must be active.' ); }
+
+	@set_time_limit( 300 );
+	require_once ABSPATH . 'wp-admin/includes/file.php';
+	require_once ABSPATH . 'wp-admin/includes/media.php';
+	require_once ABSPATH . 'wp-admin/includes/image.php';
+
+	$batch    = 8;
+	$offset   = (int) get_option( 'tpg_img_offset', 0 );
+	$products = wc_get_products( array(
+		'limit'   => $batch,
+		'offset'  => $offset,
+		'orderby' => 'ID',
+		'order'   => 'ASC',
+		'status'  => 'publish',
+	) );
+
+	$log = array();
+	foreach ( $products as $product ) {
+		$pid  = $product->get_id();
+		$name = $product->get_name();
+		if ( get_post_meta( $pid, '_tpg_web_image', true ) ) {
+			$log[] = $name . ': web image already set, skipped';
+			continue;
+		}
+		$model = tpg_image_model( $name );
+		$att   = tpg_fetch_openverse_image( $model );
+		if ( $att ) {
+			$old = (int) $product->get_image_id();
+			if ( $old ) {
+				$gallery   = $product->get_gallery_image_ids();
+				$gallery[] = $old;
+				$product->set_gallery_image_ids( array_values( array_unique( $gallery ) ) );
+			}
+			$product->set_image_id( $att );
+			$product->save();
+			update_post_meta( $pid, '_tpg_web_image', $att );
+			$log[] = $name . ': image updated (branded card kept in gallery)';
+		} else {
+			$log[] = $name . ': no suitable openly licensed image found, branded card kept';
+		}
+	}
+
+	$offset += count( $products );
+	$counts  = wp_count_posts( 'product' );
+	$total   = isset( $counts->publish ) ? (int) $counts->publish : 0;
+	if ( $offset >= $total || empty( $products ) ) {
+		$offset = 0;
+		$log[]  = 'All products processed. The next run starts from the beginning (already-updated products are skipped).';
+	} else {
+		$log[] = sprintf( 'Processed up to product %d of %d. Run again for the next batch.', $offset, $total );
+	}
+	update_option( 'tpg_img_offset', $offset );
+
+	set_transient( 'tpg_setup_report', implode( "\n", $log ), 300 );
+	wp_safe_redirect( admin_url( 'tools.php?page=tpg-setup' ) );
+	exit;
+}
+
+/** Model search phrase from a product name, e.g. "HP EliteBook 840 G7 laptop". */
+function tpg_image_model( $name ) {
+	$model = trim( explode( ' - ', $name )[0] );
+	$model = preg_replace( '/\((Touch|Non-touch)\)/i', '', $model );
+	return trim( preg_replace( '/\s+/', ' ', $model ) ) . ' laptop';
+}
+
+/**
+ * Query Openverse for an openly licensed photo and sideload the best match.
+ * Only commercial-safe licenses (CC0, CC-BY). Attribution is saved in the
+ * attachment caption and description. Returns attachment ID or 0.
+ */
+function tpg_fetch_openverse_image( $query ) {
+	$url = 'https://api.openverse.org/v1/images/?' . http_build_query( array(
+		'q'         => $query,
+		'license'   => 'cc0,by',
+		'per_page'  => 10,
+		'extension' => 'jpg,png',
+	) );
+	$res = wp_remote_get( $url, array(
+		'timeout' => 25,
+		'headers' => array( 'User-Agent' => 'TechPlugGH/1.0 (WordPress; +https://techpluggh.com)' ),
+	) );
+	if ( is_wp_error( $res ) || 200 !== wp_remote_retrieve_response_code( $res ) ) { return 0; }
+	$data = json_decode( wp_remote_retrieve_body( $res ), true );
+	if ( empty( $data['results'] ) || ! is_array( $data['results'] ) ) { return 0; }
+
+	/* Prefer results whose title mentions the model number token. */
+	$token   = '';
+	if ( preg_match( '/\b([A-Z]?\d{3,4}[A-Za-z]?(?:\s?G\d)?|L1\d|T1\d|L390)\b/i', $query, $m ) ) { $token = strtolower( $m[1] ); }
+	$results = $data['results'];
+	usort( $results, function ( $a, $b ) use ( $token ) {
+		$score = function ( $r ) use ( $token ) {
+			$t = strtolower( (string) ( $r['title'] ?? '' ) );
+			$s = 0;
+			if ( $token && false !== strpos( $t, $token ) ) { $s += 2; }
+			if ( false !== strpos( $t, 'laptop' ) || false !== strpos( $t, 'notebook' ) || false !== strpos( $t, 'thinkpad' ) || false !== strpos( $t, 'elitebook' ) || false !== strpos( $t, 'latitude' ) ) { $s += 1; }
+			return $s;
+		};
+		return $score( $b ) <=> $score( $a );
+	} );
+
+	foreach ( $results as $r ) {
+		if ( empty( $r['url'] ) || (int) ( $r['width'] ?? 0 ) < 500 ) { continue; }
+		$tmp = download_url( $r['url'], 60 );
+		if ( is_wp_error( $tmp ) ) { continue; }
+		$ext  = strtolower( pathinfo( wp_parse_url( $r['url'], PHP_URL_PATH ), PATHINFO_EXTENSION ) );
+		$ext  = in_array( $ext, array( 'jpg', 'jpeg', 'png' ), true ) ? $ext : 'jpg';
+		$file = array(
+			'name'     => sanitize_title( $query ) . '-' . wp_generate_password( 6, false, false ) . '.' . $ext,
+			'tmp_name' => $tmp,
+		);
+		$att = media_handle_sideload( $file, 0, $query );
+		if ( is_wp_error( $att ) ) {
+			@unlink( $tmp );
+			continue;
+		}
+		$credit = 'Photo: ' . ( $r['creator'] ?? 'unknown' ) . ' (' . strtoupper( (string) ( $r['license'] ?? '' ) ) . ' ' . ( $r['license_version'] ?? '' ) . '). Source: ' . ( $r['foreign_landing_url'] ?? $r['url'] );
+		wp_update_post( array(
+			'ID'           => $att,
+			'post_excerpt' => $credit,
+			'post_content' => $credit,
+		) );
+		update_post_meta( $att, '_tpg_image_source', esc_url_raw( (string) ( $r['foreign_landing_url'] ?? '' ) ) );
+		return (int) $att;
+	}
+	return 0;
 }

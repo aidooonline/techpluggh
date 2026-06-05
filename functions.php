@@ -89,6 +89,7 @@ if ( is_admin() ) {
 require TPG_DIR . '/inc/template-tags.php';
 if ( class_exists( 'WooCommerce' ) ) {
 	require TPG_DIR . '/inc/woocommerce.php';
+	require TPG_DIR . '/inc/whatsapp-gateway.php';
 }
 
 /** Excerpt tweaks. */
