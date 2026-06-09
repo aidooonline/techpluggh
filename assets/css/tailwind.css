@@ -40,7 +40,7 @@
   .tpg-product__media img{ @apply w-full h-full object-cover; }
   .tpg-product__body{ @apply flex flex-col gap-1.5 p-4 flex-1; }
   .tpg-product__title{ @apply font-display text-[15px] font-semibold leading-snug text-tpg-paper; }
-  .tpg-product__spec{ @apply text-xs text-tpg-muted leading-snug line-clamp-2; }
+  .tpg-product__spec{ @apply text-xs text-tpg-paper/70 leading-snug line-clamp-2 rounded-lg border border-tpg-line bg-tpg-ink/60 px-3 py-2; }
   .tpg-product__stock{ @apply text-xs font-medium text-tpg-green; }
   .tpg-product__stock.is-out{ @apply text-tpg-muted; }
   .tpg-product .price{ @apply font-display text-tpg-green text-lg font-bold; }
