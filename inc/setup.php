@@ -43,6 +43,14 @@ function tpg_setup_page() {
 				<p><button type="submit" class="button button-primary button-hero">Run Full Setup</button></p>
 			</form>
 			<hr>
+			<h2>Refresh category tile images</h2>
+			<p>Applies the distinct per-category artwork (UK Used, Business, Student, MacBooks, HP, Dell, Lenovo, Accessories) to the homepage category tiles. Overwrites the current tile image for each category and stores the new images in the Media Library, where you can replace them later.</p>
+			<form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>">
+				<input type="hidden" name="action" value="tpg_refresh_cat_images">
+				<?php wp_nonce_field( 'tpg_refresh_cat_images' ); ?>
+				<p><button type="submit" class="button button-primary button-hero">Refresh Category Images</button></p>
+			</form>
+			<hr>
 			<h2>Update product details (researched specs and SEO content)</h2>
 			<p>Rewrites every product with platform-accurate researched content: corrected generation labels, a full specification table (exact CPUs, display panel, ports, wireless, battery, build), positioning copy, a Ghana-specific FAQ block for AI overviews and organic search, and structured WooCommerce attributes shown in the Additional Information tab. Matched by SKU; safe to re-run.</p>
 			<form method="post" action="<?php echo esc_url( admin_url( 'admin-post.php' ) ); ?>">
@@ -553,4 +561,37 @@ function tpg_fetch_model_image( $model ) {
 		}
 	}
 	return 0;
+}
+
+/* =========================================================
+   Refresh category tile images from the bundled category art.
+   Overwrites existing term thumbnails (unlike Full Setup, which
+   only sets them when empty). Images land in the Media Library.
+   ========================================================= */
+add_action( 'admin_post_tpg_refresh_cat_images', 'tpg_refresh_cat_images' );
+function tpg_refresh_cat_images() {
+	if ( ! current_user_can( 'manage_options' ) ) { wp_die( 'Insufficient permissions.' ); }
+	check_admin_referer( 'tpg_refresh_cat_images' );
+	if ( ! taxonomy_exists( 'product_cat' ) ) { wp_die( 'WooCommerce must be active.' ); }
+	@set_time_limit( 300 );
+
+	$cats    = tpg_setup_data( 'categories' );
+	$log     = array();
+	$updated = 0;
+	foreach ( $cats as $c ) {
+		$term = get_term_by( 'slug', $c['slug'], 'product_cat' );
+		if ( ! $term ) { $log[] = $c['name'] . ': category not found, skipped'; continue; }
+		$att = tpg_setup_attach_image( $c['image'], $c['name'] . ' category' );
+		if ( $att ) {
+			update_term_meta( $term->term_id, 'thumbnail_id', $att );
+			$updated++;
+			$log[] = $c['name'] . ': tile image updated';
+		} else {
+			$log[] = $c['name'] . ': image file missing in theme, skipped';
+		}
+	}
+	$log[] = sprintf( '%d category tiles refreshed. Editable under Products > Categories.', $updated );
+	set_transient( 'tpg_setup_report', implode( "\n", $log ), 300 );
+	wp_safe_redirect( admin_url( 'tools.php?page=tpg-setup' ) );
+	exit;
 }
