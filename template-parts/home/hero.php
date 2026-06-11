@@ -53,43 +53,45 @@ $hero_img = (int) tpg_opt( 'tpg_hero_image' );
 				}
 			}
 			?>
-			<?php if ( $slides ) : ?>
-				<div class="tpg-hero-slider card overflow-hidden aspect-[5/4] relative" data-interval="4500">
-					<?php foreach ( $slides as $i => $s ) : ?>
-						<a href="<?php echo esc_url( $s['url'] ); ?>"
-							class="tpg-hero-slide absolute inset-0 flex flex-col opacity-0 transition-opacity duration-700<?php echo 0 === $i ? ' is-active !opacity-100' : ''; ?>"
-							data-index="<?php echo (int) $i; ?>">
-							<span class="relative flex-1 bg-tpg-ink overflow-hidden">
-								<?php if ( $s['img'] ) : ?>
-									<img src="<?php echo esc_url( $s['img'] ); ?>" alt="<?php echo esc_attr( $s['title'] ); ?>" class="w-full h-full object-cover" loading="lazy">
-								<?php else : ?>
-									<?php echo tpg_placeholder_svg( 'w-full h-full' ); ?>
-								<?php endif; ?>
-								<span class="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-tpg-black via-tpg-black/60 to-transparent"></span>
-							</span>
-							<span class="absolute inset-x-0 bottom-0 p-4 sm:p-5 flex items-end justify-between gap-3">
-								<span class="min-w-0">
-									<span class="block font-display font-semibold text-sm sm:text-base text-tpg-paper leading-snug line-clamp-2"><?php echo esc_html( $s['title'] ); ?></span>
-									<span class="block mt-1 font-display text-tpg-green font-bold text-sm"><?php echo wp_kses_post( $s['price'] ); ?></span>
-								</span>
-								<span class="shrink-0 inline-flex items-center gap-1 text-xs font-semibold text-tpg-green whitespace-nowrap">Learn more
-									<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-								</span>
-							</span>
-						</a>
-					<?php endforeach; ?>
-					<!-- Dots overlaid inside the frame -->
-					<div class="tpg-hero-dots absolute top-3 right-3 z-10 flex gap-1.5">
-						<?php foreach ( $slides as $i => $s ) : ?>
-							<button type="button" class="tpg-hero-dot h-1.5 rounded-full transition-all duration-300<?php echo 0 === $i ? ' w-5 bg-tpg-green' : ' w-1.5 bg-tpg-paper/40'; ?>" data-index="<?php echo (int) $i; ?>" aria-label="<?php echo esc_attr( sprintf( 'Slide %d', $i + 1 ) ); ?>"></button>
-						<?php endforeach; ?>
+			<div class="card overflow-hidden aspect-[5/4] relative flex items-center justify-center">
+				<!-- Faint laptop backdrop -->
+				<svg viewBox="0 0 64 64" class="absolute w-2/3 h-2/3 opacity-[0.06]" fill="none" aria-hidden="true">
+					<rect x="8" y="14" width="48" height="30" rx="3" stroke="#9AA8A1" stroke-width="2"/>
+					<rect x="4" y="46" width="56" height="4" rx="2" fill="#9AA8A1"/>
+				</svg>
+
+				<?php if ( $slides ) : ?>
+					<div class="tpg-hero-slider relative w-[290px] max-w-[78%]" data-interval="4500">
+						<div class="relative rounded-xl overflow-hidden border border-tpg-line bg-tpg-black aspect-[16/10] shadow-card">
+							<?php foreach ( $slides as $i => $s ) : ?>
+								<a href="<?php echo esc_url( $s['url'] ); ?>"
+									class="tpg-hero-slide absolute inset-0 opacity-0 transition-opacity duration-700<?php echo 0 === $i ? ' is-active !opacity-100' : ''; ?>"
+									data-index="<?php echo (int) $i; ?>">
+									<?php if ( $s['img'] ) : ?>
+										<img src="<?php echo esc_url( $s['img'] ); ?>" alt="<?php echo esc_attr( $s['title'] ); ?>" class="w-full h-full object-cover" loading="lazy">
+									<?php else : ?>
+										<?php echo tpg_placeholder_svg( 'w-full h-full' ); ?>
+									<?php endif; ?>
+									<span class="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-tpg-black via-tpg-black/55 to-transparent"></span>
+									<span class="absolute inset-x-0 bottom-0 p-2.5">
+										<span class="block font-display font-semibold text-[11px] leading-tight text-tpg-paper line-clamp-1"><?php echo esc_html( $s['title'] ); ?></span>
+										<span class="inline-flex items-center gap-1 mt-0.5 text-[10px] font-semibold text-tpg-green">Read more
+											<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+										</span>
+									</span>
+								</a>
+							<?php endforeach; ?>
+							<div class="tpg-hero-dots absolute top-2 right-2 z-10 flex gap-1">
+								<?php foreach ( $slides as $i => $s ) : ?>
+									<button type="button" class="tpg-hero-dot h-1 rounded-full transition-all duration-300<?php echo 0 === $i ? ' w-4 bg-tpg-green' : ' w-1 bg-tpg-paper/40'; ?>" data-index="<?php echo (int) $i; ?>" aria-label="<?php echo esc_attr( sprintf( 'Slide %d', $i + 1 ) ); ?>"></button>
+								<?php endforeach; ?>
+							</div>
+						</div>
 					</div>
-				</div>
-			<?php else : ?>
-				<div class="card overflow-hidden aspect-[5/4]">
+				<?php else : ?>
 					<?php tpg_image_or_placeholder( $hero_img, 'large', 'w-full h-full object-cover' ); ?>
-				</div>
-			<?php endif; ?>
+				<?php endif; ?>
+			</div>
 			<div class="absolute -bottom-5 -left-5 card px-5 py-4 hidden sm:flex items-center gap-3">
 				<span class="text-2xl font-display font-bold text-tpg-green">195+</span>
 				<span class="text-xs text-tpg-muted leading-tight">laptops in stock<br>ready to ship</span>
