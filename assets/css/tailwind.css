@@ -37,7 +37,7 @@
 
   .tpg-product{ @apply card overflow-hidden flex flex-col h-full; }
   .tpg-product__media{ @apply relative block aspect-[7/5] bg-tpg-ink overflow-hidden; }
-  .tpg-product__media img{ @apply w-full h-full object-cover; }
+  .tpg-product__media img{ @apply w-full h-full object-contain p-3; }
   .tpg-product__body{ @apply flex flex-col gap-1.5 p-4 flex-1; }
   .tpg-product__title{ @apply font-display text-[15px] font-semibold leading-snug text-tpg-paper; }
   .tpg-product__spec{ @apply text-xs text-tpg-paper/70 leading-snug line-clamp-2 rounded-lg border border-tpg-line bg-tpg-ink/60 px-3 py-2; }
@@ -141,7 +141,7 @@ nav.woocommerce-pagination ul li span.current{ @apply !bg-tpg-green !text-tpg-bl
 .woocommerce div.product p.price del{ @apply !text-tpg-muted text-lg font-normal mr-2; }
 .woocommerce div.product p.price ins{ @apply no-underline; }
 .woocommerce div.product div.images{ @apply rounded-2xl overflow-hidden border border-tpg-line bg-tpg-ink; }
-.woocommerce div.product div.images img{ @apply w-full; }
+.woocommerce div.product div.images img{ @apply w-full object-contain bg-tpg-ink; aspect-ratio: 4 / 3; padding: 1.25rem; }
 .woocommerce div.product .woocommerce-product-details__short-description{ @apply text-tpg-muted leading-relaxed; }
 .woocommerce div.product .stock.in-stock{ @apply !text-tpg-green text-sm font-medium; }
 .woocommerce div.product .stock.out-of-stock{ @apply !text-tpg-muted text-sm font-medium; }

@@ -70,7 +70,7 @@ $hero_img = (int) tpg_opt( 'tpg_hero_image' );
 									data-title="<?php echo esc_attr( $s['title'] ); ?>"
 									data-url="<?php echo esc_url( $s['url'] ); ?>">
 									<?php if ( $s['img'] ) : ?>
-										<img src="<?php echo esc_url( $s['img'] ); ?>" alt="<?php echo esc_attr( $s['title'] ); ?>" class="w-full h-full object-cover" loading="lazy">
+										<img src="<?php echo esc_url( $s['img'] ); ?>" alt="<?php echo esc_attr( $s['title'] ); ?>" class="w-full h-full object-contain p-3" loading="lazy">
 									<?php else : ?>
 										<?php echo tpg_placeholder_svg( 'w-full h-full' ); ?>
 									<?php endif; ?>
