@@ -81,6 +81,8 @@
       var i = 0;
       var interval = parseInt(slider.getAttribute('data-interval') || '4500', 10);
       var timer;
+      var caption = slider.querySelector('.tpg-hero-caption');
+      var captionTitle = slider.querySelector('.tpg-hero-caption-title');
 
       function show(n) {
         i = (n + slides.length) % slides.length;
@@ -97,6 +99,10 @@
           d.classList.toggle('w-1', !on);
           d.classList.toggle('bg-tpg-paper/40', !on);
         });
+        if (caption && captionTitle) {
+          captionTitle.textContent = slides[i].getAttribute('data-title') || '';
+          caption.setAttribute('href', slides[i].getAttribute('data-url') || '#');
+        }
       }
       function next() { show(i + 1); }
       function start() { stop(); timer = setInterval(next, interval); }

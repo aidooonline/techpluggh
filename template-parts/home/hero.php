@@ -61,24 +61,19 @@ $hero_img = (int) tpg_opt( 'tpg_hero_image' );
 				</svg>
 
 				<?php if ( $slides ) : ?>
-					<div class="tpg-hero-slider relative w-[290px] max-w-[78%]" data-interval="4500">
+					<div class="tpg-hero-slider relative w-[360px] max-w-[90%]" data-interval="4500">
 						<div class="relative rounded-xl overflow-hidden border border-tpg-line bg-tpg-black aspect-[16/10] shadow-card">
 							<?php foreach ( $slides as $i => $s ) : ?>
 								<a href="<?php echo esc_url( $s['url'] ); ?>"
 									class="tpg-hero-slide absolute inset-0 opacity-0 transition-opacity duration-700<?php echo 0 === $i ? ' is-active !opacity-100' : ''; ?>"
-									data-index="<?php echo (int) $i; ?>">
+									data-index="<?php echo (int) $i; ?>"
+									data-title="<?php echo esc_attr( $s['title'] ); ?>"
+									data-url="<?php echo esc_url( $s['url'] ); ?>">
 									<?php if ( $s['img'] ) : ?>
 										<img src="<?php echo esc_url( $s['img'] ); ?>" alt="<?php echo esc_attr( $s['title'] ); ?>" class="w-full h-full object-cover" loading="lazy">
 									<?php else : ?>
 										<?php echo tpg_placeholder_svg( 'w-full h-full' ); ?>
 									<?php endif; ?>
-									<span class="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-tpg-black via-tpg-black/55 to-transparent"></span>
-									<span class="absolute inset-x-0 bottom-0 p-2.5">
-										<span class="block font-display font-semibold text-[11px] leading-tight text-tpg-paper line-clamp-1"><?php echo esc_html( $s['title'] ); ?></span>
-										<span class="inline-flex items-center gap-1 mt-0.5 text-[10px] font-semibold text-tpg-green">Read more
-											<svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-										</span>
-									</span>
 								</a>
 							<?php endforeach; ?>
 							<div class="tpg-hero-dots absolute top-2 right-2 z-10 flex gap-1">
@@ -87,6 +82,13 @@ $hero_img = (int) tpg_opt( 'tpg_hero_image' );
 								<?php endforeach; ?>
 							</div>
 						</div>
+						<!-- Caption outside the slider image -->
+						<a href="<?php echo esc_url( $slides[0]['url'] ); ?>" class="tpg-hero-caption mt-3 flex items-center justify-between gap-3 group">
+							<span class="tpg-hero-caption-title min-w-0 font-display text-sm font-semibold text-tpg-paper leading-snug line-clamp-1 group-hover:text-tpg-green transition-colors"><?php echo esc_html( $slides[0]['title'] ); ?></span>
+							<span class="shrink-0 inline-flex items-center gap-1 text-xs font-semibold text-tpg-green whitespace-nowrap">Read more
+								<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+							</span>
+						</a>
 					</div>
 				<?php else : ?>
 					<?php tpg_image_or_placeholder( $hero_img, 'large', 'w-full h-full object-cover' ); ?>
