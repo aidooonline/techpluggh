@@ -46,10 +46,6 @@ $spec = trim( wp_strip_all_tags( $product->get_short_description() ) );
 
 			<a href="<?php the_permalink(); ?>"><h3 class="tpg-product__title"><?php echo esc_html( $product->get_name() ); ?></h3></a>
 
-			<?php if ( $spec ) : ?>
-				<p class="tpg-product__spec"><?php echo esc_html( $spec ); ?></p>
-			<?php endif; ?>
-
 			<div class="mt-auto pt-2 flex flex-col gap-2">
 				<div class="flex items-center justify-between gap-2 flex-wrap">
 					<?php echo wp_kses_post( $product->get_price_html() ); ?>
