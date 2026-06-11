@@ -7,7 +7,7 @@ $hero_img = (int) tpg_opt( 'tpg_hero_image' );
 	<div class="tpg-container relative grid lg:grid-cols-2 gap-12 items-center py-16 sm:py-24">
 		<div class="animate-riseIn">
 			<span class="eyebrow"><?php echo esc_html( tpg_opt( 'tpg_hero_eyebrow', 'Plug Into Quality' ) ); ?></span>
-			<h1 class="mt-4 text-3xl sm:text-4xl lg:text-5xl font-bold leading-[1.08]">
+			<h1 class="mt-4 text-4xl sm:text-5xl lg:text-5xl font-bold leading-[1.08]">
 				<?php echo esc_html( tpg_opt( 'tpg_hero_title', 'Quality UK Used Laptops, Delivered Across Ghana.' ) ); ?>
 			</h1>
 			<p class="mt-5 text-tpg-muted text-base sm:text-lg max-w-xl leading-relaxed">
