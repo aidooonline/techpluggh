@@ -61,7 +61,7 @@ $hero_img = (int) tpg_opt( 'tpg_hero_image' );
 				</svg>
 
 				<?php if ( $slides ) : ?>
-					<div class="tpg-hero-slider relative w-[360px] max-w-[90%]" data-interval="4500">
+					<div class="tpg-hero-slider relative w-[360px] max-w-[90%]" data-interval="3000">
 						<div class="relative rounded-xl overflow-hidden border border-tpg-line bg-tpg-black aspect-[16/10] shadow-card">
 							<?php foreach ( $slides as $i => $s ) : ?>
 								<a href="<?php echo esc_url( $s['url'] ); ?>"
