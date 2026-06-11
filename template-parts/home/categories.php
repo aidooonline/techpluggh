@@ -11,18 +11,15 @@ if ( is_wp_error( $cats ) || ! $cats ) { return; }
 		</div>
 		<a href="<?php echo esc_url( wc_get_page_permalink( 'shop' ) ); ?>" class="menu-link hidden sm:block">View all &rarr;</a>
 	</div>
-	<div class="grid grid-cols-2 lg:grid-cols-4 gap-4">
+	<div class="flex gap-3 sm:gap-4 overflow-x-auto pb-2 -mx-5 px-5 sm:mx-0 sm:px-0 sm:overflow-visible [scrollbar-width:none] [-ms-overflow-style:none]">
 		<?php foreach ( $cats as $cat ) :
 			$thumb_id = (int) get_term_meta( $cat->term_id, 'thumbnail_id', true ); ?>
-			<a href="<?php echo esc_url( get_term_link( $cat ) ); ?>" class="card group relative overflow-hidden aspect-[4/5] flex flex-col justify-end hover:border-tpg-green/50 transition">
-				<div class="absolute inset-0">
-					<?php tpg_image_or_placeholder( $thumb_id, 'large', 'w-full h-full object-cover opacity-60 group-hover:opacity-80 group-hover:scale-105 transition duration-500' ); ?>
+			<a href="<?php echo esc_url( get_term_link( $cat ) ); ?>" class="group shrink-0 w-24 sm:w-auto sm:flex-1 text-center">
+				<div class="card aspect-square overflow-hidden rounded-2xl flex items-center justify-center group-hover:border-tpg-green/50 transition">
+					<?php tpg_image_or_placeholder( $thumb_id, 'medium', 'w-full h-full object-cover group-hover:scale-105 transition duration-500' ); ?>
 				</div>
-				<div class="absolute inset-0 bg-gradient-to-t from-tpg-black via-tpg-black/40 to-transparent"></div>
-				<div class="relative p-4">
-					<h3 class="font-display font-semibold text-tpg-paper"><?php echo esc_html( $cat->name ); ?></h3>
-					<p class="text-xs text-tpg-muted mt-0.5"><?php echo esc_html( $cat->count ); ?> in stock</p>
-				</div>
+				<h3 class="mt-2 text-xs sm:text-[13px] font-medium text-tpg-paper group-hover:text-tpg-green transition-colors leading-tight line-clamp-1"><?php echo esc_html( $cat->name ); ?></h3>
+				<p class="text-[10px] text-tpg-muted mt-0.5"><?php echo esc_html( $cat->count ); ?> in stock</p>
 			</a>
 		<?php endforeach; ?>
 	</div>
