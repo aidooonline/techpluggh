@@ -6,6 +6,7 @@ module.exports = {
   ],
   safelist: [
     "is-active", "menu-open", "tpg-locations-open",
+    "!opacity-100", "opacity-0", "w-6", "w-1.5", "bg-tpg-green", "bg-tpg-line",
     { pattern: /(bg|text|border)-(tpg)-(green|greenDim|ink|paper|line)/ },
   ],
   theme: {

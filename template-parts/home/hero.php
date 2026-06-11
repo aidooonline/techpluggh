@@ -26,9 +26,80 @@ $hero_img = (int) tpg_opt( 'tpg_hero_image' );
 			</div>
 		</div>
 		<div class="relative animate-riseIn" style="animation-delay:.15s">
-			<div class="card overflow-hidden aspect-[5/4]">
-				<?php tpg_image_or_placeholder( $hero_img, 'large', 'w-full h-full object-cover' ); ?>
-			</div>
+			<?php
+			// Featured products for the hero slider.
+			$slides = array();
+			if ( function_exists( 'wc_get_products' ) ) {
+				$ids = get_posts( array(
+					'post_type'      => 'product',
+					'post_status'    => 'publish',
+					'posts_per_page' => 8,
+					'fields'         => 'ids',
+					'tax_query'      => array( array( 'taxonomy' => 'product_visibility', 'field' => 'name', 'terms' => 'featured' ) ),
+				) );
+				if ( ! $ids ) {
+					$ids = get_posts( array( 'post_type' => 'product', 'post_status' => 'publish', 'posts_per_page' => 8, 'fields' => 'ids', 'orderby' => 'date', 'order' => 'DESC' ) );
+				}
+				foreach ( $ids as $pid ) {
+					$p = wc_get_product( $pid );
+					if ( ! $p ) { continue; }
+					$img = get_the_post_thumbnail_url( $pid, 'large' );
+					$slides[] = array(
+						'title' => $p->get_name(),
+						'url'   => get_permalink( $pid ),
+						'img'   => $img ? $img : '',
+						'price' => $p->get_price_html(),
+					);
+				}
+			}
+			?>
+			<?php if ( $slides ) : ?>
+				<div class="tpg-hero-slider" data-interval="4500">
+					<!-- Laptop frame -->
+					<div class="relative mx-auto w-full max-w-xl">
+						<div class="rounded-t-2xl border border-tpg-line bg-tpg-ink p-2.5 sm:p-3 shadow-card">
+							<div class="rounded-xl overflow-hidden bg-tpg-black aspect-[16/10] relative">
+								<?php foreach ( $slides as $i => $s ) : ?>
+									<a href="<?php echo esc_url( $s['url'] ); ?>"
+										class="tpg-hero-slide absolute inset-0 flex flex-col opacity-0 transition-opacity duration-700<?php echo 0 === $i ? ' is-active !opacity-100' : ''; ?>"
+										data-index="<?php echo (int) $i; ?>">
+										<span class="relative flex-1 bg-tpg-ink overflow-hidden">
+											<?php if ( $s['img'] ) : ?>
+												<img src="<?php echo esc_url( $s['img'] ); ?>" alt="<?php echo esc_attr( $s['title'] ); ?>" class="w-full h-full object-cover" loading="lazy">
+											<?php else : ?>
+												<?php echo tpg_placeholder_svg( 'w-full h-full' ); ?>
+											<?php endif; ?>
+											<span class="absolute inset-x-0 bottom-0 h-2/3 bg-gradient-to-t from-tpg-black via-tpg-black/60 to-transparent"></span>
+										</span>
+										<span class="absolute inset-x-0 bottom-0 p-4 sm:p-5 flex items-end justify-between gap-3">
+											<span class="min-w-0">
+												<span class="block font-display font-semibold text-sm sm:text-base text-tpg-paper leading-snug line-clamp-2"><?php echo esc_html( $s['title'] ); ?></span>
+												<span class="block mt-1 font-display text-tpg-green font-bold text-sm"><?php echo wp_kses_post( $s['price'] ); ?></span>
+											</span>
+											<span class="shrink-0 inline-flex items-center gap-1 text-xs font-semibold text-tpg-green whitespace-nowrap">Learn more
+												<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M13 6l6 6-6 6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+											</span>
+										</span>
+									</a>
+								<?php endforeach; ?>
+							</div>
+						</div>
+						<!-- Laptop base -->
+						<div class="mx-auto h-3 sm:h-3.5 w-[112%] -translate-x-[5.5%] rounded-b-xl bg-tpg-line"></div>
+						<div class="mx-auto h-1 w-1/4 rounded-b-md bg-tpg-line/60"></div>
+						<!-- Dots -->
+						<div class="tpg-hero-dots flex justify-center gap-2 mt-5">
+							<?php foreach ( $slides as $i => $s ) : ?>
+								<button type="button" class="tpg-hero-dot h-1.5 rounded-full transition-all duration-300<?php echo 0 === $i ? ' w-6 bg-tpg-green' : ' w-1.5 bg-tpg-line'; ?>" data-index="<?php echo (int) $i; ?>" aria-label="<?php echo esc_attr( sprintf( 'Slide %d', $i + 1 ) ); ?>"></button>
+							<?php endforeach; ?>
+						</div>
+					</div>
+				</div>
+			<?php else : ?>
+				<div class="card overflow-hidden aspect-[5/4]">
+					<?php tpg_image_or_placeholder( $hero_img, 'large', 'w-full h-full object-cover' ); ?>
+				</div>
+			<?php endif; ?>
 			<div class="absolute -bottom-5 -left-5 card px-5 py-4 hidden sm:flex items-center gap-3">
 				<span class="text-2xl font-display font-bold text-tpg-green">195+</span>
 				<span class="text-xs text-tpg-muted leading-tight">laptops in stock<br>ready to ship</span>
