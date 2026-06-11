@@ -33,7 +33,7 @@ $spec = trim( wp_strip_all_tags( $product->get_short_description() ) );
 				echo '<span class="absolute top-3 left-3 z-10 chip-green !bg-tpg-green !text-tpg-black font-bold">SALE</span>';
 			}
 			if ( has_post_thumbnail() ) {
-				echo get_the_post_thumbnail( $product->get_id(), 'woocommerce_thumbnail' );
+				echo get_the_post_thumbnail( $product->get_id(), 'large' );
 			} else {
 				echo tpg_placeholder_svg( 'w-full h-full' );
 			}

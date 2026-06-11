@@ -7,7 +7,7 @@
 
 if ( ! defined( 'ABSPATH' ) ) { exit; }
 
-define( 'TPG_VERSION', '1.1.2' );
+define( 'TPG_VERSION', '1.1.3' );
 define( 'TPG_DIR', get_template_directory() );
 define( 'TPG_URI', get_template_directory_uri() );
 
