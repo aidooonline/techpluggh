@@ -92,10 +92,10 @@
         });
         dots.forEach(function (d, idx) {
           var on = idx === i;
-          d.classList.toggle('w-6', on);
+          d.classList.toggle('w-5', on);
           d.classList.toggle('bg-tpg-green', on);
           d.classList.toggle('w-1.5', !on);
-          d.classList.toggle('bg-tpg-line', !on);
+          d.classList.toggle('bg-tpg-paper/40', !on);
         });
       }
       function next() { show(i + 1); }
